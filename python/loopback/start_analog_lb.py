@@ -4,8 +4,8 @@ import argparse
 
 # cmd argument stuff
 parser = argparse.ArgumentParser()
-parser.add_argument("rx_frequency", help="Frequency of Rx in MHz")
-parser.add_argument("tx_frequency", help="Frequency of Tx in MHz")
+parser.add_argument("rx_frequency", type=int, help="Frequency of Rx in MHz")
+parser.add_argument("tx_frequency",type=int, help="Frequency of Tx in MHz")
 
 args = parser.parse_args()
 
