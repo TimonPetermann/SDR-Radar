@@ -1,15 +1,15 @@
-# ignore build folders
+# ignore build folders and binaries
 gnuradio/chirpradar/gr-chirp_radar/build/
-
+gnuradio/chirpradar/gr-chirp_radar/python/__pycache__/
 
 # ignore output files 
 gnuradio/misc/*.dat
 gnuradio/misc/*.txt
 
-
 # ignore gnu radio python output files
 gnuradio/misc/*.py
 gnuradio/chirpradar/top_block_sim.py
+gnuradio/chirpradar/chirp_radar_tx_rx.py
 
 # ignore visual studio code files
 **/.vscode/
