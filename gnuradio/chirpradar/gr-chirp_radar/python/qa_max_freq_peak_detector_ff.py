@@ -39,9 +39,10 @@ class qa_max_freq_peak_detector_ff(gr_unittest.TestCase):
         amp = np.arange(1, 10 * num_signals + 1, 10)
         freqs = np.random.uniform(1, 10, num_signals)
         f_samp = 50
+        num_samp = 8192
         T_samp = 1/f_samp
-        t = np.arange(0, 10, T_samp)
-        signal = 0.0
+        t = np.arange(0, num_samp*T_samp, T_samp)
+        signal = np.zeros(len(t))
         for i in range(num_signals):
             signal = signal + amp[i] * np.cos(2*np.pi*freqs[i]*t)
 
@@ -51,22 +52,25 @@ class qa_max_freq_peak_detector_ff(gr_unittest.TestCase):
         print("Expected: ", expected_result)
 
         # create blocks
-        src = blocks.vector_source_f(signal)
-        dut = max_freq_peak_detector_ff(sampling_rate=f_samp, f_max = 5, fft_size=len(t))
+        src = blocks.vector_source_f(signal, vlen=len(signal))
+        dut = max_freq_peak_detector_ff(sampling_rate=f_samp, f_max = 5, fft_size=len(signal))
         sink = blocks.vector_sink_f()
 
         #connect blocks
-        self.tb.connect(src, dut)
-        self.tb.connect(dut, sink)
+        self.tb.connect((src,0), (dut,0))
+        self.tb.connect((dut,0), (sink,0))
 
         #run test
         self.tb.run()
 
         # check data
         result = sink.data()
+        print(result)
         print("Result: ", result[0])
-
-        self.assertAlmostEqual(expected_result, result[0], places=1)
+        if expected_result > 5:
+            self.assertLessEqual(result[0], 5)
+        else:
+            self.assertAlmostEqual(expected_result, result[0], places=1)
 
     def test_001_t(self):
         self.runningRndTest()

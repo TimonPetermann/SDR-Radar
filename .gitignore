@@ -1,0 +1,14 @@
+# ignore build folders
+gnuradio/chirpradar/gr-chirp_radar/build/
+
+
+# ignore output files 
+gnuradio/misc/*.dat
+gnuradio/misc/*.txt
+
+
+# ignore gnu radio python output files
+gnuradio/misc/*.py
+gnuradio/chirpradar/top_block_sim.py
+
+
