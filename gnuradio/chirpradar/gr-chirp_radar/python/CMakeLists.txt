@@ -32,7 +32,8 @@ endif()
 GR_PYTHON_INSTALL(
     FILES
     __init__.py
-    max_freq_peak_detector_ff.py DESTINATION ${GR_PYTHON_DIR}/chirp_radar
+    max_freq_peak_detector_ff.py
+    range_calc_ff.py DESTINATION ${GR_PYTHON_DIR}/chirp_radar
 )
 
 ########################################################################
@@ -43,3 +44,4 @@ include(GrTest)
 set(GR_TEST_TARGET_DEPS gnuradio-chirp_radar)
 set(GR_TEST_PYTHON_DIRS ${CMAKE_BINARY_DIR}/swig)
 GR_ADD_TEST(qa_max_freq_peak_detector_ff ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_max_freq_peak_detector_ff.py)
+GR_ADD_TEST(qa_range_calc_ff ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_range_calc_ff.py)

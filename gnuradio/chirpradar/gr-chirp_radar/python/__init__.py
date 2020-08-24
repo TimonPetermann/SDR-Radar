@@ -33,4 +33,5 @@ except ImportError:
 
 # import any pure python here
 from .max_freq_peak_detector_ff import max_freq_peak_detector_ff
+from .range_calc_ff import range_calc_ff
 #

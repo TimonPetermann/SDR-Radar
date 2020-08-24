@@ -11,4 +11,6 @@ gnuradio/misc/*.txt
 gnuradio/misc/*.py
 gnuradio/chirpradar/top_block_sim.py
 
+# ignore visual studio code files
+**/.vscode/
 
