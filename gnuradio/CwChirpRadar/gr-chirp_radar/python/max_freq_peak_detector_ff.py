@@ -27,7 +27,7 @@ class max_freq_peak_detector_ff(gr.sync_block):
     """
     docstring for block max_freq_peak_detector_ff
     """
-    def __init__(self, sampling_rate, f_max, fft_size=1024):
+    def __init__(self, sampling_rate, f_max, f_min, fft_size=1024):
         gr.sync_block.__init__(self,
             name="max_freq_peak_detector_ff",
             in_sig=[(numpy.float32, fft_size)],
@@ -35,11 +35,12 @@ class max_freq_peak_detector_ff(gr.sync_block):
         self.fft_size = fft_size
         self.sampling_rate = sampling_rate
         self.f_max = f_max
+        self.f_min = f_min
 
         #set up frequency interval once for efficiency
         T_samp = 1/self.sampling_rate
         self.f = numpy.fft.fftfreq(self.fft_size, d=T_samp)
-        self.mask = numpy.abs(self.f) > f_max
+        self.mask = numpy.logical_or(numpy.abs(self.f) > f_max, numpy.abs(self.f) < f_min)
 
 
     def work(self, input_items, output_items):

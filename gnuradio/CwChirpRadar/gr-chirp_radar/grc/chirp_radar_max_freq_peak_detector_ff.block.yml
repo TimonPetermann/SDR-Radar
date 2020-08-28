@@ -4,7 +4,7 @@ category: '[Chirp Radar]'
 
 templates:
   imports: import chirp_radar
-  make: chirp_radar.max_freq_peak_detector_ff(${sampling_rate}, ${f_max}, ${fft_size})
+  make: chirp_radar.max_freq_peak_detector_ff(${sampling_rate}, ${f_max}, ${f_min}, ${fft_size})
 
 #  Make one 'parameters' list entry for every parameter you want settable from the GUI.
 #     Keys include:
@@ -18,10 +18,13 @@ parameters:
 - id: f_max
   label: Cut Off Freq
   dtype: float
+- id: f_min
+  label: Minimum Freq
+  dtype: float
 - id: sampling_rate
   label: Sampling Rate
   dtype: float
-
+  
 #  Make one 'inputs' list entry per input and one 'outputs' list entry per output.
 #  Keys include:
 #      * label (an identifier for the GUI)

@@ -33,7 +33,8 @@ GR_PYTHON_INSTALL(
     FILES
     __init__.py
     max_freq_peak_detector_ff.py
-    range_calc_ff.py DESTINATION ${GR_PYTHON_DIR}/chirp_radar
+    range_calc_ff.py
+    DESTINATION ${GR_PYTHON_DIR}/chirp_radar
 )
 
 ########################################################################

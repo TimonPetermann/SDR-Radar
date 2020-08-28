@@ -1,6 +1,6 @@
 # ignore build folders and binaries
-gnuradio/chirpradar/gr-chirp_radar/build/
-gnuradio/chirpradar/gr-chirp_radar/python/__pycache__/
+gnuradio/CwChirpRadar/gr-chirp_radar/build/
+gnuradio/CwChirpRadar/gr-chirp_radar/python/__pycache__/
 
 # ignore output files 
 gnuradio/misc/*.dat
@@ -8,8 +8,10 @@ gnuradio/misc/*.txt
 
 # ignore gnu radio python output files
 gnuradio/misc/*.py
-gnuradio/chirpradar/top_block_sim.py
-gnuradio/chirpradar/chirp_radar_tx_rx.py
+gnuradio/CwChirpRadar/top_block_sim.py
+gnuradio/CwChirpRadar/chirp_radar_tx_rx.py
+gnuradio/CwChirpRadar/pluto_chirp_radar_sim.py
+gnuradio/CwChirpRadar/chirp_radar_sim_2.py
 
 # ignore visual studio code files
 **/.vscode/
