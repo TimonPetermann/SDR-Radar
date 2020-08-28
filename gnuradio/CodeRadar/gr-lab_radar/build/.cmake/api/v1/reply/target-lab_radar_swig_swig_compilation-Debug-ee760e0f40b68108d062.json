@@ -1,0 +1,94 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"swig_add_library",
+			"GR_SWIG_MAKE"
+		],
+		"files" : 
+		[
+			"/usr/lib/x86_64-linux-gnu/cmake/gnuradio/UseSWIG.cmake",
+			"/usr/lib/x86_64-linux-gnu/cmake/gnuradio/GrSwig.cmake",
+			"swig/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 51,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 133,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 579,
+				"parent" : 2
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "lab_radar_swig_swig_doc::@af072dd06d56d42a6c33"
+		}
+	],
+	"id" : "lab_radar_swig_swig_compilation::@af072dd06d56d42a6c33",
+	"name" : "lab_radar_swig_swig_compilation",
+	"paths" : 
+	{
+		"build" : "swig",
+		"source" : "swig"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0,
+				2
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "build/swig/CMakeFiles/lab_radar_swig_swig_compilation",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/swig/CMakeFiles/lab_radar_swig_swig_compilation.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"path" : "swig/lab_radar_swig.i",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "UTILITY"
+}

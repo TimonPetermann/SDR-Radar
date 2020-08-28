@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="api_8h" kind="file" language="C++">
+    <compoundname>api.h</compoundname>
+    <includes local="no">gnuradio/attributes.h</includes>
+    <includedby refid="corr__dist__estimator__bfi_8h" local="no">corr_dist_estimator_bfi.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gnuradio/attributes.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>corr_dist_estimator_bfi.h</label>
+        <link refid="corr__dist__estimator__bfi_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>corr_dist_estimator_bfi_impl.h</label>
+        <link refid="corr__dist__estimator__bfi__impl_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="api_8h_1a95d4b98826028f9cfe14a837ce3caadf" prot="public" static="no">
+        <name>LAB_RADAR_API</name>
+        <initializer>__GR_ATTR_IMPORT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/include/lab_radar/api.h" line="31" column="10" bodyfile="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/include/lab_radar/api.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/include/lab_radar/api.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi" kind="class" language="C++" prot="public">
+    <compoundname>gr::lab_radar::corr_dist_estimator_bfi</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_decimator</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl" prot="public" virt="non-virtual">gr::lab_radar::corr_dist_estimator_bfi_impl</derivedcompoundref>
+    <includes refid="corr__dist__estimator__bfi_8h" local="no">corr_dist_estimator_bfi.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi_1a0fbb1d3eb1df8d8ca631552adbc37220" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi" kindref="compound">corr_dist_estimator_bfi</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;corr_dist_estimator_bfi&gt; gr::lab_radar::corr_dist_estimator_bfi::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/include/lab_radar/corr_dist_estimator_bfi.h" line="38" column="33" bodyfile="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/include/lab_radar/corr_dist_estimator_bfi.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi_1a333bbe986e9810aafb90e900640cec15" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi_1a0fbb1d3eb1df8d8ca631552adbc37220" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::lab_radar::corr_dist_estimator_bfi::make</definition>
+        <argsstring>(int code_length)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>code_length</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi" kindref="compound">lab_radar::corr_dist_estimator_bfi</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi" kindref="compound">lab_radar::corr_dist_estimator_bfi</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi_1a333bbe986e9810aafb90e900640cec15" kindref="member">lab_radar::corr_dist_estimator_bfi::make</ref> is the public interface for creating new instances. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/include/lab_radar/corr_dist_estimator_bfi.h" line="48" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::lab_radar::corr_dist_estimator_bfi</label>
+        <link refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gr::sync_decimator</label>
+      </node>
+      <node id="3">
+        <label>gr::lab_radar::corr_dist_estimator_bfi_impl</label>
+        <link refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gr::lab_radar::corr_dist_estimator_bfi</label>
+        <link refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gr::sync_decimator</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/include/lab_radar/corr_dist_estimator_bfi.h" line="36" column="1" bodyfile="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/include/lab_radar/corr_dist_estimator_bfi.h" bodystart="35" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi_1a333bbe986e9810aafb90e900640cec15" prot="public" virt="non-virtual"><scope>gr::lab_radar::corr_dist_estimator_bfi</scope><name>make</name></member>
+      <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi_1a0fbb1d3eb1df8d8ca631552adbc37220" prot="public" virt="non-virtual"><scope>gr::lab_radar::corr_dist_estimator_bfi</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

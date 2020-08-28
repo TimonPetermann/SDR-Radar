@@ -1,0 +1,11 @@
+This is the lab_radar-write-a-block package meant as a guide to building
+out-of-tree packages. To use the lab_radar blocks, the Python namespaces
+is in 'lab_radar', which is imported as:
+
+    import lab_radar
+
+See the Doxygen documentation for details about the blocks available
+in this package. A quick listing of the details can be found in Python
+after importing by using:
+
+    help(lab_radar)

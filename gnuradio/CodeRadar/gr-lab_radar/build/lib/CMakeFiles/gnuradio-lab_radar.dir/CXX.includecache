@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/lab_radar/api.h
+gnuradio/attributes.h
+-
+
+../include/lab_radar/corr_dist_estimator_bfi.h
+lab_radar/api.h
+-
+gnuradio/sync_decimator.h
+-
+
+/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/lib/corr_dist_estimator_bfi_impl.cc
+config.h
+/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/lib/config.h
+gnuradio/io_signature.h
+-
+corr_dist_estimator_bfi_impl.h
+/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/lib/corr_dist_estimator_bfi_impl.h
+iostream
+-
+vector
+-
+
+/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/lib/corr_dist_estimator_bfi_impl.h
+lab_radar/corr_dist_estimator_bfi.h
+-
+fstream
+-
+

@@ -1,0 +1,58 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0a3ad/fast && /usr/bin/make -f CMakeFiles/cmTC_0a3ad.dir/build.make CMakeFiles/cmTC_0a3ad.dir/build
+make[1]: Verzeichnis „/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_0a3ad.dir/src.c.o
+/bin/gcc-9   -DCMAKE_HAVE_LIBC_PTHREAD   -std=gnu11 -o CMakeFiles/cmTC_0a3ad.dir/src.c.o   -c /home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_0a3ad
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a3ad.dir/link.txt --verbose=1
+/bin/gcc-9  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_0a3ad.dir/src.c.o  -o cmTC_0a3ad 
+/usr/bin/ld: CMakeFiles/cmTC_0a3ad.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_0a3ad.dir/build.make:87: cmTC_0a3ad] Fehler 1
+make[1]: Verzeichnis „/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/CMakeFiles/CMakeTmp“ wird verlassen
+make: *** [Makefile:121: cmTC_0a3ad/fast] Fehler 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e65ed/fast && /usr/bin/make -f CMakeFiles/cmTC_e65ed.dir/build.make CMakeFiles/cmTC_e65ed.dir/build
+make[1]: Verzeichnis „/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_e65ed.dir/CheckFunctionExists.c.o
+/bin/gcc-9   -DCHECK_FUNCTION_EXISTS=pthread_create   -std=gnu11 -o CMakeFiles/cmTC_e65ed.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e65ed
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e65ed.dir/link.txt --verbose=1
+/bin/gcc-9  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_e65ed.dir/CheckFunctionExists.c.o  -o cmTC_e65ed  -lpthreads 
+/usr/bin/ld: -lpthreads kann nicht gefunden werden
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e65ed.dir/build.make:87: cmTC_e65ed] Fehler 1
+make[1]: Verzeichnis „/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/CMakeFiles/CMakeTmp“ wird verlassen
+make: *** [Makefile:121: cmTC_e65ed/fast] Fehler 2
+
+
+

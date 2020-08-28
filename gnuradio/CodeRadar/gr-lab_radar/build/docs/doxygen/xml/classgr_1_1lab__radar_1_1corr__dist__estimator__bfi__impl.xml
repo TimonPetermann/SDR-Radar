@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::lab_radar::corr_dist_estimator_bfi_impl</compoundname>
+    <basecompoundref refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi" prot="public" virt="non-virtual">gr::lab_radar::corr_dist_estimator_bfi</basecompoundref>
+    <includes refid="corr__dist__estimator__bfi__impl_8h" local="no">corr_dist_estimator_bfi_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1a15da5b68a00ad1e1aa12df15da6f173d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lab_radar::corr_dist_estimator_bfi_impl::code_length</definition>
+        <argsstring></argsstring>
+        <name>code_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/lib/corr_dist_estimator_bfi_impl.h" line="32" column="11" bodyfile="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/lib/corr_dist_estimator_bfi_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1ad25976a94109c16c8dee19af061fd06a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lab_radar::corr_dist_estimator_bfi_impl::corr_dist_estimator_bfi_impl</definition>
+        <argsstring>(int code_length)</argsstring>
+        <name>corr_dist_estimator_bfi_impl</name>
+        <param>
+          <type>int</type>
+          <declname>code_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/lib/corr_dist_estimator_bfi_impl.h" line="35" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1acf5f0752315733aa991a9ddc56fba906" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lab_radar::corr_dist_estimator_bfi_impl::~corr_dist_estimator_bfi_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~corr_dist_estimator_bfi_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/lib/corr_dist_estimator_bfi_impl.h" line="36" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1ab2e13745fb47f53c894569ab6f3f532d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::lab_radar::corr_dist_estimator_bfi_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/lib/corr_dist_estimator_bfi_impl.h" line="39" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>gr::lab_radar::corr_dist_estimator_bfi</label>
+        <link refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::sync_decimator</label>
+      </node>
+      <node id="1">
+        <label>gr::lab_radar::corr_dist_estimator_bfi_impl</label>
+        <link refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>gr::lab_radar::corr_dist_estimator_bfi</label>
+        <link refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::sync_decimator</label>
+      </node>
+      <node id="1">
+        <label>gr::lab_radar::corr_dist_estimator_bfi_impl</label>
+        <link refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/lib/corr_dist_estimator_bfi_impl.h" line="30" column="1" bodyfile="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/lib/corr_dist_estimator_bfi_impl.h" bodystart="29" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1a15da5b68a00ad1e1aa12df15da6f173d" prot="private" virt="non-virtual"><scope>gr::lab_radar::corr_dist_estimator_bfi_impl</scope><name>code_length</name></member>
+      <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1ad25976a94109c16c8dee19af061fd06a" prot="public" virt="non-virtual"><scope>gr::lab_radar::corr_dist_estimator_bfi_impl</scope><name>corr_dist_estimator_bfi_impl</name></member>
+      <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi_1a333bbe986e9810aafb90e900640cec15" prot="public" virt="non-virtual"><scope>gr::lab_radar::corr_dist_estimator_bfi_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi_1a0fbb1d3eb1df8d8ca631552adbc37220" prot="public" virt="non-virtual"><scope>gr::lab_radar::corr_dist_estimator_bfi_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1ab2e13745fb47f53c894569ab6f3f532d" prot="public" virt="non-virtual"><scope>gr::lab_radar::corr_dist_estimator_bfi_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1acf5f0752315733aa991a9ddc56fba906" prot="public" virt="non-virtual"><scope>gr::lab_radar::corr_dist_estimator_bfi_impl</scope><name>~corr_dist_estimator_bfi_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

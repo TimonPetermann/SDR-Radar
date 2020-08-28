@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacegr_1_1lab__radar" kind="namespace" language="C++">
+    <compoundname>gr::lab_radar</compoundname>
+    <innerclass refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi" prot="public">gr::lab_radar::corr_dist_estimator_bfi</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/include/lab_radar/corr_dist_estimator_bfi.h" line="28" column="21"/>
+  </compounddef>
+</doxygen>

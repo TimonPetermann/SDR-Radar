@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_c4d7c54ca3d6d5bd0014915e6ce94095" kind="dir">
+    <compoundname>lab_radar</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="corr__dist__estimator__bfi_8h">corr_dist_estimator_bfi.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/include/lab_radar/"/>
+  </compounddef>
+</doxygen>
