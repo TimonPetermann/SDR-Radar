@@ -53,7 +53,7 @@ class qa_max_freq_peak_detector_ff(gr_unittest.TestCase):
 
         # create blocks
         src = blocks.vector_source_f(signal, vlen=len(signal))
-        dut = max_freq_peak_detector_ff(sampling_rate=f_samp, f_max = 5, fft_size=len(signal))
+        dut = max_freq_peak_detector_ff(sampling_rate=f_samp, f_max = 5,f_min = 2, fft_size=len(signal))
         sink = blocks.vector_sink_f()
 
         #connect blocks
@@ -69,6 +69,8 @@ class qa_max_freq_peak_detector_ff(gr_unittest.TestCase):
         print("Result: ", result[0])
         if expected_result > 5:
             self.assertLessEqual(result[0], 5)
+        elif expected_result < 2:
+            self.assertGreaterEqual(result[0], 2)
         else:
             self.assertAlmostEqual(expected_result, result[0], places=1)
 

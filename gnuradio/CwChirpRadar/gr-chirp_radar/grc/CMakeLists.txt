@@ -17,8 +17,8 @@
 # along with GNU Radio; see the file COPYING.  If not, write to
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
-
 install(FILES
     chirp_radar_max_freq_peak_detector_ff.block.yml
-    chirp_radar_range_calc_ff.block.yml DESTINATION share/gnuradio/grc/blocks
+    chirp_radar_range_calc_ff.block.yml
+    DESTINATION share/gnuradio/grc/blocks
 )

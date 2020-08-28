@@ -10,7 +10,7 @@ options:
     gen_linking: dynamic
     generate_options: qt_gui
     hier_block_src_path: '.:'
-    id: BW_test
+    id: top_block_sim
     max_nouts: '0'
     output_language: python
     placement: (0,0)
@@ -21,7 +21,7 @@ options:
     run_options: prompt
     sizing_mode: fixed
     thread_safe_setters: ''
-    title: Not titled yet
+    title: Chirp Radar Simulation
     window_size: ''
   states:
     bus_sink: false
@@ -32,11 +32,77 @@ options:
     state: enabled
 
 blocks:
+- name: PRF
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: ''
+    label: PRF
+    min_len: '200'
+    orient: Qt.Horizontal
+    rangeType: int
+    start: '100'
+    step: '100'
+    stop: '10000000'
+    value: '50000'
+    widget: counter_slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [593, 15]
+    rotation: 0
+    state: true
+- name: bw
+  id: variable
+  parameters:
+    comment: ''
+    value: '8'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [396, 11]
+    rotation: 0
+    state: enabled
+- name: fft_size
+  id: variable
+  parameters:
+    comment: ''
+    value: int(8192)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [290, 11]
+    rotation: 0
+    state: enabled
+- name: input_d
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: ''
+    label: Delay
+    min_len: '200'
+    orient: Qt.Horizontal
+    rangeType: float
+    start: '0'
+    step: '0.1'
+    stop: '35'
+    value: '10'
+    widget: counter_slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [472, 14]
+    rotation: 0
+    state: true
 - name: samp_rate
   id: variable
   parameters:
     comment: ''
-    value: '600000000'
+    value: 600000000*10
   states:
     bus_sink: false
     bus_source: false
@@ -44,6 +110,25 @@ blocks:
     coordinate: [184, 12]
     rotation: 0
     state: enabled
+- name: analog_noise_source_x_0
+  id: analog_noise_source_x
+  parameters:
+    affinity: ''
+    alias: ''
+    amp: '0.01'
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    noise_type: analog.GR_GAUSSIAN
+    seed: '0'
+    type: complex
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [288, 516]
+    rotation: 0
+    state: true
 - name: analog_sig_source_x_0
   id: analog_sig_source_x
   parameters:
@@ -51,7 +136,7 @@ blocks:
     alias: ''
     amp: '1'
     comment: ''
-    freq: '10000'
+    freq: PRF
     maxoutbuf: '0'
     minoutbuf: '0'
     offset: '0'
@@ -63,7 +148,149 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [411, 283]
+    coordinate: [100, 187]
+    rotation: 0
+    state: true
+- name: blocks_add_xx_0
+  id: blocks_add_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [603, 458]
+    rotation: 0
+    state: true
+- name: blocks_complex_to_real_0
+  id: blocks_complex_to_real
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [754, 363]
+    rotation: 0
+    state: true
+- name: blocks_complex_to_real_0_0
+  id: blocks_complex_to_real
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [753, 414]
+    rotation: 0
+    state: true
+- name: blocks_delay_0
+  id: blocks_delay
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    delay: int(2*input_d*samp_rate/300000000)
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_ports: '1'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [271, 454]
+    rotation: 0
+    state: true
+- name: blocks_multiply_const_vxx_0
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: '0.01'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [416, 454]
+    rotation: 0
+    state: true
+- name: blocks_multiply_xx_0
+  id: blocks_multiply_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [974, 372]
+    rotation: 0
+    state: true
+- name: blocks_stream_to_vector_0
+  id: blocks_stream_to_vector
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_items: fft_size
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [740, 579]
+    rotation: 0
+    state: true
+- name: blocks_throttle_0
+  id: blocks_throttle
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    ignoretag: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samples_per_second: samp_rate
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [488, 223]
     rotation: 0
     state: true
 - name: blocks_vco_f_0
@@ -76,12 +303,48 @@ blocks:
     maxoutbuf: '0'
     minoutbuf: '0'
     samp_rate: samp_rate
-    sensitivity: int(2*6280000)
+    sensitivity: int(bw*628000000)
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [683, 301]
+    coordinate: [317, 211]
+    rotation: 0
+    state: true
+- name: chirp_radar_max_freq_peak_detector_ff_0
+  id: chirp_radar_max_freq_peak_detector_ff
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    f_max: '100000000'
+    f_min: '0'
+    fft_size: fft_size
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    sampling_rate: samp_rate
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [940, 556]
+    rotation: 0
+    state: true
+- name: chirp_radar_range_calc_ff_0
+  id: chirp_radar_range_calc_ff
+  parameters:
+    affinity: ''
+    alias: ''
+    bandwidth: bw*1e8
+    chirp_period: 1/PRF
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1205, 568]
     rotation: 0
     state: true
 - name: hilbert_fc_0
@@ -99,56 +362,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [896, 312]
-    rotation: 0
-    state: true
-- name: iio_pluto_sink_0
-  id: iio_pluto_sink
-  parameters:
-    affinity: ''
-    alias: ''
-    attenuation1: '10.0'
-    auto_filter: 'True'
-    bandwidth: '40000000'
-    buffer_size: '32768'
-    comment: ''
-    cyclic: 'False'
-    filter: ''
-    frequency: '1000000000'
-    samplerate: '2000000'
-    uri: ''
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1120, 160]
-    rotation: 0
-    state: true
-- name: iio_pluto_source_0
-  id: iio_pluto_source
-  parameters:
-    affinity: ''
-    alias: ''
-    auto_filter: 'True'
-    bandwidth: '40000000'
-    bbdc: 'True'
-    buffer_size: '32768'
-    comment: ''
-    filter: ''
-    frequency: '4000000000'
-    gain1: '''slow_attack'''
-    manual_gain1: '64'
-    maxoutbuf: '0'
-    minoutbuf: '0'
-    quadrature: 'True'
-    rfdc: 'True'
-    samplerate: '2000000'
-    uri: ''
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [368, 591]
+    coordinate: [656, 223]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0
@@ -201,7 +415,7 @@ blocks:
     legend: 'True'
     maxoutbuf: '0'
     minoutbuf: '0'
-    name: '"TX signal"'
+    name: '"TX signal (frequency)"'
     nconnections: '1'
     showports: 'False'
     tr_chan: '0'
@@ -228,7 +442,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1121, 333]
+    coordinate: [814, 145]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_1_0
@@ -263,8 +477,8 @@ blocks:
     comment: ''
     ctrlpanel: 'False'
     fc: '0'
-    fftsize: '10000'
-    freqhalf: 'False'
+    fftsize: int(16383/2)
+    freqhalf: 'True'
     grid: 'False'
     gui_hint: ''
     label: Relative Gain
@@ -281,14 +495,14 @@ blocks:
     legend: 'True'
     maxoutbuf: '0'
     minoutbuf: '0'
-    name: '"Rx Fourier "'
+    name: '"Beat Singal (frequency)"'
     nconnections: '1'
     showports: 'False'
     tr_chan: '0'
     tr_level: '0.0'
     tr_mode: qtgui.TRIG_MODE_FREE
     tr_tag: '""'
-    type: complex
+    type: float
     units: dB
     update_time: '0.10'
     width1: '1'
@@ -308,7 +522,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [766, 733]
+    coordinate: [1154, 387]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -364,9 +578,9 @@ blocks:
     marker7: '-1'
     marker8: '-1'
     marker9: '-1'
-    name: '"RX signal"'
+    name: '"Beat Signal (time)"'
     nconnections: '1'
-    size: '10000'
+    size: '10240'
     srate: samp_rate
     stemplot: 'False'
     style1: '1'
@@ -385,7 +599,7 @@ blocks:
     tr_mode: qtgui.TRIG_MODE_FREE
     tr_slope: qtgui.TRIG_SLOPE_POS
     tr_tag: '""'
-    type: complex
+    type: float
     update_time: '0.10'
     width1: '1'
     width10: '1'
@@ -405,10 +619,10 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [767, 624]
+    coordinate: [1144, 280]
     rotation: 0
     state: true
-- name: qtgui_time_sink_x_0_1
+- name: qtgui_time_sink_x_0_0
   id: qtgui_time_sink_x
   parameters:
     affinity: ''
@@ -423,7 +637,7 @@ blocks:
     alpha7: '1.0'
     alpha8: '1.0'
     alpha9: '1.0'
-    autoscale: 'False'
+    autoscale: 'True'
     axislabels: 'True'
     color1: blue
     color10: dark blue
@@ -438,7 +652,7 @@ blocks:
     comment: ''
     ctrlpanel: 'False'
     entags: 'True'
-    grid: 'False'
+    grid: 'True'
     gui_hint: ''
     label1: Signal 1
     label10: Signal 10
@@ -461,10 +675,10 @@ blocks:
     marker7: '-1'
     marker8: '-1'
     marker9: '-1'
-    name: '"TX signal"'
+    name: '"Range"'
     nconnections: '1'
-    size: '10000'
-    srate: samp_rate
+    size: '10'
+    srate: samp_rate/fft_size
     stemplot: 'False'
     style1: '1'
     style10: '1'
@@ -482,7 +696,7 @@ blocks:
     tr_mode: qtgui.TRIG_MODE_FREE
     tr_slope: qtgui.TRIG_SLOPE_POS
     tr_tag: '""'
-    type: complex
+    type: float
     update_time: '0.10'
     width1: '1'
     width10: '1'
@@ -494,7 +708,7 @@ blocks:
     width7: '1'
     width8: '1'
     width9: '1'
-    ylabel: Amplitude
+    ylabel: Distance
     ymax: '1'
     ymin: '-1'
     yunit: '""'
@@ -502,18 +716,29 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1114, 473]
+    coordinate: [1405, 556]
     rotation: 0
     state: true
 
 connections:
+- [analog_noise_source_x_0, '0', blocks_add_xx_0, '1']
 - [analog_sig_source_x_0, '0', blocks_vco_f_0, '0']
-- [blocks_vco_f_0, '0', hilbert_fc_0, '0']
-- [hilbert_fc_0, '0', iio_pluto_sink_0, '0']
+- [blocks_add_xx_0, '0', blocks_complex_to_real_0_0, '0']
+- [blocks_complex_to_real_0, '0', blocks_multiply_xx_0, '0']
+- [blocks_complex_to_real_0_0, '0', blocks_multiply_xx_0, '1']
+- [blocks_delay_0, '0', blocks_multiply_const_vxx_0, '0']
+- [blocks_multiply_const_vxx_0, '0', blocks_add_xx_0, '0']
+- [blocks_multiply_xx_0, '0', blocks_stream_to_vector_0, '0']
+- [blocks_multiply_xx_0, '0', qtgui_freq_sink_x_1_0, '0']
+- [blocks_multiply_xx_0, '0', qtgui_time_sink_x_0, '0']
+- [blocks_stream_to_vector_0, '0', chirp_radar_max_freq_peak_detector_ff_0, '0']
+- [blocks_throttle_0, '0', hilbert_fc_0, '0']
+- [blocks_vco_f_0, '0', blocks_throttle_0, '0']
+- [chirp_radar_max_freq_peak_detector_ff_0, '0', chirp_radar_range_calc_ff_0, '0']
+- [chirp_radar_range_calc_ff_0, '0', qtgui_time_sink_x_0_0, '0']
+- [hilbert_fc_0, '0', blocks_complex_to_real_0, '0']
+- [hilbert_fc_0, '0', blocks_delay_0, '0']
 - [hilbert_fc_0, '0', qtgui_freq_sink_x_0, '0']
-- [hilbert_fc_0, '0', qtgui_time_sink_x_0_1, '0']
-- [iio_pluto_source_0, '0', qtgui_freq_sink_x_1_0, '0']
-- [iio_pluto_source_0, '0', qtgui_time_sink_x_0, '0']
 
 metadata:
   file_format: 1
