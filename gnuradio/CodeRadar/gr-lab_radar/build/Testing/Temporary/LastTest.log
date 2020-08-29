@@ -1,27 +1,3 @@
-Start testing: Aug 28 15:50 CEST
+Start testing: Aug 29 13:38 CEST
 ----------------------------------------------------------
-1/1 Testing: qa_corr_dist_estimator_bfi
-1/1 Test: qa_corr_dist_estimator_bfi
-Command: "/usr/bin/sh" "/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/python/qa_corr_dist_estimator_bfi_test.sh"
-Directory: /home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/python
-"qa_corr_dist_estimator_bfi" start time: Aug 28 15:50 CEST
-Output:
-----------------------------------------------------------
-.
-----------------------------------------------------------------------
-Ran 1 test in 0.002s
-
-OK
-distances:(42.0,)
-peaks:(0.0,)
-offsets:(0.0,)
-Hallo
-<end of output>
-Test time =   0.25 sec
-----------------------------------------------------------
-Test Passed.
-"qa_corr_dist_estimator_bfi" end time: Aug 28 15:50 CEST
-"qa_corr_dist_estimator_bfi" time elapsed: 00:00:00
-----------------------------------------------------------
-
-End testing: Aug 28 15:50 CEST
+End testing: Aug 29 13:38 CEST

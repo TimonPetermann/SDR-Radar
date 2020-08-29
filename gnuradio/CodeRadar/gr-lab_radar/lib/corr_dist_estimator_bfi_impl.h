@@ -39,7 +39,7 @@ namespace gr {
       uint8_t get_mask (int bit_shifts );
 
       float correlation (uint8_t * arr1, uint8_t * arr2, int length);
-      std::tuple<int,float> find_max_peak(uint8_t * arr1, uint8_t * arr2, int length, int prediction);
+      std::tuple<float,int> find_max_peak(uint8_t * arr1, uint8_t * arr2, int length, int prediction);
      public:
       corr_dist_estimator_bfi_impl(int code_length);
       ~corr_dist_estimator_bfi_impl();

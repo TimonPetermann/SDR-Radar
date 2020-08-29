@@ -112,27 +112,34 @@ namespace gr
       return mask;
     }
 
-    float corr_dist_estimator_bfi_impl::correlation (uint8_t * arr1, uint8_t * arr2, int length ){
+    float corr_dist_estimator_bfi_impl::correlation(uint8_t *arr1, uint8_t *arr2, int length)
+    {
       float cor_res = 0;
-      for(int i = 0; i < length; ++i) {
+      for (int i = 0; i < length; ++i)
+      {
         uint8_t val = (arr1[i] ^ arr2[i]);
-        cor_res += ((u1&val) + (u2&val) >> 1 + (u4&val) >> 2 + (u8&val) >> 3  + (u16&val) >> 4 + (u32&val) >> 5 + (u64&val) >> 6 + (u128&val)>> 7);
+        cor_res += 8 - 2 * ((u1 & val) + ((u2 & val) >> 1) + ((u4 & val) >> 2) + ((u8 & val) >> 3) + ((u16 & val) >> 4) + ((u32 & val) >> 5) + ((u64 & val) >> 6) + ((u128 & val) >> 7));
       }
-      return cor_res / (8*length);
+      return cor_res / (8 * length);
     }
-    
-    std::tuple<int,float> corr_dist_estimator_bfi_impl::find_max_peak(uint8_t * arr1, uint8_t * arr2, int length, int prediction){
-      auto max_peak = std::make_tuple<int,float>(0,0.0);
-      auto& max_corr = std::get<0>(max_peak);
-      auto& max_pos = std::get<1>(max_peak);
-      for(int i = 0 ; i < length ; ++i) {
+
+    std::tuple<float, int> corr_dist_estimator_bfi_impl::find_max_peak(uint8_t *arr1, uint8_t *arr2, int length, int prediction)
+    {
+      auto max_peak = std::make_tuple<float, int>(0.0, 0);
+      auto &max_corr = std::get<0>(max_peak);
+      auto &max_pos = std::get<1>(max_peak);
+      for (int i = 0; i < length * 8; ++i)
+      {
         int start_byte = 0;
-        n_shifts_array(arr2, length, 1,start_byte);
-        float curr_corr = correlation(arr1,arr2,length);
-        if (curr_corr > max_corr ){
+        float curr_corr = correlation(arr1, arr2, length);
+        if (curr_corr > max_corr)
+        {
           max_corr = curr_corr;
           max_pos = i;
+          if (max_corr > 0.75)
+            break;
         }
+        n_shifts_array(arr1, length, 1, start_byte);
       }
       return max_peak;
     }
@@ -145,25 +152,20 @@ namespace gr
       uint8_t *source = (uint8_t *)input_items[0];
       uint8_t *received = (uint8_t *)input_items[1];
       float *distance = (float *)output_items[0];
+      float *peak = (float *)output_items[1];
+      float *offset = (float *)output_items[2];
 
-      // iterate over n output items 
-        // max peak detection
-          // correlation  
-      // from peak to distance  
-      std::vector<uint8_t> data;
-      distance[0] = 42;
+      // iterate over n output items
+      // max peak detection
+      // correlation
+      // from peak to distance
       for (int i = 0; i < noutput_items; i++)
       {
-        int sum = 0;
         int startbyte = 0;
-        for (int no_shifts = 0; no_shifts < code_length * 8; ++no_shifts)
-        {
-          n_shifts_array(source, code_length, 1, startbyte);
-          for (int j = i * code_length; j < (i + 1) * code_length; j++)
-          {
-            data.push_back(source[j]);
-          }
-        }
+        auto result = find_max_peak(source, received, (i + 1) * code_length, 0);
+        distance[i]=0;
+        peak[i]=std::get<0>(result);
+        offset[i]=std::get<1>(result);
       }
 
       // Tell runtime system how many output items we produced.
