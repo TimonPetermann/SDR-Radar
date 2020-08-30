@@ -6,6 +6,11 @@
   </compound>
   <compound refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl" kind="class"><name>gr::lab_radar::corr_dist_estimator_bfi_impl</name>
     <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1a15da5b68a00ad1e1aa12df15da6f173d" kind="variable"><name>code_length</name></member>
+    <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1a7b6900928bc66f31af645e2cb66630f8" kind="variable"><name>output_stream</name></member>
+    <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1a6db870cf38526ca81f2e65a6ac322a00" kind="function"><name>n_shifts_array</name></member>
+    <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1a3ecc29985c105179d6948b21127393be" kind="function"><name>get_mask</name></member>
+    <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1aac350c296417c45a622158e404985a86" kind="function"><name>correlation</name></member>
+    <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1a4d8b7d1f4414532ad8848c5946d28d32" kind="function"><name>find_max_peak</name></member>
     <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1ad25976a94109c16c8dee19af061fd06a" kind="function"><name>corr_dist_estimator_bfi_impl</name></member>
     <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1acf5f0752315733aa991a9ddc56fba906" kind="function"><name>~corr_dist_estimator_bfi_impl</name></member>
     <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1ab2e13745fb47f53c894569ab6f3f532d" kind="function"><name>work</name></member>

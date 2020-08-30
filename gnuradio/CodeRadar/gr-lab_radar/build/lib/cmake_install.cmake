@@ -1,4 +1,4 @@
-# Install script for directory: /home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/lib
+# Install script for directory: /home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,8 +50,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/x86_64-linux-gnu" TYPE SHARED_LIBRARY FILES
-    "/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/lib/libgnuradio-lab_radar.so.v1.0-compat-xxx-xunknown"
-    "/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/lib/libgnuradio-lab_radar.so.1.0.0git"
+    "/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/lib/libgnuradio-lab_radar.so.v1.0-compat-xxx-xunknown"
+    "/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/lib/libgnuradio-lab_radar.so.1.0.0git"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/x86_64-linux-gnu/libgnuradio-lab_radar.so.v1.0-compat-xxx-xunknown"
@@ -60,7 +60,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     if(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
       if(CMAKE_INSTALL_DO_STRIP)
-        execute_process(COMMAND "/bin/strip" "${file}")
+        execute_process(COMMAND "/usr/bin/strip" "${file}")
       endif()
     endif()
   endforeach()
@@ -73,11 +73,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/x86_64-linux-gnu/libgnuradio-lab_radar.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/x86_64-linux-gnu" TYPE SHARED_LIBRARY FILES "/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/lib/libgnuradio-lab_radar.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/x86_64-linux-gnu" TYPE SHARED_LIBRARY FILES "/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/lib/libgnuradio-lab_radar.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/x86_64-linux-gnu/libgnuradio-lab_radar.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/x86_64-linux-gnu/libgnuradio-lab_radar.so")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/x86_64-linux-gnu/libgnuradio-lab_radar.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/x86_64-linux-gnu/libgnuradio-lab_radar.so")
     endif()
   endif()
 endif()
@@ -86,7 +86,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/lab_radar/gnuradio-lab_radarTargets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/lab_radar/gnuradio-lab_radarTargets.cmake"
-         "/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/lib/CMakeFiles/Export/lib/cmake/lab_radar/gnuradio-lab_radarTargets.cmake")
+         "/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/lib/CMakeFiles/Export/lib/cmake/lab_radar/gnuradio-lab_radarTargets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/lab_radar/gnuradio-lab_radarTargets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -95,13 +95,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/lab_radar" TYPE FILE FILES "/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/lib/CMakeFiles/Export/lib/cmake/lab_radar/gnuradio-lab_radarTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/lab_radar" TYPE FILE FILES "/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/lib/CMakeFiles/Export/lib/cmake/lab_radar/gnuradio-lab_radarTargets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/lab_radar" TYPE FILE FILES "/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/lib/CMakeFiles/Export/lib/cmake/lab_radar/gnuradio-lab_radarTargets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/lab_radar" TYPE FILE FILES "/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/lib/CMakeFiles/Export/lib/cmake/lab_radar/gnuradio-lab_radarTargets-debug.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/lab_radar" TYPE FILE FILES "/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/lib/cmake/Modules/gnuradio-lab_radarConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/lab_radar" TYPE FILE FILES "/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/lib/cmake/Modules/gnuradio-lab_radarConfig.cmake")
 endif()
 

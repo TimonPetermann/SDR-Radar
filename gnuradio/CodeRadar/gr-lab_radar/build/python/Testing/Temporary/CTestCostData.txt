@@ -1,2 +1,2 @@
-qa_corr_dist_estimator_bfi 4 0.0619455
+qa_corr_dist_estimator_bfi 2 0.501365
 ---

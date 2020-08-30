@@ -107,10 +107,12 @@ class qa_corr_dist_estimator_bfi(gr_unittest.TestCase):
         self.assertAlmostEqual(s_offset.data(), (0.0, 0.0))
 
     def test_002_t(self):
-
-        with open("../source2.txt", "rb") as f:
+        path = "/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/python/"
+        src_path = path + "source.txt"
+        with open(src_path, "rb") as f:
             source_data = f.read()
-        with open("../sink.txt", "rb") as f:
+        sink_path = path + "sink.txt"
+        with open(sink_path, "rb") as f:
             sink_data = f.read(102400)
             sink_data = f.read(len(source_data))
 
@@ -137,6 +139,7 @@ class qa_corr_dist_estimator_bfi(gr_unittest.TestCase):
         print("peaks:" + str(peaks))
         offsets = s_offset.data()
         print("offsets:" + str(offsets))
+        peak_under_test = s_peak.data()[0]
 
         # check data
         source_bin = self.bytes2bins(source_data)
@@ -144,10 +147,9 @@ class qa_corr_dist_estimator_bfi(gr_unittest.TestCase):
         peak, offset = self.auto_correlation(source_bin, sink_bin)
         #offset = (len(source_bin))-offset
         print("expected: peak = " + str(peak) + ", offset=" + str(offset))
-        self.assertAlmostEqual(s_peak.data(), (peak,))
-        self.assertAlmostEqual(distances, (0.0,))
-        self.assertAlmostEqual(offsets, (float(offset),))
-
+        self.assertAlmostEqual(peak_under_test, peak)
+        self.assertAlmostEqual(distances[0], 0.0)
+        self.assertAlmostEqual(offsets[0], offset)
 
 if __name__ == '__main__':
     gr_unittest.run(qa_corr_dist_estimator_bfi)

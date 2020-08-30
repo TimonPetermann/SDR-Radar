@@ -1,4 +1,4 @@
-# Install script for directory: /home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/swig
+# Install script for directory: /home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/swig
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,34 +44,34 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/lab_radar/_lab_radar_swig.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/lab_radar" TYPE MODULE FILES "/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/swig/_lab_radar_swig.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/lab_radar" TYPE MODULE FILES "/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/swig/_lab_radar_swig.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/lab_radar/_lab_radar_swig.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/lab_radar/_lab_radar_swig.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/lab_radar/_lab_radar_swig.so"
-         OLD_RPATH "/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/lib:"
+         OLD_RPATH "/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/lab_radar/_lab_radar_swig.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/lab_radar/_lab_radar_swig.so")
     endif()
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/lab_radar" TYPE FILE FILES "/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/swig/lab_radar_swig.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/lab_radar" TYPE FILE FILES "/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/swig/lab_radar_swig.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/lab_radar" TYPE FILE FILES
-    "/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/swig/lab_radar_swig.pyc"
-    "/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/swig/lab_radar_swig.pyo"
+    "/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/swig/lab_radar_swig.pyc"
+    "/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/swig/lab_radar_swig.pyo"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/lab_radar/lab_radar/swig" TYPE FILE FILES
-    "/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/swig/lab_radar_swig.i"
-    "/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/swig/lab_radar_swig_doc.i"
+    "/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/swig/lab_radar_swig.i"
+    "/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/swig/lab_radar_swig_doc.i"
     )
 endif()
 

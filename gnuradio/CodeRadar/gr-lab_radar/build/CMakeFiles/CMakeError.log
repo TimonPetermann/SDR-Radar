@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_0a3ad/fast && /usr/bin/make -f CMakeFiles/cmTC_0a3ad.dir/build.make CMakeFiles/cmTC_0a3ad.dir/build
-make[1]: Verzeichnis „/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_0a3ad.dir/src.c.o
-/bin/gcc-9   -DCMAKE_HAVE_LIBC_PTHREAD   -std=gnu11 -o CMakeFiles/cmTC_0a3ad.dir/src.c.o   -c /home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_0a3ad
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a3ad.dir/link.txt --verbose=1
-/bin/gcc-9  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_0a3ad.dir/src.c.o  -o cmTC_0a3ad 
-/usr/bin/ld: CMakeFiles/cmTC_0a3ad.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/bin/make cmTC_8c4b7/fast && /usr/bin/make -f CMakeFiles/cmTC_8c4b7.dir/build.make CMakeFiles/cmTC_8c4b7.dir/build
+make[1]: Entering directory '/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8c4b7.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -std=gnu11 -o CMakeFiles/cmTC_8c4b7.dir/src.c.o   -c /home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8c4b7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c4b7.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_8c4b7.dir/src.c.o  -o cmTC_8c4b7 
+/usr/bin/ld: CMakeFiles/cmTC_8c4b7.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_0a3ad.dir/build.make:87: cmTC_0a3ad] Fehler 1
-make[1]: Verzeichnis „/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/CMakeFiles/CMakeTmp“ wird verlassen
-make: *** [Makefile:121: cmTC_0a3ad/fast] Fehler 2
+make[1]: *** [CMakeFiles/cmTC_8c4b7.dir/build.make:87: cmTC_8c4b7] Error 1
+make[1]: Leaving directory '/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_8c4b7/fast] Error 2
 
 
 Source file was:
@@ -39,20 +39,20 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/CMakeFiles/CMakeTmp
+Change Dir: /home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_e65ed/fast && /usr/bin/make -f CMakeFiles/cmTC_e65ed.dir/build.make CMakeFiles/cmTC_e65ed.dir/build
-make[1]: Verzeichnis „/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/CMakeFiles/CMakeTmp“ wird betreten
-Building C object CMakeFiles/cmTC_e65ed.dir/CheckFunctionExists.c.o
-/bin/gcc-9   -DCHECK_FUNCTION_EXISTS=pthread_create   -std=gnu11 -o CMakeFiles/cmTC_e65ed.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_e65ed
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e65ed.dir/link.txt --verbose=1
-/bin/gcc-9  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_e65ed.dir/CheckFunctionExists.c.o  -o cmTC_e65ed  -lpthreads 
-/usr/bin/ld: -lpthreads kann nicht gefunden werden
+Run Build Command(s):/usr/bin/make cmTC_3b8fc/fast && /usr/bin/make -f CMakeFiles/cmTC_3b8fc.dir/build.make CMakeFiles/cmTC_3b8fc.dir/build
+make[1]: Entering directory '/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3b8fc.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -std=gnu11 -o CMakeFiles/cmTC_3b8fc.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3b8fc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b8fc.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_3b8fc.dir/CheckFunctionExists.c.o  -o cmTC_3b8fc  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_e65ed.dir/build.make:87: cmTC_e65ed] Fehler 1
-make[1]: Verzeichnis „/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/gr-lab_radar/build/CMakeFiles/CMakeTmp“ wird verlassen
-make: *** [Makefile:121: cmTC_e65ed/fast] Fehler 2
+make[1]: *** [CMakeFiles/cmTC_3b8fc.dir/build.make:87: cmTC_3b8fc] Error 1
+make[1]: Leaving directory '/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_3b8fc/fast] Error 2
 
 
 
