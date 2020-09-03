@@ -16,7 +16,7 @@ lab_radar/api.h
 gnuradio/sync_decimator.h
 -
 
-/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/swig/CMakeFiles/lab_radar_swig.dir/lab_radar_swigPYTHON_wrap.cxx
+/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/swig/CMakeFiles/lab_radar_swig.dir/lab_radar_swigPYTHON_wrap.cxx
 math.h
 -
 Python.h
@@ -56,7 +56,7 @@ gnuradio/high_res_timer.h
 limits.h
 -
 lab_radar/corr_dist_estimator_bfi.h
-/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/swig/CMakeFiles/lab_radar_swig.dir/lab_radar/corr_dist_estimator_bfi.h
+/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build/swig/CMakeFiles/lab_radar_swig.dir/lab_radar/corr_dist_estimator_bfi.h
 float.h
 -
 math.h

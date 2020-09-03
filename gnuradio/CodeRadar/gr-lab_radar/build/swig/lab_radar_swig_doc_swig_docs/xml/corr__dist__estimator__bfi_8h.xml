@@ -8,14 +8,14 @@
       <node id="4">
         <label>gnuradio/sync_decimator.h</label>
       </node>
+      <node id="3">
+        <label>gnuradio/attributes.h</label>
+      </node>
       <node id="2">
         <label>lab_radar/api.h</label>
         <link refid="api_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
-      </node>
-      <node id="3">
-        <label>gnuradio/attributes.h</label>
       </node>
       <node id="1">
         <label>corr_dist_estimator_bfi.h</label>
@@ -77,6 +77,6 @@
 <codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_LAB_RADAR_CORR_DIST_ESTIMATOR_BFI_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/include/lab_radar/corr_dist_estimator_bfi.h"/>
+    <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/include/lab_radar/corr_dist_estimator_bfi.h"/>
   </compounddef>
 </doxygen>

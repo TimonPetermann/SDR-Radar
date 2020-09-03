@@ -1,0 +1,109 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"GR_UNIQUE_TARGET",
+			"GR_PYTHON_INSTALL",
+			"GR_SWIG_INSTALL"
+		],
+		"files" : 
+		[
+			"/usr/lib/x86_64-linux-gnu/cmake/gnuradio/GrPython.cmake",
+			"/usr/lib/x86_64-linux-gnu/cmake/gnuradio/GrSwig.cmake",
+			"swig/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 56,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 163,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 329,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 142,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "lab_radar_swig::@af072dd06d56d42a6c33"
+		}
+	],
+	"id" : "pygen_swig_3eb96::@af072dd06d56d42a6c33",
+	"name" : "pygen_swig_3eb96",
+	"paths" : 
+	{
+		"build" : "swig",
+		"source" : "swig"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/swig/CMakeFiles/pygen_swig_3eb96",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/swig/CMakeFiles/pygen_swig_3eb96.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/swig/lab_radar_swig.pyc.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/swig/lab_radar_swig.pyo.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

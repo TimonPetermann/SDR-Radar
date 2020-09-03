@@ -162,7 +162,7 @@ namespace gr
       for (int i = 0; i < noutput_items; i++)
       {
         int startbyte = 0;
-        auto result = find_max_peak(source, received, (i + 1) * code_length, 0);
+        auto result = find_max_peak(source+i*code_length, received+i*code_length, code_length, 0);
         distance[i]=0;
         peak[i]=std::get<0>(result);
         offset[i]=std::get<1>(result);

@@ -14,7 +14,7 @@
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with this software; see the file COPYING.  If not, write to
+# along with ths software; see the file COPYING.  If not, write to
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
 #
@@ -106,50 +106,82 @@ class qa_corr_dist_estimator_bfi(gr_unittest.TestCase):
         self.assertAlmostEqual(s_dist.data(), (0.0, 0.0))
         self.assertAlmostEqual(s_offset.data(), (0.0, 0.0))
 
+    # def test_002_t(self):
+    #     path = "/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/python/"
+    #     src_path = path + "source.txt"
+    #     with open(src_path, "rb") as f:
+    #         source_data = f.read()
+    #     sink_path = path + "sink.txt"
+    #     with open(sink_path, "rb") as f:
+    #         sink_data = f.read(102400)
+    #         sink_data = f.read(len(source_data))
+
+    #     # create the blocks
+    #     source = blocks.vector_source_b(source_data)
+    #     received = blocks.vector_source_b(sink_data)
+    #     s_dist = blocks.vector_sink_f()
+    #     s_peak = blocks.vector_sink_f()
+    #     s_offset = blocks.vector_sink_f()
+    #     dut = lab_radar.corr_dist_estimator_bfi(len(source_data))
+
+    #     # make connections
+    #     self.tb.connect(source, (dut, 0))
+    #     self.tb.connect(received, (dut, 1))
+    #     self.tb.connect((dut, 0), s_dist)
+    #     self.tb.connect((dut, 1), s_peak)
+    #     self.tb.connect((dut, 2), s_offset)
+
+    #     # set up fg
+    #     self.tb.run()
+    #     distances = s_dist.data()
+    #     print("distances:" + str(distances))
+    #     peaks = s_peak.data()
+    #     print("peaks:" + str(peaks))
+    #     offsets = s_offset.data()
+    #     print("offsets:" + str(offsets))
+    #     peak_under_test = s_peak.data()[0]
+
+    #     # check data
+    #     source_bin = self.bytes2bins(source_data)
+    #     sink_bin = self.bytes2bins(sink_data)
+    #     peak, offset = self.auto_correlation(source_bin, sink_bin)
+    #     #offset = (len(source_bin))-offset
+    #     print("expected: peak = " + str(peak) + ", offset=" + str(offset))
+    #     self.assertAlmostEqual(peak_under_test, peak)
+    #     self.assertAlmostEqual(distances[0], 0.0)
+    #     self.assertAlmostEqual(offsets[0], offset)
+
     def test_002_t(self):
-        path = "/home/jonas/Documents/university/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/python/"
-        src_path = path + "source.txt"
-        with open(src_path, "rb") as f:
-            source_data = f.read()
-        sink_path = path + "sink.txt"
-        with open(sink_path, "rb") as f:
-            sink_data = f.read(102400)
-            sink_data = f.read(len(source_data))
+
+        # simple test
+
+        # arange data
+        test_data = np.arange(0, 12, dtype=np.uint8)
+        samp_rate = 80000
 
         # create the blocks
-        source = blocks.vector_source_b(source_data)
-        received = blocks.vector_source_b(sink_data)
+        blocks_vector_source_x_0_0 = blocks.vector_source_b((8,1, 2, 3,4,5,6,7), True, 1, [])
+        blocks_vector_source_x_0 = blocks.vector_source_b((1, 2, 3,4,5,6,7,8), True, 1, [])
+        blocks_throttle_0_0 = blocks.throttle(gr.sizeof_char*1, samp_rate,True)
+        blocks_throttle_0 = blocks.throttle(gr.sizeof_char*1, samp_rate,True)
         s_dist = blocks.vector_sink_f()
         s_peak = blocks.vector_sink_f()
         s_offset = blocks.vector_sink_f()
-        dut = lab_radar.corr_dist_estimator_bfi(len(source_data))
+        dut = lab_radar.corr_dist_estimator_bfi(8)
 
         # make connections
-        self.tb.connect(source, (dut, 0))
-        self.tb.connect(received, (dut, 1))
+        self.tb.connect((blocks_throttle_0, 0), (dut, 0))
+        self.tb.connect((blocks_throttle_0_0, 0), (dut, 1))
+        self.tb.connect((blocks_vector_source_x_0, 0), (blocks_throttle_0, 0))
+        self.tb.connect((blocks_vector_source_x_0_0, 0), (blocks_throttle_0_0, 0))
         self.tb.connect((dut, 0), s_dist)
         self.tb.connect((dut, 1), s_peak)
         self.tb.connect((dut, 2), s_offset)
 
         # set up fg
         self.tb.run()
-        distances = s_dist.data()
-        print("distances:" + str(distances))
-        peaks = s_peak.data()
-        print("peaks:" + str(peaks))
-        offsets = s_offset.data()
-        print("offsets:" + str(offsets))
-        peak_under_test = s_peak.data()[0]
 
         # check data
-        source_bin = self.bytes2bins(source_data)
-        sink_bin = self.bytes2bins(sink_data)
-        peak, offset = self.auto_correlation(source_bin, sink_bin)
-        #offset = (len(source_bin))-offset
-        print("expected: peak = " + str(peak) + ", offset=" + str(offset))
-        self.assertAlmostEqual(peak_under_test, peak)
-        self.assertAlmostEqual(distances[0], 0.0)
-        self.assertAlmostEqual(offsets[0], offset)
 
 if __name__ == '__main__':
     gr_unittest.run(qa_corr_dist_estimator_bfi)
