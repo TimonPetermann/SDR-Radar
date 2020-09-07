@@ -4,6 +4,14 @@
     <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi_1a0fbb1d3eb1df8d8ca631552adbc37220" kind="typedef"><name>sptr</name></member>
     <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi_1a333bbe986e9810aafb90e900640cec15" kind="function"><name>make</name></member>
   </compound>
+  <compound refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf" kind="class"><name>gr::lab_radar::signal_corr_estimator_cf</name>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1a55882e3ecbb6b017c256d8a2ebea5218" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1a4d56bc5dfd0674be203a52c19e9e0e56" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lab__radar_1_1simple__decimator__cc" kind="class"><name>gr::lab_radar::simple_decimator_cc</name>
+    <member refid="classgr_1_1lab__radar_1_1simple__decimator__cc_1a3cab297394efe85f68ee1ca5abd33be8" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lab__radar_1_1simple__decimator__cc_1acccf811f989727d63864437aaf62c7c5" kind="function"><name>make</name></member>
+  </compound>
   <compound refid="namespacegr" kind="namespace"><name>gr</name>
   </compound>
   <compound refid="namespacegr_1_1lab__radar" kind="namespace"><name>gr::lab_radar</name>
@@ -14,6 +22,10 @@
     <member refid="api_8h_1a95d4b98826028f9cfe14a837ce3caadf" kind="define"><name>LAB_RADAR_API</name></member>
   </compound>
   <compound refid="corr__dist__estimator__bfi_8h" kind="file"><name>corr_dist_estimator_bfi.h</name>
+  </compound>
+  <compound refid="signal__corr__estimator__cf_8h" kind="file"><name>signal_corr_estimator_cf.h</name>
+  </compound>
+  <compound refid="simple__decimator__cc_8h" kind="file"><name>simple_decimator_cc.h</name>
   </compound>
   <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
   </compound>

@@ -88,30 +88,31 @@ $(document).ready(function(){initNavTree('corr__dist__estimator__bfi__impl_8h_so
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;     <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keywordtype">int</span> code_length;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      std::ofstream output_stream;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordtype">void</span> n_shifts_array (uint8_t * arr, <span class="keywordtype">int</span> length, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> &amp; start_byte);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      uint8_t get_mask (<span class="keywordtype">int</span> bit_shifts );</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordtype">float</span> correlation (uint8_t * arr1, uint8_t * arr2, <span class="keywordtype">int</span> length);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      std::tuple&lt;float,int&gt; find_max_peak(uint8_t * arr1, uint8_t * arr2, <span class="keywordtype">int</span> length, <span class="keywordtype">int</span> prediction);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;     <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <a class="code" href="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl.html#ad25976a94109c16c8dee19af061fd06a">corr_dist_estimator_bfi_impl</a>(<span class="keywordtype">int</span> code_length);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <a class="code" href="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl.html#acf5f0752315733aa991a9ddc56fba906">~corr_dist_estimator_bfi_impl</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="comment">// Where all the action really happens</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl.html#ab2e13745fb47f53c894569ab6f3f532d">work</a>(</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;              <span class="keywordtype">int</span> noutput_items,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;              gr_vector_const_void_star &amp;input_items,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;              gr_vector_void_star &amp;output_items</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      );</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    };</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  } <span class="comment">// namespace lab_radar</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <span class="comment">// namespace gr</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LAB_RADAR_CORR_DIST_ESTIMATOR_BFI_IMPL_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keywordtype">int</span> start_byte;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      std::ofstream output_stream;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordtype">void</span> n_shifts_array (uint8_t * arr, <span class="keywordtype">int</span> length, <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> &amp; start_byte);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      uint8_t get_mask (<span class="keywordtype">int</span> bit_shifts );</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keywordtype">float</span> correlation (uint8_t * arr1, uint8_t * arr2, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      std::tuple&lt;float,int&gt; find_max_peak(uint8_t * arr1, uint8_t * arr2, <span class="keywordtype">int</span> length, <span class="keywordtype">int</span> prediction);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;     <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <a class="code" href="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl.html#ad25976a94109c16c8dee19af061fd06a">corr_dist_estimator_bfi_impl</a>(<span class="keywordtype">int</span> code_length);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <a class="code" href="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl.html#acf5f0752315733aa991a9ddc56fba906">~corr_dist_estimator_bfi_impl</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="comment">// Where all the action really happens</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl.html#ab2e13745fb47f53c894569ab6f3f532d">work</a>(</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;              <span class="keywordtype">int</span> noutput_items,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;              gr_vector_const_void_star &amp;input_items,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;              gr_vector_void_star &amp;output_items</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      );</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    };</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  } <span class="comment">// namespace lab_radar</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LAB_RADAR_CORR_DIST_ESTIMATOR_BFI_IMPL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_html"><div class="ttname"><a href="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl.html">gr::lab_radar::corr_dist_estimator_bfi_impl</a></div><div class="ttdef"><b>Definition:</b> corr_dist_estimator_bfi_impl.h:32</div></div>

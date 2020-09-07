@@ -28,7 +28,7 @@ from gnuradio.filter import firdes
 import sip
 from gnuradio import analog
 from gnuradio import blocks
-import numpy
+import pmt
 from gnuradio import digital
 from gnuradio import gr
 import sys
@@ -81,7 +81,7 @@ class top_block(gr.top_block, Qt.QWidget):
         self.sps = sps = 2
         self.nfilts = nfilts = 32
         self.excess_bw = excess_bw = 0.35
-        self.samp_rate = samp_rate = 1280000
+        self.samp_rate = samp_rate = 1290000
         self.rrc_taps = rrc_taps = firdes.root_raised_cosine(nfilts,nfilts,1.0/float(sps),excess_bw,11*sps*nfilts)
         self.qpsk_const = qpsk_const = digital.constellation_calcdist(digital.psk_4()[0], digital.psk_4()[1],
         4, 1).base()
@@ -97,7 +97,7 @@ class top_block(gr.top_block, Qt.QWidget):
         self.top_grid_layout.addWidget(self._input_d_win)
         self.qtgui_time_sink_x_0 = qtgui.time_sink_f(
             1024, #size
-            samp_rate/128, #samp_rate
+            samp_rate/129, #samp_rate
             "", #name
             3 #number of inputs
         )
@@ -108,7 +108,7 @@ class top_block(gr.top_block, Qt.QWidget):
 
         self.qtgui_time_sink_x_0.enable_tags(True)
         self.qtgui_time_sink_x_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, 0, "")
-        self.qtgui_time_sink_x_0.enable_autoscale(True)
+        self.qtgui_time_sink_x_0.enable_autoscale(False)
         self.qtgui_time_sink_x_0.enable_grid(False)
         self.qtgui_time_sink_x_0.enable_axis_labels(True)
         self.qtgui_time_sink_x_0.enable_control_panel(False)
@@ -142,7 +142,7 @@ class top_block(gr.top_block, Qt.QWidget):
 
         self._qtgui_time_sink_x_0_win = sip.wrapinstance(self.qtgui_time_sink_x_0.pyqwidget(), Qt.QWidget)
         self.top_grid_layout.addWidget(self._qtgui_time_sink_x_0_win)
-        self.lab_radar_corr_dist_estimator_bfi_0 = lab_radar.corr_dist_estimator_bfi(128)
+        self.lab_radar_corr_dist_estimator_bfi_0 = lab_radar.corr_dist_estimator_bfi(129)
         self.digital_pfb_clock_sync_xxx_0 = digital.pfb_clock_sync_ccf(4.00, 0.0628, rrc_taps, nfilts, nfilts/2, 1.5, 2)
         self.digital_map_bb_0 = digital.map_bb(digital.psk_4()[1])
         self.digital_diff_decoder_bb_0 = digital.diff_decoder_bb(4)
@@ -160,9 +160,10 @@ class top_block(gr.top_block, Qt.QWidget):
         self.blocks_throttle_0 = blocks.throttle(gr.sizeof_char*1, samp_rate,True)
         self.blocks_pack_k_bits_bb_0 = blocks.pack_k_bits_bb(8)
         self.blocks_multiply_const_vxx_0 = blocks.multiply_const_cc(0.01)
+        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_char*1, '/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/source2.txt', True, 0, 0)
+        self.blocks_file_source_0.set_begin_tag(pmt.PMT_NIL)
         self.blocks_delay_0 = blocks.delay(gr.sizeof_gr_complex*1, int(2*input_d*samp_rate/300000000))
         self.blocks_add_xx_0 = blocks.add_vcc(1)
-        self.analog_random_source_x_0 = blocks.vector_source_b(list(map(int, numpy.random.randint(0, 256, 1000))), True)
         self.analog_noise_source_x_0 = analog.noise_source_c(analog.GR_GAUSSIAN, 0.01, 0)
         self._PRF_range = Range(100, 10000000, 100, 50000, 200)
         self._PRF_win = RangeWidget(self._PRF_range, self.set_PRF, 'PRF', "counter_slider", int)
@@ -174,9 +175,9 @@ class top_block(gr.top_block, Qt.QWidget):
         # Connections
         ##################################################
         self.connect((self.analog_noise_source_x_0, 0), (self.blocks_add_xx_0, 1))
-        self.connect((self.analog_random_source_x_0, 0), (self.blocks_throttle_0, 0))
         self.connect((self.blocks_add_xx_0, 0), (self.digital_pfb_clock_sync_xxx_0, 0))
         self.connect((self.blocks_delay_0, 0), (self.blocks_multiply_const_vxx_0, 0))
+        self.connect((self.blocks_file_source_0, 0), (self.blocks_throttle_0, 0))
         self.connect((self.blocks_multiply_const_vxx_0, 0), (self.blocks_add_xx_0, 0))
         self.connect((self.blocks_pack_k_bits_bb_0, 0), (self.lab_radar_corr_dist_estimator_bfi_0, 1))
         self.connect((self.blocks_throttle_0, 0), (self.digital_constellation_modulator_0, 0))
@@ -188,9 +189,9 @@ class top_block(gr.top_block, Qt.QWidget):
         self.connect((self.digital_diff_decoder_bb_0, 0), (self.digital_map_bb_0, 0))
         self.connect((self.digital_map_bb_0, 0), (self.blocks_unpack_k_bits_bb_0, 0))
         self.connect((self.digital_pfb_clock_sync_xxx_0, 0), (self.digital_costas_loop_cc_0, 0))
-        self.connect((self.lab_radar_corr_dist_estimator_bfi_0, 2), (self.qtgui_time_sink_x_0, 0))
-        self.connect((self.lab_radar_corr_dist_estimator_bfi_0, 1), (self.qtgui_time_sink_x_0, 1))
         self.connect((self.lab_radar_corr_dist_estimator_bfi_0, 0), (self.qtgui_time_sink_x_0, 2))
+        self.connect((self.lab_radar_corr_dist_estimator_bfi_0, 1), (self.qtgui_time_sink_x_0, 1))
+        self.connect((self.lab_radar_corr_dist_estimator_bfi_0, 2), (self.qtgui_time_sink_x_0, 0))
 
     def closeEvent(self, event):
         self.settings = Qt.QSettings("GNU Radio", "top_block")
@@ -225,7 +226,7 @@ class top_block(gr.top_block, Qt.QWidget):
         self.samp_rate = samp_rate
         self.blocks_delay_0.set_dly(int(2*self.input_d*self.samp_rate/300000000))
         self.blocks_throttle_0.set_sample_rate(self.samp_rate)
-        self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate/128)
+        self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate/129)
 
     def get_rrc_taps(self):
         return self.rrc_taps

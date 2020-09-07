@@ -1,3 +1,0 @@
-qa_corr_dist_estimator_bfi 1 0
----
-qa_corr_dist_estimator_bfi

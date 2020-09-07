@@ -3,6 +3,8 @@
   <compounddef id="namespacegr_1_1lab__radar" kind="namespace" language="C++">
     <compoundname>gr::lab_radar</compoundname>
     <innerclass refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi" prot="public">gr::lab_radar::corr_dist_estimator_bfi</innerclass>
+    <innerclass refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf" prot="public">gr::lab_radar::signal_corr_estimator_cf</innerclass>
+    <innerclass refid="classgr_1_1lab__radar_1_1simple__decimator__cc" prot="public">gr::lab_radar::simple_decimator_cc</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

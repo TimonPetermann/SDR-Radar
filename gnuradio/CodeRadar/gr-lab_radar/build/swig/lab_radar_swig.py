@@ -442,5 +442,751 @@ _lab_radar_swig.corr_dist_estimator_bfi_sptr_swigregister(corr_dist_estimator_bf
 corr_dist_estimator_bfi_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id())
 corr_dist_estimator_bfi = corr_dist_estimator_bfi.make;
 
+class signal_corr_estimator_cf(object):
+    r"""
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+    Return a shared_ptr to a new instance of lab_radar::signal_corr_estimator_cf.
+
+    To avoid accidental use of raw pointers, lab_radar::signal_corr_estimator_cf's constructor is in a private implementation class. lab_radar::signal_corr_estimator_cf::make is the public interface for creating new instances.
+
+    Args:
+        sample_rate_rx : 
+        sample_fac : 
+        code_length : 
+        sps_rx : 
+        v_max : 
+    """
+
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+
+    def __init__(self, *args, **kwargs):
+        raise AttributeError("No constructor defined")
+    __repr__ = _swig_repr
+
+    @staticmethod
+    def make(sample_rate_rx: "int", sample_fac: "int", code_length: "int", sps_rx: "int", v_max: "float") -> "gr::lab_radar::signal_corr_estimator_cf::sptr":
+        r"""
+        make(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max) -> signal_corr_estimator_cf_sptr
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+        Return a shared_ptr to a new instance of lab_radar::signal_corr_estimator_cf.
+
+        To avoid accidental use of raw pointers, lab_radar::signal_corr_estimator_cf's constructor is in a private implementation class. lab_radar::signal_corr_estimator_cf::make is the public interface for creating new instances.
+
+        Args:
+            sample_rate_rx : 
+            sample_fac : 
+            code_length : 
+            sps_rx : 
+            v_max : 
+        """
+        return _lab_radar_swig.signal_corr_estimator_cf_make(sample_rate_rx, sample_fac, code_length, sps_rx, v_max)
+    __swig_destroy__ = _lab_radar_swig.delete_signal_corr_estimator_cf
+
+# Register signal_corr_estimator_cf in _lab_radar_swig:
+_lab_radar_swig.signal_corr_estimator_cf_swigregister(signal_corr_estimator_cf)
+
+def signal_corr_estimator_cf_make(sample_rate_rx: "int", sample_fac: "int", code_length: "int", sps_rx: "int", v_max: "float") -> "gr::lab_radar::signal_corr_estimator_cf::sptr":
+    r"""
+    signal_corr_estimator_cf_make(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max) -> signal_corr_estimator_cf_sptr
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+    Return a shared_ptr to a new instance of lab_radar::signal_corr_estimator_cf.
+
+    To avoid accidental use of raw pointers, lab_radar::signal_corr_estimator_cf's constructor is in a private implementation class. lab_radar::signal_corr_estimator_cf::make is the public interface for creating new instances.
+
+    Args:
+        sample_rate_rx : 
+        sample_fac : 
+        code_length : 
+        sps_rx : 
+        v_max : 
+    """
+    return _lab_radar_swig.signal_corr_estimator_cf_make(sample_rate_rx, sample_fac, code_length, sps_rx, v_max)
+
+class signal_corr_estimator_cf_sptr(object):
+    r"""Proxy of C++ boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > class."""
+
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    __repr__ = _swig_repr
+
+    def __init__(self, *args):
+        r"""
+        __init__(signal_corr_estimator_cf_sptr self) -> signal_corr_estimator_cf_sptr
+        __init__(signal_corr_estimator_cf_sptr self, signal_corr_estimator_cf p) -> signal_corr_estimator_cf_sptr
+        """
+        _lab_radar_swig.signal_corr_estimator_cf_sptr_swiginit(self, _lab_radar_swig.new_signal_corr_estimator_cf_sptr(*args))
+
+    def __deref__(self) -> "gr::lab_radar::signal_corr_estimator_cf *":
+        r"""__deref__(signal_corr_estimator_cf_sptr self) -> signal_corr_estimator_cf"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr___deref__(self)
+    __swig_destroy__ = _lab_radar_swig.delete_signal_corr_estimator_cf_sptr
+
+    def make(self, sample_rate_rx: "int", sample_fac: "int", code_length: "int", sps_rx: "int", v_max: "float") -> "gr::lab_radar::signal_corr_estimator_cf::sptr":
+        r"""
+        make(signal_corr_estimator_cf_sptr self, int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max) -> signal_corr_estimator_cf_sptr
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+        Return a shared_ptr to a new instance of lab_radar::signal_corr_estimator_cf.
+
+        To avoid accidental use of raw pointers, lab_radar::signal_corr_estimator_cf's constructor is in a private implementation class. lab_radar::signal_corr_estimator_cf::make is the public interface for creating new instances.
+
+        Args:
+            sample_rate_rx : 
+            sample_fac : 
+            code_length : 
+            sps_rx : 
+            v_max : 
+        """
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_make(self, sample_rate_rx, sample_fac, code_length, sps_rx, v_max)
+
+    def history(self) -> "unsigned int":
+        r"""history(signal_corr_estimator_cf_sptr self) -> unsigned int"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_history(self)
+
+    def declare_sample_delay(self, *args) -> "void":
+        r"""
+        declare_sample_delay(signal_corr_estimator_cf_sptr self, int which, int delay)
+        declare_sample_delay(signal_corr_estimator_cf_sptr self, unsigned int delay)
+        """
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_declare_sample_delay(self, *args)
+
+    def sample_delay(self, which: "int") -> "unsigned int":
+        r"""sample_delay(signal_corr_estimator_cf_sptr self, int which) -> unsigned int"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_sample_delay(self, which)
+
+    def set_output_multiple(self, multiple: "int") -> "void":
+        r"""set_output_multiple(signal_corr_estimator_cf_sptr self, int multiple)"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_set_output_multiple(self, multiple)
+
+    def output_multiple(self) -> "int":
+        r"""output_multiple(signal_corr_estimator_cf_sptr self) -> int"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_output_multiple(self)
+
+    def relative_rate(self) -> "double":
+        r"""relative_rate(signal_corr_estimator_cf_sptr self) -> double"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_relative_rate(self)
+
+    def relative_rate_i(self) -> "uint64_t":
+        r"""relative_rate_i(signal_corr_estimator_cf_sptr self) -> uint64_t"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_relative_rate_i(self)
+
+    def relative_rate_d(self) -> "uint64_t":
+        r"""relative_rate_d(signal_corr_estimator_cf_sptr self) -> uint64_t"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_relative_rate_d(self)
+
+    def start(self) -> "bool":
+        r"""start(signal_corr_estimator_cf_sptr self) -> bool"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_start(self)
+
+    def stop(self) -> "bool":
+        r"""stop(signal_corr_estimator_cf_sptr self) -> bool"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_stop(self)
+
+    def nitems_read(self, which_input: "unsigned int") -> "uint64_t":
+        r"""nitems_read(signal_corr_estimator_cf_sptr self, unsigned int which_input) -> uint64_t"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_nitems_read(self, which_input)
+
+    def nitems_written(self, which_output: "unsigned int") -> "uint64_t":
+        r"""nitems_written(signal_corr_estimator_cf_sptr self, unsigned int which_output) -> uint64_t"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_nitems_written(self, which_output)
+
+    def set_log_level(self, level: "std::string") -> "void":
+        r"""set_log_level(signal_corr_estimator_cf_sptr self, std::string level)"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_set_log_level(self, level)
+
+    def log_level(self) -> "std::string":
+        r"""log_level(signal_corr_estimator_cf_sptr self) -> std::string"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_log_level(self)
+
+    def max_noutput_items(self) -> "int":
+        r"""max_noutput_items(signal_corr_estimator_cf_sptr self) -> int"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_max_noutput_items(self)
+
+    def set_max_noutput_items(self, m: "int") -> "void":
+        r"""set_max_noutput_items(signal_corr_estimator_cf_sptr self, int m)"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_set_max_noutput_items(self, m)
+
+    def unset_max_noutput_items(self) -> "void":
+        r"""unset_max_noutput_items(signal_corr_estimator_cf_sptr self)"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_unset_max_noutput_items(self)
+
+    def is_set_max_noutput_items(self) -> "bool":
+        r"""is_set_max_noutput_items(signal_corr_estimator_cf_sptr self) -> bool"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_is_set_max_noutput_items(self)
+
+    def set_min_noutput_items(self, m: "int") -> "void":
+        r"""set_min_noutput_items(signal_corr_estimator_cf_sptr self, int m)"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_set_min_noutput_items(self, m)
+
+    def min_noutput_items(self) -> "int":
+        r"""min_noutput_items(signal_corr_estimator_cf_sptr self) -> int"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_min_noutput_items(self)
+
+    def max_output_buffer(self, i: "int") -> "long":
+        r"""max_output_buffer(signal_corr_estimator_cf_sptr self, int i) -> long"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_max_output_buffer(self, i)
+
+    def set_max_output_buffer(self, *args) -> "void":
+        r"""
+        set_max_output_buffer(signal_corr_estimator_cf_sptr self, long max_output_buffer)
+        set_max_output_buffer(signal_corr_estimator_cf_sptr self, int port, long max_output_buffer)
+        """
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_set_max_output_buffer(self, *args)
+
+    def min_output_buffer(self, i: "int") -> "long":
+        r"""min_output_buffer(signal_corr_estimator_cf_sptr self, int i) -> long"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_min_output_buffer(self, i)
+
+    def set_min_output_buffer(self, *args) -> "void":
+        r"""
+        set_min_output_buffer(signal_corr_estimator_cf_sptr self, long min_output_buffer)
+        set_min_output_buffer(signal_corr_estimator_cf_sptr self, int port, long min_output_buffer)
+        """
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_set_min_output_buffer(self, *args)
+
+    def pc_noutput_items(self) -> "float":
+        r"""pc_noutput_items(signal_corr_estimator_cf_sptr self) -> float"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_pc_noutput_items(self)
+
+    def pc_noutput_items_avg(self) -> "float":
+        r"""pc_noutput_items_avg(signal_corr_estimator_cf_sptr self) -> float"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_pc_noutput_items_avg(self)
+
+    def pc_noutput_items_var(self) -> "float":
+        r"""pc_noutput_items_var(signal_corr_estimator_cf_sptr self) -> float"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_pc_noutput_items_var(self)
+
+    def pc_nproduced(self) -> "float":
+        r"""pc_nproduced(signal_corr_estimator_cf_sptr self) -> float"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_pc_nproduced(self)
+
+    def pc_nproduced_avg(self) -> "float":
+        r"""pc_nproduced_avg(signal_corr_estimator_cf_sptr self) -> float"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_pc_nproduced_avg(self)
+
+    def pc_nproduced_var(self) -> "float":
+        r"""pc_nproduced_var(signal_corr_estimator_cf_sptr self) -> float"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_pc_nproduced_var(self)
+
+    def pc_input_buffers_full(self, *args) -> "std::vector< float,std::allocator< float > >":
+        r"""
+        pc_input_buffers_full(signal_corr_estimator_cf_sptr self, int which) -> float
+        pc_input_buffers_full(signal_corr_estimator_cf_sptr self) -> pmt_vector_float
+        """
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_pc_input_buffers_full(self, *args)
+
+    def pc_input_buffers_full_avg(self, *args) -> "std::vector< float,std::allocator< float > >":
+        r"""
+        pc_input_buffers_full_avg(signal_corr_estimator_cf_sptr self, int which) -> float
+        pc_input_buffers_full_avg(signal_corr_estimator_cf_sptr self) -> pmt_vector_float
+        """
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_pc_input_buffers_full_avg(self, *args)
+
+    def pc_input_buffers_full_var(self, *args) -> "std::vector< float,std::allocator< float > >":
+        r"""
+        pc_input_buffers_full_var(signal_corr_estimator_cf_sptr self, int which) -> float
+        pc_input_buffers_full_var(signal_corr_estimator_cf_sptr self) -> pmt_vector_float
+        """
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_pc_input_buffers_full_var(self, *args)
+
+    def pc_output_buffers_full(self, *args) -> "std::vector< float,std::allocator< float > >":
+        r"""
+        pc_output_buffers_full(signal_corr_estimator_cf_sptr self, int which) -> float
+        pc_output_buffers_full(signal_corr_estimator_cf_sptr self) -> pmt_vector_float
+        """
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_pc_output_buffers_full(self, *args)
+
+    def pc_output_buffers_full_avg(self, *args) -> "std::vector< float,std::allocator< float > >":
+        r"""
+        pc_output_buffers_full_avg(signal_corr_estimator_cf_sptr self, int which) -> float
+        pc_output_buffers_full_avg(signal_corr_estimator_cf_sptr self) -> pmt_vector_float
+        """
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_pc_output_buffers_full_avg(self, *args)
+
+    def pc_output_buffers_full_var(self, *args) -> "std::vector< float,std::allocator< float > >":
+        r"""
+        pc_output_buffers_full_var(signal_corr_estimator_cf_sptr self, int which) -> float
+        pc_output_buffers_full_var(signal_corr_estimator_cf_sptr self) -> pmt_vector_float
+        """
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_pc_output_buffers_full_var(self, *args)
+
+    def pc_work_time(self) -> "float":
+        r"""pc_work_time(signal_corr_estimator_cf_sptr self) -> float"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_pc_work_time(self)
+
+    def pc_work_time_avg(self) -> "float":
+        r"""pc_work_time_avg(signal_corr_estimator_cf_sptr self) -> float"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_pc_work_time_avg(self)
+
+    def pc_work_time_var(self) -> "float":
+        r"""pc_work_time_var(signal_corr_estimator_cf_sptr self) -> float"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_pc_work_time_var(self)
+
+    def pc_work_time_total(self) -> "float":
+        r"""pc_work_time_total(signal_corr_estimator_cf_sptr self) -> float"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_pc_work_time_total(self)
+
+    def pc_throughput_avg(self) -> "float":
+        r"""pc_throughput_avg(signal_corr_estimator_cf_sptr self) -> float"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_pc_throughput_avg(self)
+
+    def set_processor_affinity(self, mask: "std::vector< int,std::allocator< int > > const &") -> "void":
+        r"""set_processor_affinity(signal_corr_estimator_cf_sptr self, std::vector< int,std::allocator< int > > const & mask)"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_set_processor_affinity(self, mask)
+
+    def unset_processor_affinity(self) -> "void":
+        r"""unset_processor_affinity(signal_corr_estimator_cf_sptr self)"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_unset_processor_affinity(self)
+
+    def processor_affinity(self) -> "std::vector< int,std::allocator< int > >":
+        r"""processor_affinity(signal_corr_estimator_cf_sptr self) -> std::vector< int,std::allocator< int > >"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_processor_affinity(self)
+
+    def active_thread_priority(self) -> "int":
+        r"""active_thread_priority(signal_corr_estimator_cf_sptr self) -> int"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_active_thread_priority(self)
+
+    def thread_priority(self) -> "int":
+        r"""thread_priority(signal_corr_estimator_cf_sptr self) -> int"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_thread_priority(self)
+
+    def set_thread_priority(self, priority: "int") -> "int":
+        r"""set_thread_priority(signal_corr_estimator_cf_sptr self, int priority) -> int"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_set_thread_priority(self, priority)
+
+    def name(self) -> "std::string":
+        r"""name(signal_corr_estimator_cf_sptr self) -> std::string"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_name(self)
+
+    def symbol_name(self) -> "std::string":
+        r"""symbol_name(signal_corr_estimator_cf_sptr self) -> std::string"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_symbol_name(self)
+
+    def input_signature(self) -> "gr::io_signature::sptr":
+        r"""input_signature(signal_corr_estimator_cf_sptr self) -> io_signature_sptr"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_input_signature(self)
+
+    def output_signature(self) -> "gr::io_signature::sptr":
+        r"""output_signature(signal_corr_estimator_cf_sptr self) -> io_signature_sptr"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_output_signature(self)
+
+    def unique_id(self) -> "long":
+        r"""unique_id(signal_corr_estimator_cf_sptr self) -> long"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_unique_id(self)
+
+    def to_basic_block(self) -> "gr::basic_block_sptr":
+        r"""to_basic_block(signal_corr_estimator_cf_sptr self) -> basic_block_sptr"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_to_basic_block(self)
+
+    def check_topology(self, ninputs: "int", noutputs: "int") -> "bool":
+        r"""check_topology(signal_corr_estimator_cf_sptr self, int ninputs, int noutputs) -> bool"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_check_topology(self, ninputs, noutputs)
+
+    def alias(self) -> "std::string":
+        r"""alias(signal_corr_estimator_cf_sptr self) -> std::string"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_alias(self)
+
+    def set_block_alias(self, name: "std::string") -> "void":
+        r"""set_block_alias(signal_corr_estimator_cf_sptr self, std::string name)"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_set_block_alias(self, name)
+
+    def _post(self, which_port: "swig_pmt_ptr", msg: "swig_pmt_ptr") -> "void":
+        r"""_post(signal_corr_estimator_cf_sptr self, swig_pmt_ptr which_port, swig_pmt_ptr msg)"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr__post(self, which_port, msg)
+
+    def message_ports_in(self) -> "pmt::pmt_t":
+        r"""message_ports_in(signal_corr_estimator_cf_sptr self) -> swig_pmt_ptr"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_message_ports_in(self)
+
+    def message_ports_out(self) -> "pmt::pmt_t":
+        r"""message_ports_out(signal_corr_estimator_cf_sptr self) -> swig_pmt_ptr"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_message_ports_out(self)
+
+    def message_subscribers(self, which_port: "swig_pmt_ptr") -> "pmt::pmt_t":
+        r"""message_subscribers(signal_corr_estimator_cf_sptr self, swig_pmt_ptr which_port) -> swig_pmt_ptr"""
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_message_subscribers(self, which_port)
+
+# Register signal_corr_estimator_cf_sptr in _lab_radar_swig:
+_lab_radar_swig.signal_corr_estimator_cf_sptr_swigregister(signal_corr_estimator_cf_sptr)
+
+
+signal_corr_estimator_cf_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id())
+signal_corr_estimator_cf = signal_corr_estimator_cf.make;
+
+class simple_decimator_cc(object):
+    r"""
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+    Return a shared_ptr to a new instance of lab_radar::simple_decimator_cc.
+
+    To avoid accidental use of raw pointers, lab_radar::simple_decimator_cc's constructor is in a private implementation class. lab_radar::simple_decimator_cc::make is the public interface for creating new instances.
+
+    Args:
+        decimation : 
+    """
+
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+
+    def __init__(self, *args, **kwargs):
+        raise AttributeError("No constructor defined")
+    __repr__ = _swig_repr
+
+    @staticmethod
+    def make(decimation: "int") -> "gr::lab_radar::simple_decimator_cc::sptr":
+        r"""
+        make(int decimation) -> simple_decimator_cc_sptr
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+        Return a shared_ptr to a new instance of lab_radar::simple_decimator_cc.
+
+        To avoid accidental use of raw pointers, lab_radar::simple_decimator_cc's constructor is in a private implementation class. lab_radar::simple_decimator_cc::make is the public interface for creating new instances.
+
+        Args:
+            decimation : 
+        """
+        return _lab_radar_swig.simple_decimator_cc_make(decimation)
+    __swig_destroy__ = _lab_radar_swig.delete_simple_decimator_cc
+
+# Register simple_decimator_cc in _lab_radar_swig:
+_lab_radar_swig.simple_decimator_cc_swigregister(simple_decimator_cc)
+
+def simple_decimator_cc_make(decimation: "int") -> "gr::lab_radar::simple_decimator_cc::sptr":
+    r"""
+    simple_decimator_cc_make(int decimation) -> simple_decimator_cc_sptr
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+    Return a shared_ptr to a new instance of lab_radar::simple_decimator_cc.
+
+    To avoid accidental use of raw pointers, lab_radar::simple_decimator_cc's constructor is in a private implementation class. lab_radar::simple_decimator_cc::make is the public interface for creating new instances.
+
+    Args:
+        decimation : 
+    """
+    return _lab_radar_swig.simple_decimator_cc_make(decimation)
+
+class simple_decimator_cc_sptr(object):
+    r"""Proxy of C++ boost::shared_ptr< gr::lab_radar::simple_decimator_cc > class."""
+
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    __repr__ = _swig_repr
+
+    def __init__(self, *args):
+        r"""
+        __init__(simple_decimator_cc_sptr self) -> simple_decimator_cc_sptr
+        __init__(simple_decimator_cc_sptr self, simple_decimator_cc p) -> simple_decimator_cc_sptr
+        """
+        _lab_radar_swig.simple_decimator_cc_sptr_swiginit(self, _lab_radar_swig.new_simple_decimator_cc_sptr(*args))
+
+    def __deref__(self) -> "gr::lab_radar::simple_decimator_cc *":
+        r"""__deref__(simple_decimator_cc_sptr self) -> simple_decimator_cc"""
+        return _lab_radar_swig.simple_decimator_cc_sptr___deref__(self)
+    __swig_destroy__ = _lab_radar_swig.delete_simple_decimator_cc_sptr
+
+    def make(self, decimation: "int") -> "gr::lab_radar::simple_decimator_cc::sptr":
+        r"""
+        make(simple_decimator_cc_sptr self, int decimation) -> simple_decimator_cc_sptr
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+        Return a shared_ptr to a new instance of lab_radar::simple_decimator_cc.
+
+        To avoid accidental use of raw pointers, lab_radar::simple_decimator_cc's constructor is in a private implementation class. lab_radar::simple_decimator_cc::make is the public interface for creating new instances.
+
+        Args:
+            decimation : 
+        """
+        return _lab_radar_swig.simple_decimator_cc_sptr_make(self, decimation)
+
+    def history(self) -> "unsigned int":
+        r"""history(simple_decimator_cc_sptr self) -> unsigned int"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_history(self)
+
+    def declare_sample_delay(self, *args) -> "void":
+        r"""
+        declare_sample_delay(simple_decimator_cc_sptr self, int which, int delay)
+        declare_sample_delay(simple_decimator_cc_sptr self, unsigned int delay)
+        """
+        return _lab_radar_swig.simple_decimator_cc_sptr_declare_sample_delay(self, *args)
+
+    def sample_delay(self, which: "int") -> "unsigned int":
+        r"""sample_delay(simple_decimator_cc_sptr self, int which) -> unsigned int"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_sample_delay(self, which)
+
+    def set_output_multiple(self, multiple: "int") -> "void":
+        r"""set_output_multiple(simple_decimator_cc_sptr self, int multiple)"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_set_output_multiple(self, multiple)
+
+    def output_multiple(self) -> "int":
+        r"""output_multiple(simple_decimator_cc_sptr self) -> int"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_output_multiple(self)
+
+    def relative_rate(self) -> "double":
+        r"""relative_rate(simple_decimator_cc_sptr self) -> double"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_relative_rate(self)
+
+    def relative_rate_i(self) -> "uint64_t":
+        r"""relative_rate_i(simple_decimator_cc_sptr self) -> uint64_t"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_relative_rate_i(self)
+
+    def relative_rate_d(self) -> "uint64_t":
+        r"""relative_rate_d(simple_decimator_cc_sptr self) -> uint64_t"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_relative_rate_d(self)
+
+    def start(self) -> "bool":
+        r"""start(simple_decimator_cc_sptr self) -> bool"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_start(self)
+
+    def stop(self) -> "bool":
+        r"""stop(simple_decimator_cc_sptr self) -> bool"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_stop(self)
+
+    def nitems_read(self, which_input: "unsigned int") -> "uint64_t":
+        r"""nitems_read(simple_decimator_cc_sptr self, unsigned int which_input) -> uint64_t"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_nitems_read(self, which_input)
+
+    def nitems_written(self, which_output: "unsigned int") -> "uint64_t":
+        r"""nitems_written(simple_decimator_cc_sptr self, unsigned int which_output) -> uint64_t"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_nitems_written(self, which_output)
+
+    def set_log_level(self, level: "std::string") -> "void":
+        r"""set_log_level(simple_decimator_cc_sptr self, std::string level)"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_set_log_level(self, level)
+
+    def log_level(self) -> "std::string":
+        r"""log_level(simple_decimator_cc_sptr self) -> std::string"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_log_level(self)
+
+    def max_noutput_items(self) -> "int":
+        r"""max_noutput_items(simple_decimator_cc_sptr self) -> int"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_max_noutput_items(self)
+
+    def set_max_noutput_items(self, m: "int") -> "void":
+        r"""set_max_noutput_items(simple_decimator_cc_sptr self, int m)"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_set_max_noutput_items(self, m)
+
+    def unset_max_noutput_items(self) -> "void":
+        r"""unset_max_noutput_items(simple_decimator_cc_sptr self)"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_unset_max_noutput_items(self)
+
+    def is_set_max_noutput_items(self) -> "bool":
+        r"""is_set_max_noutput_items(simple_decimator_cc_sptr self) -> bool"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_is_set_max_noutput_items(self)
+
+    def set_min_noutput_items(self, m: "int") -> "void":
+        r"""set_min_noutput_items(simple_decimator_cc_sptr self, int m)"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_set_min_noutput_items(self, m)
+
+    def min_noutput_items(self) -> "int":
+        r"""min_noutput_items(simple_decimator_cc_sptr self) -> int"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_min_noutput_items(self)
+
+    def max_output_buffer(self, i: "int") -> "long":
+        r"""max_output_buffer(simple_decimator_cc_sptr self, int i) -> long"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_max_output_buffer(self, i)
+
+    def set_max_output_buffer(self, *args) -> "void":
+        r"""
+        set_max_output_buffer(simple_decimator_cc_sptr self, long max_output_buffer)
+        set_max_output_buffer(simple_decimator_cc_sptr self, int port, long max_output_buffer)
+        """
+        return _lab_radar_swig.simple_decimator_cc_sptr_set_max_output_buffer(self, *args)
+
+    def min_output_buffer(self, i: "int") -> "long":
+        r"""min_output_buffer(simple_decimator_cc_sptr self, int i) -> long"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_min_output_buffer(self, i)
+
+    def set_min_output_buffer(self, *args) -> "void":
+        r"""
+        set_min_output_buffer(simple_decimator_cc_sptr self, long min_output_buffer)
+        set_min_output_buffer(simple_decimator_cc_sptr self, int port, long min_output_buffer)
+        """
+        return _lab_radar_swig.simple_decimator_cc_sptr_set_min_output_buffer(self, *args)
+
+    def pc_noutput_items(self) -> "float":
+        r"""pc_noutput_items(simple_decimator_cc_sptr self) -> float"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_pc_noutput_items(self)
+
+    def pc_noutput_items_avg(self) -> "float":
+        r"""pc_noutput_items_avg(simple_decimator_cc_sptr self) -> float"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_pc_noutput_items_avg(self)
+
+    def pc_noutput_items_var(self) -> "float":
+        r"""pc_noutput_items_var(simple_decimator_cc_sptr self) -> float"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_pc_noutput_items_var(self)
+
+    def pc_nproduced(self) -> "float":
+        r"""pc_nproduced(simple_decimator_cc_sptr self) -> float"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_pc_nproduced(self)
+
+    def pc_nproduced_avg(self) -> "float":
+        r"""pc_nproduced_avg(simple_decimator_cc_sptr self) -> float"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_pc_nproduced_avg(self)
+
+    def pc_nproduced_var(self) -> "float":
+        r"""pc_nproduced_var(simple_decimator_cc_sptr self) -> float"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_pc_nproduced_var(self)
+
+    def pc_input_buffers_full(self, *args) -> "std::vector< float,std::allocator< float > >":
+        r"""
+        pc_input_buffers_full(simple_decimator_cc_sptr self, int which) -> float
+        pc_input_buffers_full(simple_decimator_cc_sptr self) -> pmt_vector_float
+        """
+        return _lab_radar_swig.simple_decimator_cc_sptr_pc_input_buffers_full(self, *args)
+
+    def pc_input_buffers_full_avg(self, *args) -> "std::vector< float,std::allocator< float > >":
+        r"""
+        pc_input_buffers_full_avg(simple_decimator_cc_sptr self, int which) -> float
+        pc_input_buffers_full_avg(simple_decimator_cc_sptr self) -> pmt_vector_float
+        """
+        return _lab_radar_swig.simple_decimator_cc_sptr_pc_input_buffers_full_avg(self, *args)
+
+    def pc_input_buffers_full_var(self, *args) -> "std::vector< float,std::allocator< float > >":
+        r"""
+        pc_input_buffers_full_var(simple_decimator_cc_sptr self, int which) -> float
+        pc_input_buffers_full_var(simple_decimator_cc_sptr self) -> pmt_vector_float
+        """
+        return _lab_radar_swig.simple_decimator_cc_sptr_pc_input_buffers_full_var(self, *args)
+
+    def pc_output_buffers_full(self, *args) -> "std::vector< float,std::allocator< float > >":
+        r"""
+        pc_output_buffers_full(simple_decimator_cc_sptr self, int which) -> float
+        pc_output_buffers_full(simple_decimator_cc_sptr self) -> pmt_vector_float
+        """
+        return _lab_radar_swig.simple_decimator_cc_sptr_pc_output_buffers_full(self, *args)
+
+    def pc_output_buffers_full_avg(self, *args) -> "std::vector< float,std::allocator< float > >":
+        r"""
+        pc_output_buffers_full_avg(simple_decimator_cc_sptr self, int which) -> float
+        pc_output_buffers_full_avg(simple_decimator_cc_sptr self) -> pmt_vector_float
+        """
+        return _lab_radar_swig.simple_decimator_cc_sptr_pc_output_buffers_full_avg(self, *args)
+
+    def pc_output_buffers_full_var(self, *args) -> "std::vector< float,std::allocator< float > >":
+        r"""
+        pc_output_buffers_full_var(simple_decimator_cc_sptr self, int which) -> float
+        pc_output_buffers_full_var(simple_decimator_cc_sptr self) -> pmt_vector_float
+        """
+        return _lab_radar_swig.simple_decimator_cc_sptr_pc_output_buffers_full_var(self, *args)
+
+    def pc_work_time(self) -> "float":
+        r"""pc_work_time(simple_decimator_cc_sptr self) -> float"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_pc_work_time(self)
+
+    def pc_work_time_avg(self) -> "float":
+        r"""pc_work_time_avg(simple_decimator_cc_sptr self) -> float"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_pc_work_time_avg(self)
+
+    def pc_work_time_var(self) -> "float":
+        r"""pc_work_time_var(simple_decimator_cc_sptr self) -> float"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_pc_work_time_var(self)
+
+    def pc_work_time_total(self) -> "float":
+        r"""pc_work_time_total(simple_decimator_cc_sptr self) -> float"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_pc_work_time_total(self)
+
+    def pc_throughput_avg(self) -> "float":
+        r"""pc_throughput_avg(simple_decimator_cc_sptr self) -> float"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_pc_throughput_avg(self)
+
+    def set_processor_affinity(self, mask: "std::vector< int,std::allocator< int > > const &") -> "void":
+        r"""set_processor_affinity(simple_decimator_cc_sptr self, std::vector< int,std::allocator< int > > const & mask)"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_set_processor_affinity(self, mask)
+
+    def unset_processor_affinity(self) -> "void":
+        r"""unset_processor_affinity(simple_decimator_cc_sptr self)"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_unset_processor_affinity(self)
+
+    def processor_affinity(self) -> "std::vector< int,std::allocator< int > >":
+        r"""processor_affinity(simple_decimator_cc_sptr self) -> std::vector< int,std::allocator< int > >"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_processor_affinity(self)
+
+    def active_thread_priority(self) -> "int":
+        r"""active_thread_priority(simple_decimator_cc_sptr self) -> int"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_active_thread_priority(self)
+
+    def thread_priority(self) -> "int":
+        r"""thread_priority(simple_decimator_cc_sptr self) -> int"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_thread_priority(self)
+
+    def set_thread_priority(self, priority: "int") -> "int":
+        r"""set_thread_priority(simple_decimator_cc_sptr self, int priority) -> int"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_set_thread_priority(self, priority)
+
+    def name(self) -> "std::string":
+        r"""name(simple_decimator_cc_sptr self) -> std::string"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_name(self)
+
+    def symbol_name(self) -> "std::string":
+        r"""symbol_name(simple_decimator_cc_sptr self) -> std::string"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_symbol_name(self)
+
+    def input_signature(self) -> "gr::io_signature::sptr":
+        r"""input_signature(simple_decimator_cc_sptr self) -> io_signature_sptr"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_input_signature(self)
+
+    def output_signature(self) -> "gr::io_signature::sptr":
+        r"""output_signature(simple_decimator_cc_sptr self) -> io_signature_sptr"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_output_signature(self)
+
+    def unique_id(self) -> "long":
+        r"""unique_id(simple_decimator_cc_sptr self) -> long"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_unique_id(self)
+
+    def to_basic_block(self) -> "gr::basic_block_sptr":
+        r"""to_basic_block(simple_decimator_cc_sptr self) -> basic_block_sptr"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_to_basic_block(self)
+
+    def check_topology(self, ninputs: "int", noutputs: "int") -> "bool":
+        r"""check_topology(simple_decimator_cc_sptr self, int ninputs, int noutputs) -> bool"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_check_topology(self, ninputs, noutputs)
+
+    def alias(self) -> "std::string":
+        r"""alias(simple_decimator_cc_sptr self) -> std::string"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_alias(self)
+
+    def set_block_alias(self, name: "std::string") -> "void":
+        r"""set_block_alias(simple_decimator_cc_sptr self, std::string name)"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_set_block_alias(self, name)
+
+    def _post(self, which_port: "swig_pmt_ptr", msg: "swig_pmt_ptr") -> "void":
+        r"""_post(simple_decimator_cc_sptr self, swig_pmt_ptr which_port, swig_pmt_ptr msg)"""
+        return _lab_radar_swig.simple_decimator_cc_sptr__post(self, which_port, msg)
+
+    def message_ports_in(self) -> "pmt::pmt_t":
+        r"""message_ports_in(simple_decimator_cc_sptr self) -> swig_pmt_ptr"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_message_ports_in(self)
+
+    def message_ports_out(self) -> "pmt::pmt_t":
+        r"""message_ports_out(simple_decimator_cc_sptr self) -> swig_pmt_ptr"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_message_ports_out(self)
+
+    def message_subscribers(self, which_port: "swig_pmt_ptr") -> "pmt::pmt_t":
+        r"""message_subscribers(simple_decimator_cc_sptr self, swig_pmt_ptr which_port) -> swig_pmt_ptr"""
+        return _lab_radar_swig.simple_decimator_cc_sptr_message_subscribers(self, which_port)
+
+# Register simple_decimator_cc_sptr in _lab_radar_swig:
+_lab_radar_swig.simple_decimator_cc_sptr_swigregister(simple_decimator_cc_sptr)
+
+
+simple_decimator_cc_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id())
+simple_decimator_cc = simple_decimator_cc.make;
+
 
 

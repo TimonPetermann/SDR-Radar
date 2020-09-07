@@ -209,6 +209,60 @@ corr_dist_estimator_bfi_impl.cc.s:
 	cd /home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build && $(MAKE) -f lib/CMakeFiles/gnuradio-lab_radar.dir/build.make lib/CMakeFiles/gnuradio-lab_radar.dir/corr_dist_estimator_bfi_impl.cc.s
 .PHONY : corr_dist_estimator_bfi_impl.cc.s
 
+signal_corr_estimator_cf_impl.o: signal_corr_estimator_cf_impl.cc.o
+
+.PHONY : signal_corr_estimator_cf_impl.o
+
+# target to build an object file
+signal_corr_estimator_cf_impl.cc.o:
+	cd /home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build && $(MAKE) -f lib/CMakeFiles/gnuradio-lab_radar.dir/build.make lib/CMakeFiles/gnuradio-lab_radar.dir/signal_corr_estimator_cf_impl.cc.o
+.PHONY : signal_corr_estimator_cf_impl.cc.o
+
+signal_corr_estimator_cf_impl.i: signal_corr_estimator_cf_impl.cc.i
+
+.PHONY : signal_corr_estimator_cf_impl.i
+
+# target to preprocess a source file
+signal_corr_estimator_cf_impl.cc.i:
+	cd /home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build && $(MAKE) -f lib/CMakeFiles/gnuradio-lab_radar.dir/build.make lib/CMakeFiles/gnuradio-lab_radar.dir/signal_corr_estimator_cf_impl.cc.i
+.PHONY : signal_corr_estimator_cf_impl.cc.i
+
+signal_corr_estimator_cf_impl.s: signal_corr_estimator_cf_impl.cc.s
+
+.PHONY : signal_corr_estimator_cf_impl.s
+
+# target to generate assembly for a file
+signal_corr_estimator_cf_impl.cc.s:
+	cd /home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build && $(MAKE) -f lib/CMakeFiles/gnuradio-lab_radar.dir/build.make lib/CMakeFiles/gnuradio-lab_radar.dir/signal_corr_estimator_cf_impl.cc.s
+.PHONY : signal_corr_estimator_cf_impl.cc.s
+
+simple_decimator_cc_impl.o: simple_decimator_cc_impl.cc.o
+
+.PHONY : simple_decimator_cc_impl.o
+
+# target to build an object file
+simple_decimator_cc_impl.cc.o:
+	cd /home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build && $(MAKE) -f lib/CMakeFiles/gnuradio-lab_radar.dir/build.make lib/CMakeFiles/gnuradio-lab_radar.dir/simple_decimator_cc_impl.cc.o
+.PHONY : simple_decimator_cc_impl.cc.o
+
+simple_decimator_cc_impl.i: simple_decimator_cc_impl.cc.i
+
+.PHONY : simple_decimator_cc_impl.i
+
+# target to preprocess a source file
+simple_decimator_cc_impl.cc.i:
+	cd /home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build && $(MAKE) -f lib/CMakeFiles/gnuradio-lab_radar.dir/build.make lib/CMakeFiles/gnuradio-lab_radar.dir/simple_decimator_cc_impl.cc.i
+.PHONY : simple_decimator_cc_impl.cc.i
+
+simple_decimator_cc_impl.s: simple_decimator_cc_impl.cc.s
+
+.PHONY : simple_decimator_cc_impl.s
+
+# target to generate assembly for a file
+simple_decimator_cc_impl.cc.s:
+	cd /home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/build && $(MAKE) -f lib/CMakeFiles/gnuradio-lab_radar.dir/build.make lib/CMakeFiles/gnuradio-lab_radar.dir/simple_decimator_cc_impl.cc.s
+.PHONY : simple_decimator_cc_impl.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -226,6 +280,12 @@ help:
 	@echo "... corr_dist_estimator_bfi_impl.o"
 	@echo "... corr_dist_estimator_bfi_impl.i"
 	@echo "... corr_dist_estimator_bfi_impl.s"
+	@echo "... signal_corr_estimator_cf_impl.o"
+	@echo "... signal_corr_estimator_cf_impl.i"
+	@echo "... signal_corr_estimator_cf_impl.s"
+	@echo "... simple_decimator_cc_impl.o"
+	@echo "... simple_decimator_cc_impl.i"
+	@echo "... simple_decimator_cc_impl.s"
 .PHONY : help
 
 

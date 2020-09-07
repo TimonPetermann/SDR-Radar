@@ -55,7 +55,7 @@ namespace gr
                              gr::io_signature::make(2, 2, sizeof(char)),
                              gr::io_signature::make(1, 3, sizeof(float)), code_length),
           output_stream(std::string("../debug.txt")),
-          code_length(code_length)
+          code_length(code_length),start_byte(0)
     {
     }
 
@@ -117,7 +117,8 @@ namespace gr
       float cor_res = 0;
       for (int i = 0; i < length; ++i)
       {
-        uint8_t val = (arr1[i] ^ arr2[i]);
+        int index = (i-start_byte)%length;
+        uint8_t val = (arr1[(i-start_byte)%length] ^ arr2[i]);
         cor_res += 8 - 2 * ((u1 & val) + ((u2 & val) >> 1) + ((u4 & val) >> 2) + ((u8 & val) >> 3) + ((u16 & val) >> 4) + ((u32 & val) >> 5) + ((u64 & val) >> 6) + ((u128 & val) >> 7));
       }
       return cor_res / (8 * length);
@@ -130,12 +131,11 @@ namespace gr
       auto &max_pos = std::get<1>(max_peak);
       for (int i = 0; i < length * 8; ++i)
       {
-        int start_byte = 0;
         float curr_corr = correlation(arr1, arr2, length);
         if (curr_corr > max_corr)
         {
           max_corr = curr_corr;
-          max_pos = i;
+          max_pos = i+start_byte*8;
           if (max_corr > 0.75)
             break;
         }
@@ -161,11 +161,11 @@ namespace gr
       // from peak to distance
       for (int i = 0; i < noutput_items; i++)
       {
-        int startbyte = 0;
-        auto result = find_max_peak(source+i*code_length, received+i*code_length, code_length, 0);
+        auto result = find_max_peak(source+i*code_length, received+i*code_length, code_length, start_byte);
         distance[i]=0;
         peak[i]=std::get<0>(result);
         offset[i]=std::get<1>(result);
+        start_byte = offset[i]/8;
       }
 
       // Tell runtime system how many output items we produced.

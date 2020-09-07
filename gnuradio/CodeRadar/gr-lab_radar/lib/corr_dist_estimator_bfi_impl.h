@@ -33,6 +33,7 @@ namespace gr {
     {
      private:
       int code_length;
+      int start_byte;
       std::ofstream output_stream;
 
       void n_shifts_array (uint8_t * arr, int length, int n, int & start_byte);

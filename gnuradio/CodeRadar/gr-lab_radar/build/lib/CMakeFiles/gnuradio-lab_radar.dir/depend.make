@@ -6,3 +6,13 @@ lib/CMakeFiles/gnuradio-lab_radar.dir/corr_dist_estimator_bfi_impl.cc.o: ../incl
 lib/CMakeFiles/gnuradio-lab_radar.dir/corr_dist_estimator_bfi_impl.cc.o: ../lib/corr_dist_estimator_bfi_impl.cc
 lib/CMakeFiles/gnuradio-lab_radar.dir/corr_dist_estimator_bfi_impl.cc.o: ../lib/corr_dist_estimator_bfi_impl.h
 
+lib/CMakeFiles/gnuradio-lab_radar.dir/signal_corr_estimator_cf_impl.cc.o: ../include/lab_radar/api.h
+lib/CMakeFiles/gnuradio-lab_radar.dir/signal_corr_estimator_cf_impl.cc.o: ../include/lab_radar/signal_corr_estimator_cf.h
+lib/CMakeFiles/gnuradio-lab_radar.dir/signal_corr_estimator_cf_impl.cc.o: ../lib/signal_corr_estimator_cf_impl.cc
+lib/CMakeFiles/gnuradio-lab_radar.dir/signal_corr_estimator_cf_impl.cc.o: ../lib/signal_corr_estimator_cf_impl.h
+
+lib/CMakeFiles/gnuradio-lab_radar.dir/simple_decimator_cc_impl.cc.o: ../include/lab_radar/api.h
+lib/CMakeFiles/gnuradio-lab_radar.dir/simple_decimator_cc_impl.cc.o: ../include/lab_radar/simple_decimator_cc.h
+lib/CMakeFiles/gnuradio-lab_radar.dir/simple_decimator_cc_impl.cc.o: ../lib/simple_decimator_cc_impl.cc
+lib/CMakeFiles/gnuradio-lab_radar.dir/simple_decimator_cc_impl.cc.o: ../lib/simple_decimator_cc_impl.h
+

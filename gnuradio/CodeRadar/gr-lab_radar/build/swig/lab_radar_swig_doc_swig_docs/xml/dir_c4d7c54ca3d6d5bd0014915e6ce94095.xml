@@ -4,6 +4,8 @@
     <compoundname>lab_radar</compoundname>
     <innerfile refid="api_8h">api.h</innerfile>
     <innerfile refid="corr__dist__estimator__bfi_8h">corr_dist_estimator_bfi.h</innerfile>
+    <innerfile refid="signal__corr__estimator__cf_8h">signal_corr_estimator_cf.h</innerfile>
+    <innerfile refid="simple__decimator__cc_8h">simple_decimator_cc.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

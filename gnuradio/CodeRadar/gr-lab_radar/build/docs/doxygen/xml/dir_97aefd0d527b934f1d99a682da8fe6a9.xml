@@ -3,6 +3,8 @@
   <compounddef id="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir">
     <compoundname>lib</compoundname>
     <innerfile refid="corr__dist__estimator__bfi__impl_8h">corr_dist_estimator_bfi_impl.h</innerfile>
+    <innerfile refid="signal__corr__estimator__cf__impl_8h">signal_corr_estimator_cf_impl.h</innerfile>
+    <innerfile refid="simple__decimator__cc__impl_8h">simple_decimator_cc_impl.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

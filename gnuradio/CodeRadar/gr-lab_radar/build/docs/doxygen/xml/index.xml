@@ -6,6 +6,7 @@
   </compound>
   <compound refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl" kind="class"><name>gr::lab_radar::corr_dist_estimator_bfi_impl</name>
     <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1a15da5b68a00ad1e1aa12df15da6f173d" kind="variable"><name>code_length</name></member>
+    <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1a524ae2cc9f92b19c83771c8aa3670935" kind="variable"><name>start_byte</name></member>
     <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1a7b6900928bc66f31af645e2cb66630f8" kind="variable"><name>output_stream</name></member>
     <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1a6db870cf38526ca81f2e65a6ac322a00" kind="function"><name>n_shifts_array</name></member>
     <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1a3ecc29985c105179d6948b21127393be" kind="function"><name>get_mask</name></member>
@@ -14,6 +15,32 @@
     <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1ad25976a94109c16c8dee19af061fd06a" kind="function"><name>corr_dist_estimator_bfi_impl</name></member>
     <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1acf5f0752315733aa991a9ddc56fba906" kind="function"><name>~corr_dist_estimator_bfi_impl</name></member>
     <member refid="classgr_1_1lab__radar_1_1corr__dist__estimator__bfi__impl_1ab2e13745fb47f53c894569ab6f3f532d" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf" kind="class"><name>gr::lab_radar::signal_corr_estimator_cf</name>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1a55882e3ecbb6b017c256d8a2ebea5218" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1a4d56bc5dfd0674be203a52c19e9e0e56" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl" kind="class"><name>gr::lab_radar::signal_corr_estimator_cf_impl</name>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1abb3adbbbed475e05d18425f95551f02b" kind="variable"><name>nelements_rx</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1aa7248000aa76b61030abdd13eea197e1" kind="variable"><name>nelements_tx</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a51fd42ab3bfcaf3cabee0764f757735f" kind="variable"><name>dist_factor</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a5ed2b0bd3c9dd67e64b4bd5574d2dda7" kind="variable"><name>factor</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1af78357bfd10878c97111fbc66366e945" kind="variable"><name>v_max</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1aa70780d0870d47ab25d5b6e1b50886d9" kind="function"><name>findCorrelationPeak</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a52fed0568a1a451af33b2378c5373adf" kind="function"><name>signal_corr_estimator_cf_impl</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1aab71525615382d751bf5e9801c73053d" kind="function"><name>~signal_corr_estimator_cf_impl</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a50782a5a63a99ef9d28baae5ac70facd" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a282c6200dce2f936a4d151130ba2b312" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="classgr_1_1lab__radar_1_1simple__decimator__cc" kind="class"><name>gr::lab_radar::simple_decimator_cc</name>
+    <member refid="classgr_1_1lab__radar_1_1simple__decimator__cc_1a3cab297394efe85f68ee1ca5abd33be8" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lab__radar_1_1simple__decimator__cc_1acccf811f989727d63864437aaf62c7c5" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lab__radar_1_1simple__decimator__cc__impl" kind="class"><name>gr::lab_radar::simple_decimator_cc_impl</name>
+    <member refid="classgr_1_1lab__radar_1_1simple__decimator__cc__impl_1a1dd04751b764808ad0bdc20c757dfc71" kind="variable"><name>decimation</name></member>
+    <member refid="classgr_1_1lab__radar_1_1simple__decimator__cc__impl_1a290404ff7a59dfa75d8131753f58b31c" kind="function"><name>simple_decimator_cc_impl</name></member>
+    <member refid="classgr_1_1lab__radar_1_1simple__decimator__cc__impl_1aab41b23004be0673e59e3e636c749aec" kind="function"><name>~simple_decimator_cc_impl</name></member>
+    <member refid="classgr_1_1lab__radar_1_1simple__decimator__cc__impl_1ae3cc92ec733a5eef6229816f2d831734" kind="function"><name>work</name></member>
   </compound>
   <compound refid="namespacegr" kind="namespace"><name>gr</name>
   </compound>
@@ -31,6 +58,14 @@
   <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
   </compound>
   <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="signal__corr__estimator__cf_8h" kind="file"><name>signal_corr_estimator_cf.h</name>
+  </compound>
+  <compound refid="signal__corr__estimator__cf__impl_8h" kind="file"><name>signal_corr_estimator_cf_impl.h</name>
+  </compound>
+  <compound refid="simple__decimator__cc_8h" kind="file"><name>simple_decimator_cc.h</name>
+  </compound>
+  <compound refid="simple__decimator__cc__impl_8h" kind="file"><name>simple_decimator_cc_impl.h</name>
   </compound>
   <compound refid="group__block" kind="group"><name>block</name>
   </compound>

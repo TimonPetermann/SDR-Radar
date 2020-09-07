@@ -4,6 +4,8 @@
     <compoundname>api.h</compoundname>
     <includes local="no">gnuradio/attributes.h</includes>
     <includedby refid="corr__dist__estimator__bfi_8h" local="no">corr_dist_estimator_bfi.h</includedby>
+    <includedby refid="signal__corr__estimator__cf_8h" local="no">signal_corr_estimator_cf.h</includedby>
+    <includedby refid="simple__decimator__cc_8h" local="no">simple_decimator_cc.h</includedby>
     <incdepgraph>
       <node id="2">
         <label>gnuradio/attributes.h</label>
@@ -16,14 +18,38 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="6">
+        <label>simple_decimator_cc.h</label>
+        <link refid="simple__decimator__cc_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>simple_decimator_cc_impl.h</label>
+        <link refid="simple__decimator__cc__impl_8h"/>
+      </node>
       <node id="3">
         <label>corr_dist_estimator_bfi_impl.h</label>
         <link refid="corr__dist__estimator__bfi__impl_8h"/>
+      </node>
+      <node id="5">
+        <label>signal_corr_estimator_cf_impl.h</label>
+        <link refid="signal__corr__estimator__cf__impl_8h"/>
       </node>
       <node id="1">
         <label>api.h</label>
         <link refid="api_8h"/>
         <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>signal_corr_estimator_cf.h</label>
+        <link refid="signal__corr__estimator__cf_8h"/>
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="2">

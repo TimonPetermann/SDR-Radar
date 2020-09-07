@@ -17,7 +17,8 @@
 # along with GNU Radio; see the file COPYING.  If not, write to
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
-
 install(FILES
-    lab_radar_corr_dist_estimator_bfi.block.yml DESTINATION share/gnuradio/grc/blocks
+    lab_radar_corr_dist_estimator_bfi.block.yml
+    lab_radar_signal_corr_estimator_cf.block.yml
+    lab_radar_simple_decimator_cc.block.yml DESTINATION share/gnuradio/grc/blocks
 )

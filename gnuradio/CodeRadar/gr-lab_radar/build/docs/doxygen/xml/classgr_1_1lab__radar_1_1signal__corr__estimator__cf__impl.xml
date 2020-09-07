@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::lab_radar::signal_corr_estimator_cf_impl</compoundname>
+    <basecompoundref refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf" prot="public" virt="non-virtual">gr::lab_radar::signal_corr_estimator_cf</basecompoundref>
+    <includes refid="signal__corr__estimator__cf__impl_8h" local="no">signal_corr_estimator_cf_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1abb3adbbbed475e05d18425f95551f02b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lab_radar::signal_corr_estimator_cf_impl::nelements_rx</definition>
+        <argsstring></argsstring>
+        <name>nelements_rx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/lib/signal_corr_estimator_cf_impl.h" line="34" column="11" bodyfile="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/lib/signal_corr_estimator_cf_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1aa7248000aa76b61030abdd13eea197e1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lab_radar::signal_corr_estimator_cf_impl::nelements_tx</definition>
+        <argsstring></argsstring>
+        <name>nelements_tx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/lib/signal_corr_estimator_cf_impl.h" line="35" column="11" bodyfile="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/lib/signal_corr_estimator_cf_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a51fd42ab3bfcaf3cabee0764f757735f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lab_radar::signal_corr_estimator_cf_impl::dist_factor</definition>
+        <argsstring></argsstring>
+        <name>dist_factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/lib/signal_corr_estimator_cf_impl.h" line="36" column="13" bodyfile="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/lib/signal_corr_estimator_cf_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a5ed2b0bd3c9dd67e64b4bd5574d2dda7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lab_radar::signal_corr_estimator_cf_impl::factor</definition>
+        <argsstring></argsstring>
+        <name>factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/lib/signal_corr_estimator_cf_impl.h" line="37" column="11" bodyfile="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/lib/signal_corr_estimator_cf_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1af78357bfd10878c97111fbc66366e945" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lab_radar::signal_corr_estimator_cf_impl::v_max</definition>
+        <argsstring></argsstring>
+        <name>v_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/lib/signal_corr_estimator_cf_impl.h" line="38" column="13" bodyfile="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/lib/signal_corr_estimator_cf_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1aa70780d0870d47ab25d5b6e1b50886d9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lab_radar::signal_corr_estimator_cf_impl::findCorrelationPeak</definition>
+        <argsstring>(std::tuple&lt; float, int &gt; &amp;result, gr_complex *arr1, gr_complex *arr2)</argsstring>
+        <name>findCorrelationPeak</name>
+        <param>
+          <type>std::tuple&lt; float, int &gt; &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>gr_complex *</type>
+          <declname>arr1</declname>
+        </param>
+        <param>
+          <type>gr_complex *</type>
+          <declname>arr2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/lib/signal_corr_estimator_cf_impl.h" line="40" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a52fed0568a1a451af33b2378c5373adf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lab_radar::signal_corr_estimator_cf_impl::signal_corr_estimator_cf_impl</definition>
+        <argsstring>(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max)</argsstring>
+        <name>signal_corr_estimator_cf_impl</name>
+        <param>
+          <type>int</type>
+          <declname>sample_rate_rx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sample_fac</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>code_length</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sps_rx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>v_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/lib/signal_corr_estimator_cf_impl.h" line="43" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1aab71525615382d751bf5e9801c73053d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lab_radar::signal_corr_estimator_cf_impl::~signal_corr_estimator_cf_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~signal_corr_estimator_cf_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/lib/signal_corr_estimator_cf_impl.h" line="44" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a50782a5a63a99ef9d28baae5ac70facd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lab_radar::signal_corr_estimator_cf_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/lib/signal_corr_estimator_cf_impl.h" line="47" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a282c6200dce2f936a4d151130ba2b312" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::lab_radar::signal_corr_estimator_cf_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/lib/signal_corr_estimator_cf_impl.h" line="49" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>gr::lab_radar::signal_corr_estimator_cf</label>
+        <link refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gr::lab_radar::signal_corr_estimator_cf_impl</label>
+        <link refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>gr::lab_radar::signal_corr_estimator_cf</label>
+        <link refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gr::lab_radar::signal_corr_estimator_cf_impl</label>
+        <link refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/lib/signal_corr_estimator_cf_impl.h" line="32" column="1" bodyfile="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/lib/signal_corr_estimator_cf_impl.h" bodystart="31" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a51fd42ab3bfcaf3cabee0764f757735f" prot="private" virt="non-virtual"><scope>gr::lab_radar::signal_corr_estimator_cf_impl</scope><name>dist_factor</name></member>
+      <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a5ed2b0bd3c9dd67e64b4bd5574d2dda7" prot="private" virt="non-virtual"><scope>gr::lab_radar::signal_corr_estimator_cf_impl</scope><name>factor</name></member>
+      <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1aa70780d0870d47ab25d5b6e1b50886d9" prot="private" virt="non-virtual"><scope>gr::lab_radar::signal_corr_estimator_cf_impl</scope><name>findCorrelationPeak</name></member>
+      <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a50782a5a63a99ef9d28baae5ac70facd" prot="public" virt="non-virtual"><scope>gr::lab_radar::signal_corr_estimator_cf_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a282c6200dce2f936a4d151130ba2b312" prot="public" virt="non-virtual"><scope>gr::lab_radar::signal_corr_estimator_cf_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1a4d56bc5dfd0674be203a52c19e9e0e56" prot="public" virt="non-virtual"><scope>gr::lab_radar::signal_corr_estimator_cf_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1abb3adbbbed475e05d18425f95551f02b" prot="private" virt="non-virtual"><scope>gr::lab_radar::signal_corr_estimator_cf_impl</scope><name>nelements_rx</name></member>
+      <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1aa7248000aa76b61030abdd13eea197e1" prot="private" virt="non-virtual"><scope>gr::lab_radar::signal_corr_estimator_cf_impl</scope><name>nelements_tx</name></member>
+      <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a52fed0568a1a451af33b2378c5373adf" prot="public" virt="non-virtual"><scope>gr::lab_radar::signal_corr_estimator_cf_impl</scope><name>signal_corr_estimator_cf_impl</name></member>
+      <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1a55882e3ecbb6b017c256d8a2ebea5218" prot="public" virt="non-virtual"><scope>gr::lab_radar::signal_corr_estimator_cf_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1af78357bfd10878c97111fbc66366e945" prot="private" virt="non-virtual"><scope>gr::lab_radar::signal_corr_estimator_cf_impl</scope><name>v_max</name></member>
+      <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1aab71525615382d751bf5e9801c73053d" prot="public" virt="non-virtual"><scope>gr::lab_radar::signal_corr_estimator_cf_impl</scope><name>~signal_corr_estimator_cf_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

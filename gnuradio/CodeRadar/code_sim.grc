@@ -132,7 +132,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: '1280000'
+    value: '1290000'
   states:
     bus_sink: false
     bus_source: false
@@ -171,26 +171,6 @@ blocks:
     coordinate: [1017, 304]
     rotation: 180
     state: true
-- name: analog_random_source_x_0
-  id: analog_random_source_x
-  parameters:
-    affinity: ''
-    alias: ''
-    comment: ''
-    max: '256'
-    maxoutbuf: '0'
-    min: '0'
-    minoutbuf: '0'
-    num_samps: '1000'
-    repeat: 'True'
-    type: byte
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [17, 170]
-    rotation: 0
-    state: true
 - name: blocks_add_xx_0
   id: blocks_add_xx
   parameters:
@@ -226,6 +206,28 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [541, 195]
+    rotation: 0
+    state: true
+- name: blocks_file_source_0
+  id: blocks_file_source
+  parameters:
+    affinity: ''
+    alias: ''
+    begin_tag: pmt.PMT_NIL
+    comment: ''
+    file: /home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/source2.txt
+    length: '0'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    offset: '0'
+    repeat: 'True'
+    type: byte
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [14, 172]
     rotation: 0
     state: true
 - name: blocks_multiply_const_vxx_0
@@ -438,7 +440,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    code_length: '128'
+    code_length: '129'
     comment: ''
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -464,7 +466,7 @@ blocks:
     alpha7: '1.0'
     alpha8: '1.0'
     alpha9: '1.0'
-    autoscale: 'True'
+    autoscale: 'False'
     axislabels: 'True'
     color1: blue
     color10: dark blue
@@ -504,8 +506,8 @@ blocks:
     marker9: '-1'
     name: '""'
     nconnections: '3'
-    size: '1024'
-    srate: samp_rate/128
+    size: '1000'
+    srate: samp_rate/129
     stemplot: 'False'
     style1: '1'
     style10: '1'
@@ -549,9 +551,9 @@ blocks:
 
 connections:
 - [analog_noise_source_x_0, '0', blocks_add_xx_0, '1']
-- [analog_random_source_x_0, '0', blocks_throttle_0, '0']
 - [blocks_add_xx_0, '0', digital_pfb_clock_sync_xxx_0, '0']
 - [blocks_delay_0, '0', blocks_multiply_const_vxx_0, '0']
+- [blocks_file_source_0, '0', blocks_throttle_0, '0']
 - [blocks_multiply_const_vxx_0, '0', blocks_add_xx_0, '0']
 - [blocks_pack_k_bits_bb_0, '0', lab_radar_corr_dist_estimator_bfi_0, '1']
 - [blocks_throttle_0, '0', digital_constellation_modulator_0, '0']

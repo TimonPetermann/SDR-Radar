@@ -118,7 +118,9 @@
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2
 			]
 		}
 	],
@@ -234,7 +236,9 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2
 			]
 		}
 	],
@@ -244,6 +248,18 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "lib/corr_dist_estimator_bfi_impl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/signal_corr_estimator_cf_impl.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/simple_decimator_cc_impl.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

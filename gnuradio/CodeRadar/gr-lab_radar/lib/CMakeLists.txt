@@ -22,10 +22,10 @@
 # Setup library
 ########################################################################
 include(GrPlatform) #define LIB_SUFFIX
-
 list(APPEND lab_radar_sources
     corr_dist_estimator_bfi_impl.cc
-)
+    signal_corr_estimator_cf_impl.cc
+    simple_decimator_cc_impl.cc )
 
 set(lab_radar_sources "${lab_radar_sources}" PARENT_SCOPE)
 if(NOT lab_radar_sources)

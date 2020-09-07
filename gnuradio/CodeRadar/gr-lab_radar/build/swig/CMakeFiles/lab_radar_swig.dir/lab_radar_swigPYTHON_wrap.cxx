@@ -2675,37 +2675,41 @@ SWIGINTERN PyObject *SWIG_PyStaticMethod_New(PyObject *SWIGUNUSEDPARM(self), PyO
 #define SWIGTYPE_p_boost__shared_ptrT_gr__hier_block2_t swig_types[8]
 #define SWIGTYPE_p_boost__shared_ptrT_gr__io_signature_t swig_types[9]
 #define SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__corr_dist_estimator_bfi_t swig_types[10]
-#define SWIGTYPE_p_boost__shared_ptrT_gr__top_block_t swig_types[11]
-#define SWIGTYPE_p_boost__shared_ptrT_pmt__pmt_base_t swig_types[12]
-#define SWIGTYPE_p_char swig_types[13]
-#define SWIGTYPE_p_difference_type swig_types[14]
-#define SWIGTYPE_p_gr__basic_block swig_types[15]
-#define SWIGTYPE_p_gr__block swig_types[16]
-#define SWIGTYPE_p_gr__block_gateway swig_types[17]
-#define SWIGTYPE_p_gr__endianness_t swig_types[18]
-#define SWIGTYPE_p_gr__hier_block2 swig_types[19]
-#define SWIGTYPE_p_gr__lab_radar__corr_dist_estimator_bfi swig_types[20]
-#define SWIGTYPE_p_gr__rt_status_t swig_types[21]
-#define SWIGTYPE_p_gr__sync_block swig_types[22]
-#define SWIGTYPE_p_gr__sync_decimator swig_types[23]
-#define SWIGTYPE_p_gr__sync_interpolator swig_types[24]
-#define SWIGTYPE_p_gr__tagged_stream_block swig_types[25]
-#define SWIGTYPE_p_gr__top_block swig_types[26]
-#define SWIGTYPE_p_int swig_types[27]
-#define SWIGTYPE_p_long_long swig_types[28]
-#define SWIGTYPE_p_short swig_types[29]
-#define SWIGTYPE_p_signed_char swig_types[30]
-#define SWIGTYPE_p_size_type swig_types[31]
-#define SWIGTYPE_p_sptr swig_types[32]
-#define SWIGTYPE_p_std__complexT_double_t swig_types[33]
-#define SWIGTYPE_p_std__complexT_float_t swig_types[34]
-#define SWIGTYPE_p_unsigned_char swig_types[35]
-#define SWIGTYPE_p_unsigned_int swig_types[36]
-#define SWIGTYPE_p_unsigned_long_long swig_types[37]
-#define SWIGTYPE_p_unsigned_short swig_types[38]
-#define SWIGTYPE_p_value_type swig_types[39]
-static swig_type_info *swig_types[41];
-static swig_module_info swig_module = {swig_types, 40, 0, 0, 0, 0};
+#define SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t swig_types[11]
+#define SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t swig_types[12]
+#define SWIGTYPE_p_boost__shared_ptrT_gr__top_block_t swig_types[13]
+#define SWIGTYPE_p_boost__shared_ptrT_pmt__pmt_base_t swig_types[14]
+#define SWIGTYPE_p_char swig_types[15]
+#define SWIGTYPE_p_difference_type swig_types[16]
+#define SWIGTYPE_p_gr__basic_block swig_types[17]
+#define SWIGTYPE_p_gr__block swig_types[18]
+#define SWIGTYPE_p_gr__block_gateway swig_types[19]
+#define SWIGTYPE_p_gr__endianness_t swig_types[20]
+#define SWIGTYPE_p_gr__hier_block2 swig_types[21]
+#define SWIGTYPE_p_gr__lab_radar__corr_dist_estimator_bfi swig_types[22]
+#define SWIGTYPE_p_gr__lab_radar__signal_corr_estimator_cf swig_types[23]
+#define SWIGTYPE_p_gr__lab_radar__simple_decimator_cc swig_types[24]
+#define SWIGTYPE_p_gr__rt_status_t swig_types[25]
+#define SWIGTYPE_p_gr__sync_block swig_types[26]
+#define SWIGTYPE_p_gr__sync_decimator swig_types[27]
+#define SWIGTYPE_p_gr__sync_interpolator swig_types[28]
+#define SWIGTYPE_p_gr__tagged_stream_block swig_types[29]
+#define SWIGTYPE_p_gr__top_block swig_types[30]
+#define SWIGTYPE_p_int swig_types[31]
+#define SWIGTYPE_p_long_long swig_types[32]
+#define SWIGTYPE_p_short swig_types[33]
+#define SWIGTYPE_p_signed_char swig_types[34]
+#define SWIGTYPE_p_size_type swig_types[35]
+#define SWIGTYPE_p_sptr swig_types[36]
+#define SWIGTYPE_p_std__complexT_double_t swig_types[37]
+#define SWIGTYPE_p_std__complexT_float_t swig_types[38]
+#define SWIGTYPE_p_unsigned_char swig_types[39]
+#define SWIGTYPE_p_unsigned_int swig_types[40]
+#define SWIGTYPE_p_unsigned_long_long swig_types[41]
+#define SWIGTYPE_p_unsigned_short swig_types[42]
+#define SWIGTYPE_p_value_type swig_types[43]
+static swig_type_info *swig_types[45];
+static swig_module_info swig_module = {swig_types, 44, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -2867,6 +2871,8 @@ SWIG_From_long_SS_long  (long long value)
 
 
 #include "lab_radar/corr_dist_estimator_bfi.h"
+#include "lab_radar/signal_corr_estimator_cf.h"
+#include "lab_radar/simple_decimator_cc.h"
 
 
 SWIGINTERN int
@@ -8161,6 +8167,6742 @@ SWIGINTERN PyObject *corr_dist_estimator_bfi_sptr_swiginit(PyObject *SWIGUNUSEDP
   return SWIG_Python_InitShadowInstance(args);
 }
 
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  int arg1 ;
+  int arg2 ;
+  int arg3 ;
+  int arg4 ;
+  float arg5 ;
+  int val1 ;
+  int ecode1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  int val4 ;
+  int ecode4 = 0 ;
+  float val5 ;
+  int ecode5 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  char * kwnames[] = {
+    (char *)"sample_rate_rx",  (char *)"sample_fac",  (char *)"code_length",  (char *)"sps_rx",  (char *)"v_max",  NULL 
+  };
+  gr::lab_radar::signal_corr_estimator_cf::sptr result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OOOOO:signal_corr_estimator_cf_make", kwnames, &obj0, &obj1, &obj2, &obj3, &obj4)) SWIG_fail;
+  ecode1 = SWIG_AsVal_int(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "signal_corr_estimator_cf_make" "', argument " "1"" of type '" "int""'");
+  } 
+  arg1 = static_cast< int >(val1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_make" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "signal_corr_estimator_cf_make" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_int(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "signal_corr_estimator_cf_make" "', argument " "4"" of type '" "int""'");
+  } 
+  arg4 = static_cast< int >(val4);
+  ecode5 = SWIG_AsVal_float(obj4, &val5);
+  if (!SWIG_IsOK(ecode5)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "signal_corr_estimator_cf_make" "', argument " "5"" of type '" "float""'");
+  } 
+  arg5 = static_cast< float >(val5);
+  {
+    try {
+      result = gr::lab_radar::signal_corr_estimator_cf::make(arg1,arg2,arg3,arg4,arg5);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr::lab_radar::signal_corr_estimator_cf::sptr(static_cast< const gr::lab_radar::signal_corr_estimator_cf::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_signal_corr_estimator_cf(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  gr::lab_radar::signal_corr_estimator_cf *arg1 = (gr::lab_radar::signal_corr_estimator_cf *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_gr__lab_radar__signal_corr_estimator_cf, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_signal_corr_estimator_cf" "', argument " "1"" of type '" "gr::lab_radar::signal_corr_estimator_cf *""'"); 
+  }
+  arg1 = reinterpret_cast< gr::lab_radar::signal_corr_estimator_cf * >(argp1);
+  {
+    try {
+      delete arg1;
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *signal_corr_estimator_cf_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!SWIG_Python_UnpackTuple(args, "swigregister", 1, 1, &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_gr__lab_radar__signal_corr_estimator_cf, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_new_signal_corr_estimator_cf_sptr__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **SWIGUNUSEDPARM(swig_obj)) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *result = 0 ;
+  
+  if ((nobjs < 0) || (nobjs > 0)) SWIG_fail;
+  {
+    try {
+      result = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *)new boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf >();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_signal_corr_estimator_cf_sptr__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  gr::lab_radar::signal_corr_estimator_cf *arg1 = (gr::lab_radar::signal_corr_estimator_cf *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *result = 0 ;
+  
+  if ((nobjs < 1) || (nobjs > 1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_gr__lab_radar__signal_corr_estimator_cf, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_signal_corr_estimator_cf_sptr" "', argument " "1"" of type '" "gr::lab_radar::signal_corr_estimator_cf *""'"); 
+  }
+  arg1 = reinterpret_cast< gr::lab_radar::signal_corr_estimator_cf * >(argp1);
+  {
+    try {
+      result = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *)new boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf >(arg1);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_signal_corr_estimator_cf_sptr(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[2] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "new_signal_corr_estimator_cf_sptr", 0, 1, argv))) SWIG_fail;
+  --argc;
+  if (argc == 0) {
+    return _wrap_new_signal_corr_estimator_cf_sptr__SWIG_0(self, argc, argv);
+  }
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_gr__lab_radar__signal_corr_estimator_cf, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_new_signal_corr_estimator_cf_sptr__SWIG_1(self, argc, argv);
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'new_signal_corr_estimator_cf_sptr'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf >::shared_ptr()\n"
+    "    boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf >::shared_ptr(gr::lab_radar::signal_corr_estimator_cf *)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr___deref__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  gr::lab_radar::signal_corr_estimator_cf *result = 0 ;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr___deref__" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (gr::lab_radar::signal_corr_estimator_cf *)(arg1)->operator ->();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_gr__lab_radar__signal_corr_estimator_cf, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_signal_corr_estimator_cf_sptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_signal_corr_estimator_cf_sptr" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      delete arg1;
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  int arg4 ;
+  int arg5 ;
+  float arg6 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  int val4 ;
+  int ecode4 = 0 ;
+  int val5 ;
+  int ecode5 = 0 ;
+  float val6 ;
+  int ecode6 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  PyObject * obj5 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"sample_rate_rx",  (char *)"sample_fac",  (char *)"code_length",  (char *)"sps_rx",  (char *)"v_max",  NULL 
+  };
+  gr::lab_radar::signal_corr_estimator_cf::sptr result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OOOOOO:signal_corr_estimator_cf_sptr_make", kwnames, &obj0, &obj1, &obj2, &obj3, &obj4, &obj5)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_make" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_make" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "signal_corr_estimator_cf_sptr_make" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_int(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "signal_corr_estimator_cf_sptr_make" "', argument " "4"" of type '" "int""'");
+  } 
+  arg4 = static_cast< int >(val4);
+  ecode5 = SWIG_AsVal_int(obj4, &val5);
+  if (!SWIG_IsOK(ecode5)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "signal_corr_estimator_cf_sptr_make" "', argument " "5"" of type '" "int""'");
+  } 
+  arg5 = static_cast< int >(val5);
+  ecode6 = SWIG_AsVal_float(obj5, &val6);
+  if (!SWIG_IsOK(ecode6)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "signal_corr_estimator_cf_sptr_make" "', argument " "6"" of type '" "float""'");
+  } 
+  arg6 = static_cast< float >(val6);
+  {
+    try {
+      result = (*arg1)->make(arg2,arg3,arg4,arg5,arg6);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr::lab_radar::signal_corr_estimator_cf::sptr(static_cast< const gr::lab_radar::signal_corr_estimator_cf::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_history(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  unsigned int result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_history" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (unsigned int)(*arg1)->history();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_declare_sample_delay__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  
+  if ((nobjs < 3) || (nobjs > 3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_declare_sample_delay" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_declare_sample_delay" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "signal_corr_estimator_cf_sptr_declare_sample_delay" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  {
+    try {
+      (*arg1)->declare_sample_delay(arg2,arg3);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_declare_sample_delay__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  unsigned int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_declare_sample_delay" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_declare_sample_delay" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  {
+    try {
+      (*arg1)->declare_sample_delay(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_declare_sample_delay(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[4] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "signal_corr_estimator_cf_sptr_declare_sample_delay", 0, 3, argv))) SWIG_fail;
+  --argc;
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_unsigned_SS_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_signal_corr_estimator_cf_sptr_declare_sample_delay__SWIG_1(self, argc, argv);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          return _wrap_signal_corr_estimator_cf_sptr_declare_sample_delay__SWIG_0(self, argc, argv);
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'signal_corr_estimator_cf_sptr_declare_sample_delay'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gr::block::declare_sample_delay(int,int)\n"
+    "    gr::block::declare_sample_delay(unsigned int)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_sample_delay(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"which",  NULL 
+  };
+  unsigned int result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:signal_corr_estimator_cf_sptr_sample_delay", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_sample_delay" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_sample_delay" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (unsigned int)(*arg1)->sample_delay(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_set_output_multiple(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"multiple",  NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:signal_corr_estimator_cf_sptr_set_output_multiple", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_set_output_multiple" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_set_output_multiple" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      (*arg1)->set_output_multiple(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_output_multiple(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  int result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_output_multiple" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (int)(*arg1)->output_multiple();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_relative_rate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  double result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_relative_rate" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (double)(*arg1)->relative_rate();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_double(static_cast< double >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_relative_rate_i(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  uint64_t result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_relative_rate_i" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (uint64_t)(*arg1)->relative_rate_i();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_relative_rate_d(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  uint64_t result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_relative_rate_d" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (uint64_t)(*arg1)->relative_rate_d();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_start(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  bool result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_start" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (bool)(*arg1)->start();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_stop(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  bool result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_stop" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (bool)(*arg1)->stop();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_nitems_read(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  unsigned int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"which_input",  NULL 
+  };
+  uint64_t result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:signal_corr_estimator_cf_sptr_nitems_read", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_nitems_read" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_nitems_read" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  {
+    try {
+      result = (uint64_t)(*arg1)->nitems_read(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_nitems_written(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  unsigned int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"which_output",  NULL 
+  };
+  uint64_t result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:signal_corr_estimator_cf_sptr_nitems_written", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_nitems_written" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_nitems_written" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  {
+    try {
+      result = (uint64_t)(*arg1)->nitems_written(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_set_log_level(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  std::string arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"level",  NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:signal_corr_estimator_cf_sptr_set_log_level", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_set_log_level" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    int res = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "signal_corr_estimator_cf_sptr_set_log_level" "', argument " "2"" of type '" "std::string""'"); 
+    }
+    arg2 = *ptr;
+    if (SWIG_IsNewObj(res)) delete ptr;
+  }
+  {
+    try {
+      (*arg1)->set_log_level(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_log_level(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  std::string result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_log_level" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (*arg1)->log_level();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  int result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (int)(*arg1)->max_noutput_items();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_set_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"m",  NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:signal_corr_estimator_cf_sptr_set_max_noutput_items", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_set_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_set_max_noutput_items" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      (*arg1)->set_max_noutput_items(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_unset_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_unset_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      (*arg1)->unset_max_noutput_items();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_is_set_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  bool result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_is_set_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (bool)(*arg1)->is_set_max_noutput_items();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_set_min_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"m",  NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:signal_corr_estimator_cf_sptr_set_min_noutput_items", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_set_min_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_set_min_noutput_items" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      (*arg1)->set_min_noutput_items(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_min_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  int result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_min_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (int)(*arg1)->min_noutput_items();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_max_output_buffer(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"i",  NULL 
+  };
+  long result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:signal_corr_estimator_cf_sptr_max_output_buffer", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_max_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_max_output_buffer" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (long)(*arg1)->max_output_buffer(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_long(static_cast< long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_set_max_output_buffer__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  long arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  long val2 ;
+  int ecode2 = 0 ;
+  
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_set_max_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_long(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_set_max_output_buffer" "', argument " "2"" of type '" "long""'");
+  } 
+  arg2 = static_cast< long >(val2);
+  {
+    try {
+      (*arg1)->set_max_output_buffer(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_set_max_output_buffer__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  int arg2 ;
+  long arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  long val3 ;
+  int ecode3 = 0 ;
+  
+  if ((nobjs < 3) || (nobjs > 3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_set_max_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_set_max_output_buffer" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_long(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "signal_corr_estimator_cf_sptr_set_max_output_buffer" "', argument " "3"" of type '" "long""'");
+  } 
+  arg3 = static_cast< long >(val3);
+  {
+    try {
+      (*arg1)->set_max_output_buffer(arg2,arg3);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_set_max_output_buffer(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[4] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "signal_corr_estimator_cf_sptr_set_max_output_buffer", 0, 3, argv))) SWIG_fail;
+  --argc;
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_long(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_signal_corr_estimator_cf_sptr_set_max_output_buffer__SWIG_0(self, argc, argv);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_long(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          return _wrap_signal_corr_estimator_cf_sptr_set_max_output_buffer__SWIG_1(self, argc, argv);
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'signal_corr_estimator_cf_sptr_set_max_output_buffer'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gr::block::set_max_output_buffer(long)\n"
+    "    gr::block::set_max_output_buffer(int,long)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_min_output_buffer(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"i",  NULL 
+  };
+  long result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:signal_corr_estimator_cf_sptr_min_output_buffer", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_min_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_min_output_buffer" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (long)(*arg1)->min_output_buffer(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_long(static_cast< long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_set_min_output_buffer__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  long arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  long val2 ;
+  int ecode2 = 0 ;
+  
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_set_min_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_long(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_set_min_output_buffer" "', argument " "2"" of type '" "long""'");
+  } 
+  arg2 = static_cast< long >(val2);
+  {
+    try {
+      (*arg1)->set_min_output_buffer(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_set_min_output_buffer__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  int arg2 ;
+  long arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  long val3 ;
+  int ecode3 = 0 ;
+  
+  if ((nobjs < 3) || (nobjs > 3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_set_min_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_set_min_output_buffer" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_long(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "signal_corr_estimator_cf_sptr_set_min_output_buffer" "', argument " "3"" of type '" "long""'");
+  } 
+  arg3 = static_cast< long >(val3);
+  {
+    try {
+      (*arg1)->set_min_output_buffer(arg2,arg3);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_set_min_output_buffer(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[4] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "signal_corr_estimator_cf_sptr_set_min_output_buffer", 0, 3, argv))) SWIG_fail;
+  --argc;
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_long(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_signal_corr_estimator_cf_sptr_set_min_output_buffer__SWIG_0(self, argc, argv);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_long(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          return _wrap_signal_corr_estimator_cf_sptr_set_min_output_buffer__SWIG_1(self, argc, argv);
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'signal_corr_estimator_cf_sptr_set_min_output_buffer'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gr::block::set_min_output_buffer(long)\n"
+    "    gr::block::set_min_output_buffer(int,long)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_noutput_items();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_noutput_items_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_noutput_items_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_noutput_items_avg();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_noutput_items_var(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_noutput_items_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_noutput_items_var();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_nproduced(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_nproduced" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_nproduced();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_nproduced_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_nproduced_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_nproduced_avg();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_nproduced_var(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_nproduced_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_nproduced_var();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_input_buffers_full__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  float result;
+  
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_input_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_pc_input_buffers_full" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (float)(*arg1)->pc_input_buffers_full(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_input_buffers_full__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  std::vector< float,std::allocator< float > > result;
+  
+  if ((nobjs < 1) || (nobjs > 1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_input_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (*arg1)->pc_input_buffers_full();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector< float,std::allocator< float > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_input_buffers_full(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[3] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "signal_corr_estimator_cf_sptr_pc_input_buffers_full", 0, 2, argv))) SWIG_fail;
+  --argc;
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_signal_corr_estimator_cf_sptr_pc_input_buffers_full__SWIG_1(self, argc, argv);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_signal_corr_estimator_cf_sptr_pc_input_buffers_full__SWIG_0(self, argc, argv);
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'signal_corr_estimator_cf_sptr_pc_input_buffers_full'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gr::block::pc_input_buffers_full(int)\n"
+    "    gr::block::pc_input_buffers_full()\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_input_buffers_full_avg__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  float result;
+  
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_input_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_pc_input_buffers_full_avg" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (float)(*arg1)->pc_input_buffers_full_avg(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_input_buffers_full_avg__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  std::vector< float,std::allocator< float > > result;
+  
+  if ((nobjs < 1) || (nobjs > 1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_input_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (*arg1)->pc_input_buffers_full_avg();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector< float,std::allocator< float > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_input_buffers_full_avg(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[3] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "signal_corr_estimator_cf_sptr_pc_input_buffers_full_avg", 0, 2, argv))) SWIG_fail;
+  --argc;
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_signal_corr_estimator_cf_sptr_pc_input_buffers_full_avg__SWIG_1(self, argc, argv);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_signal_corr_estimator_cf_sptr_pc_input_buffers_full_avg__SWIG_0(self, argc, argv);
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'signal_corr_estimator_cf_sptr_pc_input_buffers_full_avg'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gr::block::pc_input_buffers_full_avg(int)\n"
+    "    gr::block::pc_input_buffers_full_avg()\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_input_buffers_full_var__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  float result;
+  
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_input_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_pc_input_buffers_full_var" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (float)(*arg1)->pc_input_buffers_full_var(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_input_buffers_full_var__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  std::vector< float,std::allocator< float > > result;
+  
+  if ((nobjs < 1) || (nobjs > 1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_input_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (*arg1)->pc_input_buffers_full_var();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector< float,std::allocator< float > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_input_buffers_full_var(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[3] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "signal_corr_estimator_cf_sptr_pc_input_buffers_full_var", 0, 2, argv))) SWIG_fail;
+  --argc;
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_signal_corr_estimator_cf_sptr_pc_input_buffers_full_var__SWIG_1(self, argc, argv);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_signal_corr_estimator_cf_sptr_pc_input_buffers_full_var__SWIG_0(self, argc, argv);
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'signal_corr_estimator_cf_sptr_pc_input_buffers_full_var'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gr::block::pc_input_buffers_full_var(int)\n"
+    "    gr::block::pc_input_buffers_full_var()\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_output_buffers_full__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  float result;
+  
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_output_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_pc_output_buffers_full" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (float)(*arg1)->pc_output_buffers_full(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_output_buffers_full__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  std::vector< float,std::allocator< float > > result;
+  
+  if ((nobjs < 1) || (nobjs > 1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_output_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (*arg1)->pc_output_buffers_full();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector< float,std::allocator< float > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_output_buffers_full(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[3] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "signal_corr_estimator_cf_sptr_pc_output_buffers_full", 0, 2, argv))) SWIG_fail;
+  --argc;
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_signal_corr_estimator_cf_sptr_pc_output_buffers_full__SWIG_1(self, argc, argv);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_signal_corr_estimator_cf_sptr_pc_output_buffers_full__SWIG_0(self, argc, argv);
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'signal_corr_estimator_cf_sptr_pc_output_buffers_full'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gr::block::pc_output_buffers_full(int)\n"
+    "    gr::block::pc_output_buffers_full()\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_output_buffers_full_avg__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  float result;
+  
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_output_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_pc_output_buffers_full_avg" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (float)(*arg1)->pc_output_buffers_full_avg(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_output_buffers_full_avg__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  std::vector< float,std::allocator< float > > result;
+  
+  if ((nobjs < 1) || (nobjs > 1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_output_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (*arg1)->pc_output_buffers_full_avg();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector< float,std::allocator< float > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_output_buffers_full_avg(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[3] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "signal_corr_estimator_cf_sptr_pc_output_buffers_full_avg", 0, 2, argv))) SWIG_fail;
+  --argc;
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_signal_corr_estimator_cf_sptr_pc_output_buffers_full_avg__SWIG_1(self, argc, argv);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_signal_corr_estimator_cf_sptr_pc_output_buffers_full_avg__SWIG_0(self, argc, argv);
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'signal_corr_estimator_cf_sptr_pc_output_buffers_full_avg'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gr::block::pc_output_buffers_full_avg(int)\n"
+    "    gr::block::pc_output_buffers_full_avg()\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_output_buffers_full_var__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  float result;
+  
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_output_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_pc_output_buffers_full_var" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (float)(*arg1)->pc_output_buffers_full_var(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_output_buffers_full_var__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  std::vector< float,std::allocator< float > > result;
+  
+  if ((nobjs < 1) || (nobjs > 1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_output_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (*arg1)->pc_output_buffers_full_var();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector< float,std::allocator< float > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_output_buffers_full_var(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[3] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "signal_corr_estimator_cf_sptr_pc_output_buffers_full_var", 0, 2, argv))) SWIG_fail;
+  --argc;
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_signal_corr_estimator_cf_sptr_pc_output_buffers_full_var__SWIG_1(self, argc, argv);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_signal_corr_estimator_cf_sptr_pc_output_buffers_full_var__SWIG_0(self, argc, argv);
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'signal_corr_estimator_cf_sptr_pc_output_buffers_full_var'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gr::block::pc_output_buffers_full_var(int)\n"
+    "    gr::block::pc_output_buffers_full_var()\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_work_time(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_work_time" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_work_time();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_work_time_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_work_time_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_work_time_avg();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_work_time_var(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_work_time_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_work_time_var();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_work_time_total(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_work_time_total" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_work_time_total();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_pc_throughput_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_pc_throughput_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_throughput_avg();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_set_processor_affinity(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  std::vector< int,std::allocator< int > > *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"mask",  NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:signal_corr_estimator_cf_sptr_set_processor_affinity", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_set_processor_affinity" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    std::vector< int,std::allocator< int > > *ptr = (std::vector< int,std::allocator< int > > *)0;
+    res2 = swig::asptr(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "signal_corr_estimator_cf_sptr_set_processor_affinity" "', argument " "2"" of type '" "std::vector< int,std::allocator< int > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "signal_corr_estimator_cf_sptr_set_processor_affinity" "', argument " "2"" of type '" "std::vector< int,std::allocator< int > > const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  {
+    try {
+      (*arg1)->set_processor_affinity((std::vector< int,std::allocator< int > > const &)*arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_unset_processor_affinity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_unset_processor_affinity" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      (*arg1)->unset_processor_affinity();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_processor_affinity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  std::vector< int,std::allocator< int > > result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_processor_affinity" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (*arg1)->processor_affinity();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector< int,std::allocator< int > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_active_thread_priority(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  int result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_active_thread_priority" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (int)(*arg1)->active_thread_priority();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_thread_priority(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  int result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_thread_priority" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (int)(*arg1)->thread_priority();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_set_thread_priority(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"priority",  NULL 
+  };
+  int result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:signal_corr_estimator_cf_sptr_set_thread_priority", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_set_thread_priority" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_set_thread_priority" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (int)(*arg1)->set_thread_priority(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  std::string result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_name" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (*arg1)->name();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_symbol_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  std::string result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_symbol_name" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (*arg1)->symbol_name();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_input_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  gr::io_signature::sptr result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_input_signature" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (*arg1)->input_signature();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr::io_signature::sptr(static_cast< const gr::io_signature::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__io_signature_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_output_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  gr::io_signature::sptr result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_output_signature" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (*arg1)->output_signature();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr::io_signature::sptr(static_cast< const gr::io_signature::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__io_signature_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_unique_id(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  long result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_unique_id" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (long)(*arg1)->unique_id();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_long(static_cast< long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_to_basic_block(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  gr::basic_block_sptr result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_to_basic_block" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (*arg1)->to_basic_block();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr::basic_block_sptr(static_cast< const gr::basic_block_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__basic_block_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_check_topology(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"ninputs",  (char *)"noutputs",  NULL 
+  };
+  bool result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OOO:signal_corr_estimator_cf_sptr_check_topology", kwnames, &obj0, &obj1, &obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_check_topology" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "signal_corr_estimator_cf_sptr_check_topology" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "signal_corr_estimator_cf_sptr_check_topology" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  {
+    try {
+      result = (bool)(*arg1)->check_topology(arg2,arg3);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_alias(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  std::string result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_alias" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (*arg1)->alias();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_set_block_alias(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  std::string arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"name",  NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:signal_corr_estimator_cf_sptr_set_block_alias", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_set_block_alias" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    int res = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "signal_corr_estimator_cf_sptr_set_block_alias" "', argument " "2"" of type '" "std::string""'"); 
+    }
+    arg2 = *ptr;
+    if (SWIG_IsNewObj(res)) delete ptr;
+  }
+  {
+    try {
+      (*arg1)->set_block_alias(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr__post(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  pmt::pmt_t arg2 ;
+  pmt::pmt_t arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  void *argp3 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"which_port",  (char *)"msg",  NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OOO:signal_corr_estimator_cf_sptr__post", kwnames, &obj0, &obj1, &obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr__post" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__shared_ptrT_pmt__pmt_base_t,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "signal_corr_estimator_cf_sptr__post" "', argument " "2"" of type '" "pmt::pmt_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "signal_corr_estimator_cf_sptr__post" "', argument " "2"" of type '" "pmt::pmt_t""'");
+    } else {
+      pmt::pmt_t * temp = reinterpret_cast< pmt::pmt_t * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  {
+    res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_boost__shared_ptrT_pmt__pmt_base_t,  0  | 0);
+    if (!SWIG_IsOK(res3)) {
+      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "signal_corr_estimator_cf_sptr__post" "', argument " "3"" of type '" "pmt::pmt_t""'"); 
+    }  
+    if (!argp3) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "signal_corr_estimator_cf_sptr__post" "', argument " "3"" of type '" "pmt::pmt_t""'");
+    } else {
+      pmt::pmt_t * temp = reinterpret_cast< pmt::pmt_t * >(argp3);
+      arg3 = *temp;
+      if (SWIG_IsNewObj(res3)) delete temp;
+    }
+  }
+  {
+    try {
+      (*arg1)->_post(arg2,arg3);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_message_ports_in(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  pmt::pmt_t result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_message_ports_in" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (*arg1)->message_ports_in();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new pmt::pmt_t(static_cast< const pmt::pmt_t& >(result))), SWIGTYPE_p_boost__shared_ptrT_pmt__pmt_base_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_message_ports_out(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  pmt::pmt_t result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_message_ports_out" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    try {
+      result = (*arg1)->message_ports_out();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new pmt::pmt_t(static_cast< const pmt::pmt_t& >(result))), SWIGTYPE_p_boost__shared_ptrT_pmt__pmt_base_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_message_subscribers(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *arg1 = (boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *) 0 ;
+  pmt::pmt_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"which_port",  NULL 
+  };
+  pmt::pmt_t result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:signal_corr_estimator_cf_sptr_message_subscribers", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_message_subscribers" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__shared_ptrT_pmt__pmt_base_t,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "signal_corr_estimator_cf_sptr_message_subscribers" "', argument " "2"" of type '" "pmt::pmt_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "signal_corr_estimator_cf_sptr_message_subscribers" "', argument " "2"" of type '" "pmt::pmt_t""'");
+    } else {
+      pmt::pmt_t * temp = reinterpret_cast< pmt::pmt_t * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  {
+    try {
+      result = (*arg1)->message_subscribers(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new pmt::pmt_t(static_cast< const pmt::pmt_t& >(result))), SWIGTYPE_p_boost__shared_ptrT_pmt__pmt_base_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *signal_corr_estimator_cf_sptr_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!SWIG_Python_UnpackTuple(args, "swigregister", 1, 1, &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *signal_corr_estimator_cf_sptr_swiginit(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  return SWIG_Python_InitShadowInstance(args);
+}
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  int arg1 ;
+  int val1 ;
+  int ecode1 = 0 ;
+  PyObject * obj0 = 0 ;
+  char * kwnames[] = {
+    (char *)"decimation",  NULL 
+  };
+  gr::lab_radar::simple_decimator_cc::sptr result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "O:simple_decimator_cc_make", kwnames, &obj0)) SWIG_fail;
+  ecode1 = SWIG_AsVal_int(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "simple_decimator_cc_make" "', argument " "1"" of type '" "int""'");
+  } 
+  arg1 = static_cast< int >(val1);
+  {
+    try {
+      result = gr::lab_radar::simple_decimator_cc::make(arg1);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr::lab_radar::simple_decimator_cc::sptr(static_cast< const gr::lab_radar::simple_decimator_cc::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_simple_decimator_cc(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  gr::lab_radar::simple_decimator_cc *arg1 = (gr::lab_radar::simple_decimator_cc *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_gr__lab_radar__simple_decimator_cc, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_simple_decimator_cc" "', argument " "1"" of type '" "gr::lab_radar::simple_decimator_cc *""'"); 
+  }
+  arg1 = reinterpret_cast< gr::lab_radar::simple_decimator_cc * >(argp1);
+  {
+    try {
+      delete arg1;
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *simple_decimator_cc_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!SWIG_Python_UnpackTuple(args, "swigregister", 1, 1, &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_gr__lab_radar__simple_decimator_cc, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *_wrap_new_simple_decimator_cc_sptr__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **SWIGUNUSEDPARM(swig_obj)) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *result = 0 ;
+  
+  if ((nobjs < 0) || (nobjs > 0)) SWIG_fail;
+  {
+    try {
+      result = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *)new boost::shared_ptr< gr::lab_radar::simple_decimator_cc >();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_simple_decimator_cc_sptr__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  gr::lab_radar::simple_decimator_cc *arg1 = (gr::lab_radar::simple_decimator_cc *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *result = 0 ;
+  
+  if ((nobjs < 1) || (nobjs > 1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_gr__lab_radar__simple_decimator_cc, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_simple_decimator_cc_sptr" "', argument " "1"" of type '" "gr::lab_radar::simple_decimator_cc *""'"); 
+  }
+  arg1 = reinterpret_cast< gr::lab_radar::simple_decimator_cc * >(argp1);
+  {
+    try {
+      result = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *)new boost::shared_ptr< gr::lab_radar::simple_decimator_cc >(arg1);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_simple_decimator_cc_sptr(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[2] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "new_simple_decimator_cc_sptr", 0, 1, argv))) SWIG_fail;
+  --argc;
+  if (argc == 0) {
+    return _wrap_new_simple_decimator_cc_sptr__SWIG_0(self, argc, argv);
+  }
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_gr__lab_radar__simple_decimator_cc, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_new_simple_decimator_cc_sptr__SWIG_1(self, argc, argv);
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'new_simple_decimator_cc_sptr'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    boost::shared_ptr< gr::lab_radar::simple_decimator_cc >::shared_ptr()\n"
+    "    boost::shared_ptr< gr::lab_radar::simple_decimator_cc >::shared_ptr(gr::lab_radar::simple_decimator_cc *)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr___deref__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  gr::lab_radar::simple_decimator_cc *result = 0 ;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr___deref__" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (gr::lab_radar::simple_decimator_cc *)(arg1)->operator ->();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_gr__lab_radar__simple_decimator_cc, 0 |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_simple_decimator_cc_sptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_simple_decimator_cc_sptr" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      delete arg1;
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"decimation",  NULL 
+  };
+  gr::lab_radar::simple_decimator_cc::sptr result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:simple_decimator_cc_sptr_make", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_make" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_make" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (*arg1)->make(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr::lab_radar::simple_decimator_cc::sptr(static_cast< const gr::lab_radar::simple_decimator_cc::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_history(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  unsigned int result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_history" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (unsigned int)(*arg1)->history();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_declare_sample_delay__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  
+  if ((nobjs < 3) || (nobjs > 3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_declare_sample_delay" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_declare_sample_delay" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "simple_decimator_cc_sptr_declare_sample_delay" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  {
+    try {
+      (*arg1)->declare_sample_delay(arg2,arg3);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_declare_sample_delay__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  unsigned int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_declare_sample_delay" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_declare_sample_delay" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  {
+    try {
+      (*arg1)->declare_sample_delay(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_declare_sample_delay(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[4] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "simple_decimator_cc_sptr_declare_sample_delay", 0, 3, argv))) SWIG_fail;
+  --argc;
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_unsigned_SS_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_simple_decimator_cc_sptr_declare_sample_delay__SWIG_1(self, argc, argv);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_int(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          return _wrap_simple_decimator_cc_sptr_declare_sample_delay__SWIG_0(self, argc, argv);
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'simple_decimator_cc_sptr_declare_sample_delay'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gr::block::declare_sample_delay(int,int)\n"
+    "    gr::block::declare_sample_delay(unsigned int)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_sample_delay(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"which",  NULL 
+  };
+  unsigned int result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:simple_decimator_cc_sptr_sample_delay", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_sample_delay" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_sample_delay" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (unsigned int)(*arg1)->sample_delay(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_int(static_cast< unsigned int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_set_output_multiple(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"multiple",  NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:simple_decimator_cc_sptr_set_output_multiple", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_set_output_multiple" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_set_output_multiple" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      (*arg1)->set_output_multiple(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_output_multiple(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  int result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_output_multiple" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (int)(*arg1)->output_multiple();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_relative_rate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  double result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_relative_rate" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (double)(*arg1)->relative_rate();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_double(static_cast< double >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_relative_rate_i(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  uint64_t result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_relative_rate_i" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (uint64_t)(*arg1)->relative_rate_i();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_relative_rate_d(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  uint64_t result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_relative_rate_d" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (uint64_t)(*arg1)->relative_rate_d();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_start(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  bool result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_start" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (bool)(*arg1)->start();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_stop(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  bool result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_stop" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (bool)(*arg1)->stop();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_nitems_read(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  unsigned int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"which_input",  NULL 
+  };
+  uint64_t result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:simple_decimator_cc_sptr_nitems_read", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_nitems_read" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_nitems_read" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  {
+    try {
+      result = (uint64_t)(*arg1)->nitems_read(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_nitems_written(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  unsigned int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  unsigned int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"which_output",  NULL 
+  };
+  uint64_t result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:simple_decimator_cc_sptr_nitems_written", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_nitems_written" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_nitems_written" "', argument " "2"" of type '" "unsigned int""'");
+  } 
+  arg2 = static_cast< unsigned int >(val2);
+  {
+    try {
+      result = (uint64_t)(*arg1)->nitems_written(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_unsigned_SS_long_SS_long(static_cast< unsigned long long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_set_log_level(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  std::string arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"level",  NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:simple_decimator_cc_sptr_set_log_level", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_set_log_level" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    int res = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "simple_decimator_cc_sptr_set_log_level" "', argument " "2"" of type '" "std::string""'"); 
+    }
+    arg2 = *ptr;
+    if (SWIG_IsNewObj(res)) delete ptr;
+  }
+  {
+    try {
+      (*arg1)->set_log_level(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_log_level(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  std::string result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_log_level" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (*arg1)->log_level();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  int result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (int)(*arg1)->max_noutput_items();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_set_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"m",  NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:simple_decimator_cc_sptr_set_max_noutput_items", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_set_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_set_max_noutput_items" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      (*arg1)->set_max_noutput_items(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_unset_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_unset_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      (*arg1)->unset_max_noutput_items();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_is_set_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  bool result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_is_set_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (bool)(*arg1)->is_set_max_noutput_items();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_set_min_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"m",  NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:simple_decimator_cc_sptr_set_min_noutput_items", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_set_min_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_set_min_noutput_items" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      (*arg1)->set_min_noutput_items(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_min_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  int result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_min_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (int)(*arg1)->min_noutput_items();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_max_output_buffer(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"i",  NULL 
+  };
+  long result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:simple_decimator_cc_sptr_max_output_buffer", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_max_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_max_output_buffer" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (long)(*arg1)->max_output_buffer(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_long(static_cast< long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_set_max_output_buffer__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  long arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  long val2 ;
+  int ecode2 = 0 ;
+  
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_set_max_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_long(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_set_max_output_buffer" "', argument " "2"" of type '" "long""'");
+  } 
+  arg2 = static_cast< long >(val2);
+  {
+    try {
+      (*arg1)->set_max_output_buffer(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_set_max_output_buffer__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  int arg2 ;
+  long arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  long val3 ;
+  int ecode3 = 0 ;
+  
+  if ((nobjs < 3) || (nobjs > 3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_set_max_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_set_max_output_buffer" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_long(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "simple_decimator_cc_sptr_set_max_output_buffer" "', argument " "3"" of type '" "long""'");
+  } 
+  arg3 = static_cast< long >(val3);
+  {
+    try {
+      (*arg1)->set_max_output_buffer(arg2,arg3);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_set_max_output_buffer(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[4] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "simple_decimator_cc_sptr_set_max_output_buffer", 0, 3, argv))) SWIG_fail;
+  --argc;
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_long(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_simple_decimator_cc_sptr_set_max_output_buffer__SWIG_0(self, argc, argv);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_long(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          return _wrap_simple_decimator_cc_sptr_set_max_output_buffer__SWIG_1(self, argc, argv);
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'simple_decimator_cc_sptr_set_max_output_buffer'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gr::block::set_max_output_buffer(long)\n"
+    "    gr::block::set_max_output_buffer(int,long)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_min_output_buffer(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"i",  NULL 
+  };
+  long result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:simple_decimator_cc_sptr_min_output_buffer", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_min_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_min_output_buffer" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (long)(*arg1)->min_output_buffer(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_long(static_cast< long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_set_min_output_buffer__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  long arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  long val2 ;
+  int ecode2 = 0 ;
+  
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_set_min_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_long(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_set_min_output_buffer" "', argument " "2"" of type '" "long""'");
+  } 
+  arg2 = static_cast< long >(val2);
+  {
+    try {
+      (*arg1)->set_min_output_buffer(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_set_min_output_buffer__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  int arg2 ;
+  long arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  long val3 ;
+  int ecode3 = 0 ;
+  
+  if ((nobjs < 3) || (nobjs > 3)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_set_min_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_set_min_output_buffer" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_long(swig_obj[2], &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "simple_decimator_cc_sptr_set_min_output_buffer" "', argument " "3"" of type '" "long""'");
+  } 
+  arg3 = static_cast< long >(val3);
+  {
+    try {
+      (*arg1)->set_min_output_buffer(arg2,arg3);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_set_min_output_buffer(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[4] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "simple_decimator_cc_sptr_set_min_output_buffer", 0, 3, argv))) SWIG_fail;
+  --argc;
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_long(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_simple_decimator_cc_sptr_set_min_output_buffer__SWIG_0(self, argc, argv);
+      }
+    }
+  }
+  if (argc == 3) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        {
+          int res = SWIG_AsVal_long(argv[2], NULL);
+          _v = SWIG_CheckState(res);
+        }
+        if (_v) {
+          return _wrap_simple_decimator_cc_sptr_set_min_output_buffer__SWIG_1(self, argc, argv);
+        }
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'simple_decimator_cc_sptr_set_min_output_buffer'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gr::block::set_min_output_buffer(long)\n"
+    "    gr::block::set_min_output_buffer(int,long)\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_noutput_items();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_noutput_items_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_noutput_items_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_noutput_items_avg();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_noutput_items_var(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_noutput_items_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_noutput_items_var();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_nproduced(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_nproduced" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_nproduced();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_nproduced_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_nproduced_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_nproduced_avg();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_nproduced_var(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_nproduced_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_nproduced_var();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_input_buffers_full__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  float result;
+  
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_input_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_pc_input_buffers_full" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (float)(*arg1)->pc_input_buffers_full(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_input_buffers_full__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  std::vector< float,std::allocator< float > > result;
+  
+  if ((nobjs < 1) || (nobjs > 1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_input_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (*arg1)->pc_input_buffers_full();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector< float,std::allocator< float > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_input_buffers_full(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[3] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "simple_decimator_cc_sptr_pc_input_buffers_full", 0, 2, argv))) SWIG_fail;
+  --argc;
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_simple_decimator_cc_sptr_pc_input_buffers_full__SWIG_1(self, argc, argv);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_simple_decimator_cc_sptr_pc_input_buffers_full__SWIG_0(self, argc, argv);
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'simple_decimator_cc_sptr_pc_input_buffers_full'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gr::block::pc_input_buffers_full(int)\n"
+    "    gr::block::pc_input_buffers_full()\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_input_buffers_full_avg__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  float result;
+  
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_input_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_pc_input_buffers_full_avg" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (float)(*arg1)->pc_input_buffers_full_avg(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_input_buffers_full_avg__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  std::vector< float,std::allocator< float > > result;
+  
+  if ((nobjs < 1) || (nobjs > 1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_input_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (*arg1)->pc_input_buffers_full_avg();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector< float,std::allocator< float > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_input_buffers_full_avg(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[3] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "simple_decimator_cc_sptr_pc_input_buffers_full_avg", 0, 2, argv))) SWIG_fail;
+  --argc;
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_simple_decimator_cc_sptr_pc_input_buffers_full_avg__SWIG_1(self, argc, argv);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_simple_decimator_cc_sptr_pc_input_buffers_full_avg__SWIG_0(self, argc, argv);
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'simple_decimator_cc_sptr_pc_input_buffers_full_avg'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gr::block::pc_input_buffers_full_avg(int)\n"
+    "    gr::block::pc_input_buffers_full_avg()\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_input_buffers_full_var__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  float result;
+  
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_input_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_pc_input_buffers_full_var" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (float)(*arg1)->pc_input_buffers_full_var(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_input_buffers_full_var__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  std::vector< float,std::allocator< float > > result;
+  
+  if ((nobjs < 1) || (nobjs > 1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_input_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (*arg1)->pc_input_buffers_full_var();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector< float,std::allocator< float > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_input_buffers_full_var(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[3] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "simple_decimator_cc_sptr_pc_input_buffers_full_var", 0, 2, argv))) SWIG_fail;
+  --argc;
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_simple_decimator_cc_sptr_pc_input_buffers_full_var__SWIG_1(self, argc, argv);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_simple_decimator_cc_sptr_pc_input_buffers_full_var__SWIG_0(self, argc, argv);
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'simple_decimator_cc_sptr_pc_input_buffers_full_var'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gr::block::pc_input_buffers_full_var(int)\n"
+    "    gr::block::pc_input_buffers_full_var()\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_output_buffers_full__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  float result;
+  
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_output_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_pc_output_buffers_full" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (float)(*arg1)->pc_output_buffers_full(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_output_buffers_full__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  std::vector< float,std::allocator< float > > result;
+  
+  if ((nobjs < 1) || (nobjs > 1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_output_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (*arg1)->pc_output_buffers_full();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector< float,std::allocator< float > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_output_buffers_full(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[3] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "simple_decimator_cc_sptr_pc_output_buffers_full", 0, 2, argv))) SWIG_fail;
+  --argc;
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_simple_decimator_cc_sptr_pc_output_buffers_full__SWIG_1(self, argc, argv);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_simple_decimator_cc_sptr_pc_output_buffers_full__SWIG_0(self, argc, argv);
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'simple_decimator_cc_sptr_pc_output_buffers_full'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gr::block::pc_output_buffers_full(int)\n"
+    "    gr::block::pc_output_buffers_full()\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_output_buffers_full_avg__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  float result;
+  
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_output_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_pc_output_buffers_full_avg" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (float)(*arg1)->pc_output_buffers_full_avg(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_output_buffers_full_avg__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  std::vector< float,std::allocator< float > > result;
+  
+  if ((nobjs < 1) || (nobjs > 1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_output_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (*arg1)->pc_output_buffers_full_avg();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector< float,std::allocator< float > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_output_buffers_full_avg(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[3] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "simple_decimator_cc_sptr_pc_output_buffers_full_avg", 0, 2, argv))) SWIG_fail;
+  --argc;
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_simple_decimator_cc_sptr_pc_output_buffers_full_avg__SWIG_1(self, argc, argv);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_simple_decimator_cc_sptr_pc_output_buffers_full_avg__SWIG_0(self, argc, argv);
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'simple_decimator_cc_sptr_pc_output_buffers_full_avg'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gr::block::pc_output_buffers_full_avg(int)\n"
+    "    gr::block::pc_output_buffers_full_avg()\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_output_buffers_full_var__SWIG_0(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  float result;
+  
+  if ((nobjs < 2) || (nobjs > 2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_output_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_int(swig_obj[1], &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_pc_output_buffers_full_var" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (float)(*arg1)->pc_output_buffers_full_var(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_output_buffers_full_var__SWIG_1(PyObject *SWIGUNUSEDPARM(self), Py_ssize_t nobjs, PyObject **swig_obj) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  std::vector< float,std::allocator< float > > result;
+  
+  if ((nobjs < 1) || (nobjs > 1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_output_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (*arg1)->pc_output_buffers_full_var();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector< float,std::allocator< float > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_output_buffers_full_var(PyObject *self, PyObject *args) {
+  Py_ssize_t argc;
+  PyObject *argv[3] = {
+    0
+  };
+  
+  if (!(argc = SWIG_Python_UnpackTuple(args, "simple_decimator_cc_sptr_pc_output_buffers_full_var", 0, 2, argv))) SWIG_fail;
+  --argc;
+  if (argc == 1) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      return _wrap_simple_decimator_cc_sptr_pc_output_buffers_full_var__SWIG_1(self, argc, argv);
+    }
+  }
+  if (argc == 2) {
+    int _v;
+    void *vptr = 0;
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0);
+    _v = SWIG_CheckState(res);
+    if (_v) {
+      {
+        int res = SWIG_AsVal_int(argv[1], NULL);
+        _v = SWIG_CheckState(res);
+      }
+      if (_v) {
+        return _wrap_simple_decimator_cc_sptr_pc_output_buffers_full_var__SWIG_0(self, argc, argv);
+      }
+    }
+  }
+  
+fail:
+  SWIG_Python_RaiseOrModifyTypeError("Wrong number or type of arguments for overloaded function 'simple_decimator_cc_sptr_pc_output_buffers_full_var'.\n"
+    "  Possible C/C++ prototypes are:\n"
+    "    gr::block::pc_output_buffers_full_var(int)\n"
+    "    gr::block::pc_output_buffers_full_var()\n");
+  return 0;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_work_time(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_work_time" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_work_time();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_work_time_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_work_time_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_work_time_avg();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_work_time_var(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_work_time_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_work_time_var();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_work_time_total(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_work_time_total" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_work_time_total();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_pc_throughput_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  float result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_pc_throughput_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (float)(*arg1)->pc_throughput_avg();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_float(static_cast< float >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_set_processor_affinity(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  std::vector< int,std::allocator< int > > *arg2 = 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int res2 = SWIG_OLDOBJ ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"mask",  NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:simple_decimator_cc_sptr_set_processor_affinity", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_set_processor_affinity" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    std::vector< int,std::allocator< int > > *ptr = (std::vector< int,std::allocator< int > > *)0;
+    res2 = swig::asptr(obj1, &ptr);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "simple_decimator_cc_sptr_set_processor_affinity" "', argument " "2"" of type '" "std::vector< int,std::allocator< int > > const &""'"); 
+    }
+    if (!ptr) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "simple_decimator_cc_sptr_set_processor_affinity" "', argument " "2"" of type '" "std::vector< int,std::allocator< int > > const &""'"); 
+    }
+    arg2 = ptr;
+  }
+  {
+    try {
+      (*arg1)->set_processor_affinity((std::vector< int,std::allocator< int > > const &)*arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return resultobj;
+fail:
+  if (SWIG_IsNewObj(res2)) delete arg2;
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_unset_processor_affinity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_unset_processor_affinity" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      (*arg1)->unset_processor_affinity();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_processor_affinity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  std::vector< int,std::allocator< int > > result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_processor_affinity" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (*arg1)->processor_affinity();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = swig::from(static_cast< std::vector< int,std::allocator< int > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_active_thread_priority(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  int result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_active_thread_priority" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (int)(*arg1)->active_thread_priority();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_thread_priority(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  int result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_thread_priority" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (int)(*arg1)->thread_priority();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_set_thread_priority(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  int arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"priority",  NULL 
+  };
+  int result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:simple_decimator_cc_sptr_set_thread_priority", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_set_thread_priority" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_set_thread_priority" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  {
+    try {
+      result = (int)(*arg1)->set_thread_priority(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_int(static_cast< int >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  std::string result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_name" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (*arg1)->name();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_symbol_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  std::string result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_symbol_name" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (*arg1)->symbol_name();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_input_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  gr::io_signature::sptr result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_input_signature" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (*arg1)->input_signature();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr::io_signature::sptr(static_cast< const gr::io_signature::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__io_signature_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_output_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  gr::io_signature::sptr result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_output_signature" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (*arg1)->output_signature();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr::io_signature::sptr(static_cast< const gr::io_signature::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__io_signature_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_unique_id(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  long result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_unique_id" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > const *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (long)(*arg1)->unique_id();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_long(static_cast< long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_to_basic_block(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  gr::basic_block_sptr result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_to_basic_block" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (*arg1)->to_basic_block();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new gr::basic_block_sptr(static_cast< const gr::basic_block_sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__basic_block_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_check_topology(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"ninputs",  (char *)"noutputs",  NULL 
+  };
+  bool result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OOO:simple_decimator_cc_sptr_check_topology", kwnames, &obj0, &obj1, &obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_check_topology" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "simple_decimator_cc_sptr_check_topology" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "simple_decimator_cc_sptr_check_topology" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  {
+    try {
+      result = (bool)(*arg1)->check_topology(arg2,arg3);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_bool(static_cast< bool >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_alias(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  std::string result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_alias" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (*arg1)->alias();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_From_std_string(static_cast< std::string >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_set_block_alias(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  std::string arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"name",  NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:simple_decimator_cc_sptr_set_block_alias", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_set_block_alias" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    std::string *ptr = (std::string *)0;
+    int res = SWIG_AsPtr_std_string(obj1, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "simple_decimator_cc_sptr_set_block_alias" "', argument " "2"" of type '" "std::string""'"); 
+    }
+    arg2 = *ptr;
+    if (SWIG_IsNewObj(res)) delete ptr;
+  }
+  {
+    try {
+      (*arg1)->set_block_alias(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr__post(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  pmt::pmt_t arg2 ;
+  pmt::pmt_t arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  void *argp3 ;
+  int res3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"which_port",  (char *)"msg",  NULL 
+  };
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OOO:simple_decimator_cc_sptr__post", kwnames, &obj0, &obj1, &obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr__post" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__shared_ptrT_pmt__pmt_base_t,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "simple_decimator_cc_sptr__post" "', argument " "2"" of type '" "pmt::pmt_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "simple_decimator_cc_sptr__post" "', argument " "2"" of type '" "pmt::pmt_t""'");
+    } else {
+      pmt::pmt_t * temp = reinterpret_cast< pmt::pmt_t * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  {
+    res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_boost__shared_ptrT_pmt__pmt_base_t,  0  | 0);
+    if (!SWIG_IsOK(res3)) {
+      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "simple_decimator_cc_sptr__post" "', argument " "3"" of type '" "pmt::pmt_t""'"); 
+    }  
+    if (!argp3) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "simple_decimator_cc_sptr__post" "', argument " "3"" of type '" "pmt::pmt_t""'");
+    } else {
+      pmt::pmt_t * temp = reinterpret_cast< pmt::pmt_t * >(argp3);
+      arg3 = *temp;
+      if (SWIG_IsNewObj(res3)) delete temp;
+    }
+  }
+  {
+    try {
+      (*arg1)->_post(arg2,arg3);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_message_ports_in(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  pmt::pmt_t result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_message_ports_in" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (*arg1)->message_ports_in();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new pmt::pmt_t(static_cast< const pmt::pmt_t& >(result))), SWIGTYPE_p_boost__shared_ptrT_pmt__pmt_base_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_message_ports_out(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject *swig_obj[1] ;
+  pmt::pmt_t result;
+  
+  if (!args) SWIG_fail;
+  swig_obj[0] = args;
+  res1 = SWIG_ConvertPtr(swig_obj[0], &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_message_ports_out" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    try {
+      result = (*arg1)->message_ports_out();
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new pmt::pmt_t(static_cast< const pmt::pmt_t& >(result))), SWIGTYPE_p_boost__shared_ptrT_pmt__pmt_base_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_simple_decimator_cc_sptr_message_subscribers(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+  PyObject *resultobj = 0;
+  boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *arg1 = (boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *) 0 ;
+  pmt::pmt_t arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  void *argp2 ;
+  int res2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  char * kwnames[] = {
+    (char *)"self",  (char *)"which_port",  NULL 
+  };
+  pmt::pmt_t result;
+  
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OO:simple_decimator_cc_sptr_message_subscribers", kwnames, &obj0, &obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "simple_decimator_cc_sptr_message_subscribers" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *""'"); 
+  }
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::lab_radar::simple_decimator_cc > * >(argp1);
+  {
+    res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__shared_ptrT_pmt__pmt_base_t,  0  | 0);
+    if (!SWIG_IsOK(res2)) {
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "simple_decimator_cc_sptr_message_subscribers" "', argument " "2"" of type '" "pmt::pmt_t""'"); 
+    }  
+    if (!argp2) {
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "simple_decimator_cc_sptr_message_subscribers" "', argument " "2"" of type '" "pmt::pmt_t""'");
+    } else {
+      pmt::pmt_t * temp = reinterpret_cast< pmt::pmt_t * >(argp2);
+      arg2 = *temp;
+      if (SWIG_IsNewObj(res2)) delete temp;
+    }
+  }
+  {
+    try {
+      result = (*arg1)->message_subscribers(arg2);
+    }
+    catch(std::exception &e) {
+      SWIG_exception(SWIG_RuntimeError, e.what());
+    }
+    catch(...) {
+      SWIG_exception(SWIG_RuntimeError, "Unknown exception");
+    }
+    
+  }
+  resultobj = SWIG_NewPointerObj((new pmt::pmt_t(static_cast< const pmt::pmt_t& >(result))), SWIGTYPE_p_boost__shared_ptrT_pmt__pmt_base_t, SWIG_POINTER_OWN |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *simple_decimator_cc_sptr_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!SWIG_Python_UnpackTuple(args, "swigregister", 1, 1, &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
+
+SWIGINTERN PyObject *simple_decimator_cc_sptr_swiginit(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  return SWIG_Python_InitShadowInstance(args);
+}
+
 static PyMethodDef SwigMethods[] = {
 	 { "SWIG_PyInstanceMethod_New", SWIG_PyInstanceMethod_New, METH_O, NULL},
 	 { "high_res_timer_now", _wrap_high_res_timer_now, METH_NOARGS, "high_res_timer_now() -> gr::high_res_timer_type"},
@@ -8290,6 +15032,260 @@ static PyMethodDef SwigMethods[] = {
 	 { "corr_dist_estimator_bfi_sptr_message_subscribers", (PyCFunction)(void(*)(void))_wrap_corr_dist_estimator_bfi_sptr_message_subscribers, METH_VARARGS|METH_KEYWORDS, "corr_dist_estimator_bfi_sptr_message_subscribers(corr_dist_estimator_bfi_sptr self, swig_pmt_ptr which_port) -> swig_pmt_ptr"},
 	 { "corr_dist_estimator_bfi_sptr_swigregister", corr_dist_estimator_bfi_sptr_swigregister, METH_O, NULL},
 	 { "corr_dist_estimator_bfi_sptr_swiginit", corr_dist_estimator_bfi_sptr_swiginit, METH_VARARGS, NULL},
+	 { "signal_corr_estimator_cf_make", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_make, METH_VARARGS|METH_KEYWORDS, "\n"
+		"signal_corr_estimator_cf_make(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max) -> signal_corr_estimator_cf_sptr\n"
+		"<+description of block+>\n"
+		"\n"
+		"Constructor Specific Documentation:\n"
+		"\n"
+		"Return a shared_ptr to a new instance of lab_radar::signal_corr_estimator_cf.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, lab_radar::signal_corr_estimator_cf's constructor is in a private implementation class. lab_radar::signal_corr_estimator_cf::make is the public interface for creating new instances.\n"
+		"\n"
+		"Args:\n"
+		"    sample_rate_rx : \n"
+		"    sample_fac : \n"
+		"    code_length : \n"
+		"    sps_rx : \n"
+		"    v_max : \n"
+		""},
+	 { "delete_signal_corr_estimator_cf", _wrap_delete_signal_corr_estimator_cf, METH_O, "delete_signal_corr_estimator_cf(signal_corr_estimator_cf self)"},
+	 { "signal_corr_estimator_cf_swigregister", signal_corr_estimator_cf_swigregister, METH_O, NULL},
+	 { "new_signal_corr_estimator_cf_sptr", _wrap_new_signal_corr_estimator_cf_sptr, METH_VARARGS, "\n"
+		"signal_corr_estimator_cf_sptr()\n"
+		"new_signal_corr_estimator_cf_sptr(signal_corr_estimator_cf p) -> signal_corr_estimator_cf_sptr\n"
+		""},
+	 { "signal_corr_estimator_cf_sptr___deref__", _wrap_signal_corr_estimator_cf_sptr___deref__, METH_O, "signal_corr_estimator_cf_sptr___deref__(signal_corr_estimator_cf_sptr self) -> signal_corr_estimator_cf"},
+	 { "delete_signal_corr_estimator_cf_sptr", _wrap_delete_signal_corr_estimator_cf_sptr, METH_O, "delete_signal_corr_estimator_cf_sptr(signal_corr_estimator_cf_sptr self)"},
+	 { "signal_corr_estimator_cf_sptr_make", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_sptr_make, METH_VARARGS|METH_KEYWORDS, "\n"
+		"signal_corr_estimator_cf_sptr_make(signal_corr_estimator_cf_sptr self, int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max) -> signal_corr_estimator_cf_sptr\n"
+		"<+description of block+>\n"
+		"\n"
+		"Constructor Specific Documentation:\n"
+		"\n"
+		"Return a shared_ptr to a new instance of lab_radar::signal_corr_estimator_cf.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, lab_radar::signal_corr_estimator_cf's constructor is in a private implementation class. lab_radar::signal_corr_estimator_cf::make is the public interface for creating new instances.\n"
+		"\n"
+		"Args:\n"
+		"    sample_rate_rx : \n"
+		"    sample_fac : \n"
+		"    code_length : \n"
+		"    sps_rx : \n"
+		"    v_max : \n"
+		""},
+	 { "signal_corr_estimator_cf_sptr_history", _wrap_signal_corr_estimator_cf_sptr_history, METH_O, "signal_corr_estimator_cf_sptr_history(signal_corr_estimator_cf_sptr self) -> unsigned int"},
+	 { "signal_corr_estimator_cf_sptr_declare_sample_delay", _wrap_signal_corr_estimator_cf_sptr_declare_sample_delay, METH_VARARGS, "\n"
+		"signal_corr_estimator_cf_sptr_declare_sample_delay(signal_corr_estimator_cf_sptr self, int which, int delay)\n"
+		"signal_corr_estimator_cf_sptr_declare_sample_delay(signal_corr_estimator_cf_sptr self, unsigned int delay)\n"
+		""},
+	 { "signal_corr_estimator_cf_sptr_sample_delay", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_sptr_sample_delay, METH_VARARGS|METH_KEYWORDS, "signal_corr_estimator_cf_sptr_sample_delay(signal_corr_estimator_cf_sptr self, int which) -> unsigned int"},
+	 { "signal_corr_estimator_cf_sptr_set_output_multiple", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_sptr_set_output_multiple, METH_VARARGS|METH_KEYWORDS, "signal_corr_estimator_cf_sptr_set_output_multiple(signal_corr_estimator_cf_sptr self, int multiple)"},
+	 { "signal_corr_estimator_cf_sptr_output_multiple", _wrap_signal_corr_estimator_cf_sptr_output_multiple, METH_O, "signal_corr_estimator_cf_sptr_output_multiple(signal_corr_estimator_cf_sptr self) -> int"},
+	 { "signal_corr_estimator_cf_sptr_relative_rate", _wrap_signal_corr_estimator_cf_sptr_relative_rate, METH_O, "signal_corr_estimator_cf_sptr_relative_rate(signal_corr_estimator_cf_sptr self) -> double"},
+	 { "signal_corr_estimator_cf_sptr_relative_rate_i", _wrap_signal_corr_estimator_cf_sptr_relative_rate_i, METH_O, "signal_corr_estimator_cf_sptr_relative_rate_i(signal_corr_estimator_cf_sptr self) -> uint64_t"},
+	 { "signal_corr_estimator_cf_sptr_relative_rate_d", _wrap_signal_corr_estimator_cf_sptr_relative_rate_d, METH_O, "signal_corr_estimator_cf_sptr_relative_rate_d(signal_corr_estimator_cf_sptr self) -> uint64_t"},
+	 { "signal_corr_estimator_cf_sptr_start", _wrap_signal_corr_estimator_cf_sptr_start, METH_O, "signal_corr_estimator_cf_sptr_start(signal_corr_estimator_cf_sptr self) -> bool"},
+	 { "signal_corr_estimator_cf_sptr_stop", _wrap_signal_corr_estimator_cf_sptr_stop, METH_O, "signal_corr_estimator_cf_sptr_stop(signal_corr_estimator_cf_sptr self) -> bool"},
+	 { "signal_corr_estimator_cf_sptr_nitems_read", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_sptr_nitems_read, METH_VARARGS|METH_KEYWORDS, "signal_corr_estimator_cf_sptr_nitems_read(signal_corr_estimator_cf_sptr self, unsigned int which_input) -> uint64_t"},
+	 { "signal_corr_estimator_cf_sptr_nitems_written", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_sptr_nitems_written, METH_VARARGS|METH_KEYWORDS, "signal_corr_estimator_cf_sptr_nitems_written(signal_corr_estimator_cf_sptr self, unsigned int which_output) -> uint64_t"},
+	 { "signal_corr_estimator_cf_sptr_set_log_level", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_sptr_set_log_level, METH_VARARGS|METH_KEYWORDS, "signal_corr_estimator_cf_sptr_set_log_level(signal_corr_estimator_cf_sptr self, std::string level)"},
+	 { "signal_corr_estimator_cf_sptr_log_level", _wrap_signal_corr_estimator_cf_sptr_log_level, METH_O, "signal_corr_estimator_cf_sptr_log_level(signal_corr_estimator_cf_sptr self) -> std::string"},
+	 { "signal_corr_estimator_cf_sptr_max_noutput_items", _wrap_signal_corr_estimator_cf_sptr_max_noutput_items, METH_O, "signal_corr_estimator_cf_sptr_max_noutput_items(signal_corr_estimator_cf_sptr self) -> int"},
+	 { "signal_corr_estimator_cf_sptr_set_max_noutput_items", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_sptr_set_max_noutput_items, METH_VARARGS|METH_KEYWORDS, "signal_corr_estimator_cf_sptr_set_max_noutput_items(signal_corr_estimator_cf_sptr self, int m)"},
+	 { "signal_corr_estimator_cf_sptr_unset_max_noutput_items", _wrap_signal_corr_estimator_cf_sptr_unset_max_noutput_items, METH_O, "signal_corr_estimator_cf_sptr_unset_max_noutput_items(signal_corr_estimator_cf_sptr self)"},
+	 { "signal_corr_estimator_cf_sptr_is_set_max_noutput_items", _wrap_signal_corr_estimator_cf_sptr_is_set_max_noutput_items, METH_O, "signal_corr_estimator_cf_sptr_is_set_max_noutput_items(signal_corr_estimator_cf_sptr self) -> bool"},
+	 { "signal_corr_estimator_cf_sptr_set_min_noutput_items", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_sptr_set_min_noutput_items, METH_VARARGS|METH_KEYWORDS, "signal_corr_estimator_cf_sptr_set_min_noutput_items(signal_corr_estimator_cf_sptr self, int m)"},
+	 { "signal_corr_estimator_cf_sptr_min_noutput_items", _wrap_signal_corr_estimator_cf_sptr_min_noutput_items, METH_O, "signal_corr_estimator_cf_sptr_min_noutput_items(signal_corr_estimator_cf_sptr self) -> int"},
+	 { "signal_corr_estimator_cf_sptr_max_output_buffer", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_sptr_max_output_buffer, METH_VARARGS|METH_KEYWORDS, "signal_corr_estimator_cf_sptr_max_output_buffer(signal_corr_estimator_cf_sptr self, int i) -> long"},
+	 { "signal_corr_estimator_cf_sptr_set_max_output_buffer", _wrap_signal_corr_estimator_cf_sptr_set_max_output_buffer, METH_VARARGS, "\n"
+		"signal_corr_estimator_cf_sptr_set_max_output_buffer(signal_corr_estimator_cf_sptr self, long max_output_buffer)\n"
+		"signal_corr_estimator_cf_sptr_set_max_output_buffer(signal_corr_estimator_cf_sptr self, int port, long max_output_buffer)\n"
+		""},
+	 { "signal_corr_estimator_cf_sptr_min_output_buffer", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_sptr_min_output_buffer, METH_VARARGS|METH_KEYWORDS, "signal_corr_estimator_cf_sptr_min_output_buffer(signal_corr_estimator_cf_sptr self, int i) -> long"},
+	 { "signal_corr_estimator_cf_sptr_set_min_output_buffer", _wrap_signal_corr_estimator_cf_sptr_set_min_output_buffer, METH_VARARGS, "\n"
+		"signal_corr_estimator_cf_sptr_set_min_output_buffer(signal_corr_estimator_cf_sptr self, long min_output_buffer)\n"
+		"signal_corr_estimator_cf_sptr_set_min_output_buffer(signal_corr_estimator_cf_sptr self, int port, long min_output_buffer)\n"
+		""},
+	 { "signal_corr_estimator_cf_sptr_pc_noutput_items", _wrap_signal_corr_estimator_cf_sptr_pc_noutput_items, METH_O, "signal_corr_estimator_cf_sptr_pc_noutput_items(signal_corr_estimator_cf_sptr self) -> float"},
+	 { "signal_corr_estimator_cf_sptr_pc_noutput_items_avg", _wrap_signal_corr_estimator_cf_sptr_pc_noutput_items_avg, METH_O, "signal_corr_estimator_cf_sptr_pc_noutput_items_avg(signal_corr_estimator_cf_sptr self) -> float"},
+	 { "signal_corr_estimator_cf_sptr_pc_noutput_items_var", _wrap_signal_corr_estimator_cf_sptr_pc_noutput_items_var, METH_O, "signal_corr_estimator_cf_sptr_pc_noutput_items_var(signal_corr_estimator_cf_sptr self) -> float"},
+	 { "signal_corr_estimator_cf_sptr_pc_nproduced", _wrap_signal_corr_estimator_cf_sptr_pc_nproduced, METH_O, "signal_corr_estimator_cf_sptr_pc_nproduced(signal_corr_estimator_cf_sptr self) -> float"},
+	 { "signal_corr_estimator_cf_sptr_pc_nproduced_avg", _wrap_signal_corr_estimator_cf_sptr_pc_nproduced_avg, METH_O, "signal_corr_estimator_cf_sptr_pc_nproduced_avg(signal_corr_estimator_cf_sptr self) -> float"},
+	 { "signal_corr_estimator_cf_sptr_pc_nproduced_var", _wrap_signal_corr_estimator_cf_sptr_pc_nproduced_var, METH_O, "signal_corr_estimator_cf_sptr_pc_nproduced_var(signal_corr_estimator_cf_sptr self) -> float"},
+	 { "signal_corr_estimator_cf_sptr_pc_input_buffers_full", _wrap_signal_corr_estimator_cf_sptr_pc_input_buffers_full, METH_VARARGS, "\n"
+		"signal_corr_estimator_cf_sptr_pc_input_buffers_full(signal_corr_estimator_cf_sptr self, int which) -> float\n"
+		"signal_corr_estimator_cf_sptr_pc_input_buffers_full(signal_corr_estimator_cf_sptr self) -> pmt_vector_float\n"
+		""},
+	 { "signal_corr_estimator_cf_sptr_pc_input_buffers_full_avg", _wrap_signal_corr_estimator_cf_sptr_pc_input_buffers_full_avg, METH_VARARGS, "\n"
+		"signal_corr_estimator_cf_sptr_pc_input_buffers_full_avg(signal_corr_estimator_cf_sptr self, int which) -> float\n"
+		"signal_corr_estimator_cf_sptr_pc_input_buffers_full_avg(signal_corr_estimator_cf_sptr self) -> pmt_vector_float\n"
+		""},
+	 { "signal_corr_estimator_cf_sptr_pc_input_buffers_full_var", _wrap_signal_corr_estimator_cf_sptr_pc_input_buffers_full_var, METH_VARARGS, "\n"
+		"signal_corr_estimator_cf_sptr_pc_input_buffers_full_var(signal_corr_estimator_cf_sptr self, int which) -> float\n"
+		"signal_corr_estimator_cf_sptr_pc_input_buffers_full_var(signal_corr_estimator_cf_sptr self) -> pmt_vector_float\n"
+		""},
+	 { "signal_corr_estimator_cf_sptr_pc_output_buffers_full", _wrap_signal_corr_estimator_cf_sptr_pc_output_buffers_full, METH_VARARGS, "\n"
+		"signal_corr_estimator_cf_sptr_pc_output_buffers_full(signal_corr_estimator_cf_sptr self, int which) -> float\n"
+		"signal_corr_estimator_cf_sptr_pc_output_buffers_full(signal_corr_estimator_cf_sptr self) -> pmt_vector_float\n"
+		""},
+	 { "signal_corr_estimator_cf_sptr_pc_output_buffers_full_avg", _wrap_signal_corr_estimator_cf_sptr_pc_output_buffers_full_avg, METH_VARARGS, "\n"
+		"signal_corr_estimator_cf_sptr_pc_output_buffers_full_avg(signal_corr_estimator_cf_sptr self, int which) -> float\n"
+		"signal_corr_estimator_cf_sptr_pc_output_buffers_full_avg(signal_corr_estimator_cf_sptr self) -> pmt_vector_float\n"
+		""},
+	 { "signal_corr_estimator_cf_sptr_pc_output_buffers_full_var", _wrap_signal_corr_estimator_cf_sptr_pc_output_buffers_full_var, METH_VARARGS, "\n"
+		"signal_corr_estimator_cf_sptr_pc_output_buffers_full_var(signal_corr_estimator_cf_sptr self, int which) -> float\n"
+		"signal_corr_estimator_cf_sptr_pc_output_buffers_full_var(signal_corr_estimator_cf_sptr self) -> pmt_vector_float\n"
+		""},
+	 { "signal_corr_estimator_cf_sptr_pc_work_time", _wrap_signal_corr_estimator_cf_sptr_pc_work_time, METH_O, "signal_corr_estimator_cf_sptr_pc_work_time(signal_corr_estimator_cf_sptr self) -> float"},
+	 { "signal_corr_estimator_cf_sptr_pc_work_time_avg", _wrap_signal_corr_estimator_cf_sptr_pc_work_time_avg, METH_O, "signal_corr_estimator_cf_sptr_pc_work_time_avg(signal_corr_estimator_cf_sptr self) -> float"},
+	 { "signal_corr_estimator_cf_sptr_pc_work_time_var", _wrap_signal_corr_estimator_cf_sptr_pc_work_time_var, METH_O, "signal_corr_estimator_cf_sptr_pc_work_time_var(signal_corr_estimator_cf_sptr self) -> float"},
+	 { "signal_corr_estimator_cf_sptr_pc_work_time_total", _wrap_signal_corr_estimator_cf_sptr_pc_work_time_total, METH_O, "signal_corr_estimator_cf_sptr_pc_work_time_total(signal_corr_estimator_cf_sptr self) -> float"},
+	 { "signal_corr_estimator_cf_sptr_pc_throughput_avg", _wrap_signal_corr_estimator_cf_sptr_pc_throughput_avg, METH_O, "signal_corr_estimator_cf_sptr_pc_throughput_avg(signal_corr_estimator_cf_sptr self) -> float"},
+	 { "signal_corr_estimator_cf_sptr_set_processor_affinity", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_sptr_set_processor_affinity, METH_VARARGS|METH_KEYWORDS, "signal_corr_estimator_cf_sptr_set_processor_affinity(signal_corr_estimator_cf_sptr self, std::vector< int,std::allocator< int > > const & mask)"},
+	 { "signal_corr_estimator_cf_sptr_unset_processor_affinity", _wrap_signal_corr_estimator_cf_sptr_unset_processor_affinity, METH_O, "signal_corr_estimator_cf_sptr_unset_processor_affinity(signal_corr_estimator_cf_sptr self)"},
+	 { "signal_corr_estimator_cf_sptr_processor_affinity", _wrap_signal_corr_estimator_cf_sptr_processor_affinity, METH_O, "signal_corr_estimator_cf_sptr_processor_affinity(signal_corr_estimator_cf_sptr self) -> std::vector< int,std::allocator< int > >"},
+	 { "signal_corr_estimator_cf_sptr_active_thread_priority", _wrap_signal_corr_estimator_cf_sptr_active_thread_priority, METH_O, "signal_corr_estimator_cf_sptr_active_thread_priority(signal_corr_estimator_cf_sptr self) -> int"},
+	 { "signal_corr_estimator_cf_sptr_thread_priority", _wrap_signal_corr_estimator_cf_sptr_thread_priority, METH_O, "signal_corr_estimator_cf_sptr_thread_priority(signal_corr_estimator_cf_sptr self) -> int"},
+	 { "signal_corr_estimator_cf_sptr_set_thread_priority", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_sptr_set_thread_priority, METH_VARARGS|METH_KEYWORDS, "signal_corr_estimator_cf_sptr_set_thread_priority(signal_corr_estimator_cf_sptr self, int priority) -> int"},
+	 { "signal_corr_estimator_cf_sptr_name", _wrap_signal_corr_estimator_cf_sptr_name, METH_O, "signal_corr_estimator_cf_sptr_name(signal_corr_estimator_cf_sptr self) -> std::string"},
+	 { "signal_corr_estimator_cf_sptr_symbol_name", _wrap_signal_corr_estimator_cf_sptr_symbol_name, METH_O, "signal_corr_estimator_cf_sptr_symbol_name(signal_corr_estimator_cf_sptr self) -> std::string"},
+	 { "signal_corr_estimator_cf_sptr_input_signature", _wrap_signal_corr_estimator_cf_sptr_input_signature, METH_O, "signal_corr_estimator_cf_sptr_input_signature(signal_corr_estimator_cf_sptr self) -> io_signature_sptr"},
+	 { "signal_corr_estimator_cf_sptr_output_signature", _wrap_signal_corr_estimator_cf_sptr_output_signature, METH_O, "signal_corr_estimator_cf_sptr_output_signature(signal_corr_estimator_cf_sptr self) -> io_signature_sptr"},
+	 { "signal_corr_estimator_cf_sptr_unique_id", _wrap_signal_corr_estimator_cf_sptr_unique_id, METH_O, "signal_corr_estimator_cf_sptr_unique_id(signal_corr_estimator_cf_sptr self) -> long"},
+	 { "signal_corr_estimator_cf_sptr_to_basic_block", _wrap_signal_corr_estimator_cf_sptr_to_basic_block, METH_O, "signal_corr_estimator_cf_sptr_to_basic_block(signal_corr_estimator_cf_sptr self) -> basic_block_sptr"},
+	 { "signal_corr_estimator_cf_sptr_check_topology", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_sptr_check_topology, METH_VARARGS|METH_KEYWORDS, "signal_corr_estimator_cf_sptr_check_topology(signal_corr_estimator_cf_sptr self, int ninputs, int noutputs) -> bool"},
+	 { "signal_corr_estimator_cf_sptr_alias", _wrap_signal_corr_estimator_cf_sptr_alias, METH_O, "signal_corr_estimator_cf_sptr_alias(signal_corr_estimator_cf_sptr self) -> std::string"},
+	 { "signal_corr_estimator_cf_sptr_set_block_alias", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_sptr_set_block_alias, METH_VARARGS|METH_KEYWORDS, "signal_corr_estimator_cf_sptr_set_block_alias(signal_corr_estimator_cf_sptr self, std::string name)"},
+	 { "signal_corr_estimator_cf_sptr__post", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_sptr__post, METH_VARARGS|METH_KEYWORDS, "signal_corr_estimator_cf_sptr__post(signal_corr_estimator_cf_sptr self, swig_pmt_ptr which_port, swig_pmt_ptr msg)"},
+	 { "signal_corr_estimator_cf_sptr_message_ports_in", _wrap_signal_corr_estimator_cf_sptr_message_ports_in, METH_O, "signal_corr_estimator_cf_sptr_message_ports_in(signal_corr_estimator_cf_sptr self) -> swig_pmt_ptr"},
+	 { "signal_corr_estimator_cf_sptr_message_ports_out", _wrap_signal_corr_estimator_cf_sptr_message_ports_out, METH_O, "signal_corr_estimator_cf_sptr_message_ports_out(signal_corr_estimator_cf_sptr self) -> swig_pmt_ptr"},
+	 { "signal_corr_estimator_cf_sptr_message_subscribers", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_sptr_message_subscribers, METH_VARARGS|METH_KEYWORDS, "signal_corr_estimator_cf_sptr_message_subscribers(signal_corr_estimator_cf_sptr self, swig_pmt_ptr which_port) -> swig_pmt_ptr"},
+	 { "signal_corr_estimator_cf_sptr_swigregister", signal_corr_estimator_cf_sptr_swigregister, METH_O, NULL},
+	 { "signal_corr_estimator_cf_sptr_swiginit", signal_corr_estimator_cf_sptr_swiginit, METH_VARARGS, NULL},
+	 { "simple_decimator_cc_make", (PyCFunction)(void(*)(void))_wrap_simple_decimator_cc_make, METH_VARARGS|METH_KEYWORDS, "\n"
+		"simple_decimator_cc_make(int decimation) -> simple_decimator_cc_sptr\n"
+		"<+description of block+>\n"
+		"\n"
+		"Constructor Specific Documentation:\n"
+		"\n"
+		"Return a shared_ptr to a new instance of lab_radar::simple_decimator_cc.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, lab_radar::simple_decimator_cc's constructor is in a private implementation class. lab_radar::simple_decimator_cc::make is the public interface for creating new instances.\n"
+		"\n"
+		"Args:\n"
+		"    decimation : \n"
+		""},
+	 { "delete_simple_decimator_cc", _wrap_delete_simple_decimator_cc, METH_O, "delete_simple_decimator_cc(simple_decimator_cc self)"},
+	 { "simple_decimator_cc_swigregister", simple_decimator_cc_swigregister, METH_O, NULL},
+	 { "new_simple_decimator_cc_sptr", _wrap_new_simple_decimator_cc_sptr, METH_VARARGS, "\n"
+		"simple_decimator_cc_sptr()\n"
+		"new_simple_decimator_cc_sptr(simple_decimator_cc p) -> simple_decimator_cc_sptr\n"
+		""},
+	 { "simple_decimator_cc_sptr___deref__", _wrap_simple_decimator_cc_sptr___deref__, METH_O, "simple_decimator_cc_sptr___deref__(simple_decimator_cc_sptr self) -> simple_decimator_cc"},
+	 { "delete_simple_decimator_cc_sptr", _wrap_delete_simple_decimator_cc_sptr, METH_O, "delete_simple_decimator_cc_sptr(simple_decimator_cc_sptr self)"},
+	 { "simple_decimator_cc_sptr_make", (PyCFunction)(void(*)(void))_wrap_simple_decimator_cc_sptr_make, METH_VARARGS|METH_KEYWORDS, "\n"
+		"simple_decimator_cc_sptr_make(simple_decimator_cc_sptr self, int decimation) -> simple_decimator_cc_sptr\n"
+		"<+description of block+>\n"
+		"\n"
+		"Constructor Specific Documentation:\n"
+		"\n"
+		"Return a shared_ptr to a new instance of lab_radar::simple_decimator_cc.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, lab_radar::simple_decimator_cc's constructor is in a private implementation class. lab_radar::simple_decimator_cc::make is the public interface for creating new instances.\n"
+		"\n"
+		"Args:\n"
+		"    decimation : \n"
+		""},
+	 { "simple_decimator_cc_sptr_history", _wrap_simple_decimator_cc_sptr_history, METH_O, "simple_decimator_cc_sptr_history(simple_decimator_cc_sptr self) -> unsigned int"},
+	 { "simple_decimator_cc_sptr_declare_sample_delay", _wrap_simple_decimator_cc_sptr_declare_sample_delay, METH_VARARGS, "\n"
+		"simple_decimator_cc_sptr_declare_sample_delay(simple_decimator_cc_sptr self, int which, int delay)\n"
+		"simple_decimator_cc_sptr_declare_sample_delay(simple_decimator_cc_sptr self, unsigned int delay)\n"
+		""},
+	 { "simple_decimator_cc_sptr_sample_delay", (PyCFunction)(void(*)(void))_wrap_simple_decimator_cc_sptr_sample_delay, METH_VARARGS|METH_KEYWORDS, "simple_decimator_cc_sptr_sample_delay(simple_decimator_cc_sptr self, int which) -> unsigned int"},
+	 { "simple_decimator_cc_sptr_set_output_multiple", (PyCFunction)(void(*)(void))_wrap_simple_decimator_cc_sptr_set_output_multiple, METH_VARARGS|METH_KEYWORDS, "simple_decimator_cc_sptr_set_output_multiple(simple_decimator_cc_sptr self, int multiple)"},
+	 { "simple_decimator_cc_sptr_output_multiple", _wrap_simple_decimator_cc_sptr_output_multiple, METH_O, "simple_decimator_cc_sptr_output_multiple(simple_decimator_cc_sptr self) -> int"},
+	 { "simple_decimator_cc_sptr_relative_rate", _wrap_simple_decimator_cc_sptr_relative_rate, METH_O, "simple_decimator_cc_sptr_relative_rate(simple_decimator_cc_sptr self) -> double"},
+	 { "simple_decimator_cc_sptr_relative_rate_i", _wrap_simple_decimator_cc_sptr_relative_rate_i, METH_O, "simple_decimator_cc_sptr_relative_rate_i(simple_decimator_cc_sptr self) -> uint64_t"},
+	 { "simple_decimator_cc_sptr_relative_rate_d", _wrap_simple_decimator_cc_sptr_relative_rate_d, METH_O, "simple_decimator_cc_sptr_relative_rate_d(simple_decimator_cc_sptr self) -> uint64_t"},
+	 { "simple_decimator_cc_sptr_start", _wrap_simple_decimator_cc_sptr_start, METH_O, "simple_decimator_cc_sptr_start(simple_decimator_cc_sptr self) -> bool"},
+	 { "simple_decimator_cc_sptr_stop", _wrap_simple_decimator_cc_sptr_stop, METH_O, "simple_decimator_cc_sptr_stop(simple_decimator_cc_sptr self) -> bool"},
+	 { "simple_decimator_cc_sptr_nitems_read", (PyCFunction)(void(*)(void))_wrap_simple_decimator_cc_sptr_nitems_read, METH_VARARGS|METH_KEYWORDS, "simple_decimator_cc_sptr_nitems_read(simple_decimator_cc_sptr self, unsigned int which_input) -> uint64_t"},
+	 { "simple_decimator_cc_sptr_nitems_written", (PyCFunction)(void(*)(void))_wrap_simple_decimator_cc_sptr_nitems_written, METH_VARARGS|METH_KEYWORDS, "simple_decimator_cc_sptr_nitems_written(simple_decimator_cc_sptr self, unsigned int which_output) -> uint64_t"},
+	 { "simple_decimator_cc_sptr_set_log_level", (PyCFunction)(void(*)(void))_wrap_simple_decimator_cc_sptr_set_log_level, METH_VARARGS|METH_KEYWORDS, "simple_decimator_cc_sptr_set_log_level(simple_decimator_cc_sptr self, std::string level)"},
+	 { "simple_decimator_cc_sptr_log_level", _wrap_simple_decimator_cc_sptr_log_level, METH_O, "simple_decimator_cc_sptr_log_level(simple_decimator_cc_sptr self) -> std::string"},
+	 { "simple_decimator_cc_sptr_max_noutput_items", _wrap_simple_decimator_cc_sptr_max_noutput_items, METH_O, "simple_decimator_cc_sptr_max_noutput_items(simple_decimator_cc_sptr self) -> int"},
+	 { "simple_decimator_cc_sptr_set_max_noutput_items", (PyCFunction)(void(*)(void))_wrap_simple_decimator_cc_sptr_set_max_noutput_items, METH_VARARGS|METH_KEYWORDS, "simple_decimator_cc_sptr_set_max_noutput_items(simple_decimator_cc_sptr self, int m)"},
+	 { "simple_decimator_cc_sptr_unset_max_noutput_items", _wrap_simple_decimator_cc_sptr_unset_max_noutput_items, METH_O, "simple_decimator_cc_sptr_unset_max_noutput_items(simple_decimator_cc_sptr self)"},
+	 { "simple_decimator_cc_sptr_is_set_max_noutput_items", _wrap_simple_decimator_cc_sptr_is_set_max_noutput_items, METH_O, "simple_decimator_cc_sptr_is_set_max_noutput_items(simple_decimator_cc_sptr self) -> bool"},
+	 { "simple_decimator_cc_sptr_set_min_noutput_items", (PyCFunction)(void(*)(void))_wrap_simple_decimator_cc_sptr_set_min_noutput_items, METH_VARARGS|METH_KEYWORDS, "simple_decimator_cc_sptr_set_min_noutput_items(simple_decimator_cc_sptr self, int m)"},
+	 { "simple_decimator_cc_sptr_min_noutput_items", _wrap_simple_decimator_cc_sptr_min_noutput_items, METH_O, "simple_decimator_cc_sptr_min_noutput_items(simple_decimator_cc_sptr self) -> int"},
+	 { "simple_decimator_cc_sptr_max_output_buffer", (PyCFunction)(void(*)(void))_wrap_simple_decimator_cc_sptr_max_output_buffer, METH_VARARGS|METH_KEYWORDS, "simple_decimator_cc_sptr_max_output_buffer(simple_decimator_cc_sptr self, int i) -> long"},
+	 { "simple_decimator_cc_sptr_set_max_output_buffer", _wrap_simple_decimator_cc_sptr_set_max_output_buffer, METH_VARARGS, "\n"
+		"simple_decimator_cc_sptr_set_max_output_buffer(simple_decimator_cc_sptr self, long max_output_buffer)\n"
+		"simple_decimator_cc_sptr_set_max_output_buffer(simple_decimator_cc_sptr self, int port, long max_output_buffer)\n"
+		""},
+	 { "simple_decimator_cc_sptr_min_output_buffer", (PyCFunction)(void(*)(void))_wrap_simple_decimator_cc_sptr_min_output_buffer, METH_VARARGS|METH_KEYWORDS, "simple_decimator_cc_sptr_min_output_buffer(simple_decimator_cc_sptr self, int i) -> long"},
+	 { "simple_decimator_cc_sptr_set_min_output_buffer", _wrap_simple_decimator_cc_sptr_set_min_output_buffer, METH_VARARGS, "\n"
+		"simple_decimator_cc_sptr_set_min_output_buffer(simple_decimator_cc_sptr self, long min_output_buffer)\n"
+		"simple_decimator_cc_sptr_set_min_output_buffer(simple_decimator_cc_sptr self, int port, long min_output_buffer)\n"
+		""},
+	 { "simple_decimator_cc_sptr_pc_noutput_items", _wrap_simple_decimator_cc_sptr_pc_noutput_items, METH_O, "simple_decimator_cc_sptr_pc_noutput_items(simple_decimator_cc_sptr self) -> float"},
+	 { "simple_decimator_cc_sptr_pc_noutput_items_avg", _wrap_simple_decimator_cc_sptr_pc_noutput_items_avg, METH_O, "simple_decimator_cc_sptr_pc_noutput_items_avg(simple_decimator_cc_sptr self) -> float"},
+	 { "simple_decimator_cc_sptr_pc_noutput_items_var", _wrap_simple_decimator_cc_sptr_pc_noutput_items_var, METH_O, "simple_decimator_cc_sptr_pc_noutput_items_var(simple_decimator_cc_sptr self) -> float"},
+	 { "simple_decimator_cc_sptr_pc_nproduced", _wrap_simple_decimator_cc_sptr_pc_nproduced, METH_O, "simple_decimator_cc_sptr_pc_nproduced(simple_decimator_cc_sptr self) -> float"},
+	 { "simple_decimator_cc_sptr_pc_nproduced_avg", _wrap_simple_decimator_cc_sptr_pc_nproduced_avg, METH_O, "simple_decimator_cc_sptr_pc_nproduced_avg(simple_decimator_cc_sptr self) -> float"},
+	 { "simple_decimator_cc_sptr_pc_nproduced_var", _wrap_simple_decimator_cc_sptr_pc_nproduced_var, METH_O, "simple_decimator_cc_sptr_pc_nproduced_var(simple_decimator_cc_sptr self) -> float"},
+	 { "simple_decimator_cc_sptr_pc_input_buffers_full", _wrap_simple_decimator_cc_sptr_pc_input_buffers_full, METH_VARARGS, "\n"
+		"simple_decimator_cc_sptr_pc_input_buffers_full(simple_decimator_cc_sptr self, int which) -> float\n"
+		"simple_decimator_cc_sptr_pc_input_buffers_full(simple_decimator_cc_sptr self) -> pmt_vector_float\n"
+		""},
+	 { "simple_decimator_cc_sptr_pc_input_buffers_full_avg", _wrap_simple_decimator_cc_sptr_pc_input_buffers_full_avg, METH_VARARGS, "\n"
+		"simple_decimator_cc_sptr_pc_input_buffers_full_avg(simple_decimator_cc_sptr self, int which) -> float\n"
+		"simple_decimator_cc_sptr_pc_input_buffers_full_avg(simple_decimator_cc_sptr self) -> pmt_vector_float\n"
+		""},
+	 { "simple_decimator_cc_sptr_pc_input_buffers_full_var", _wrap_simple_decimator_cc_sptr_pc_input_buffers_full_var, METH_VARARGS, "\n"
+		"simple_decimator_cc_sptr_pc_input_buffers_full_var(simple_decimator_cc_sptr self, int which) -> float\n"
+		"simple_decimator_cc_sptr_pc_input_buffers_full_var(simple_decimator_cc_sptr self) -> pmt_vector_float\n"
+		""},
+	 { "simple_decimator_cc_sptr_pc_output_buffers_full", _wrap_simple_decimator_cc_sptr_pc_output_buffers_full, METH_VARARGS, "\n"
+		"simple_decimator_cc_sptr_pc_output_buffers_full(simple_decimator_cc_sptr self, int which) -> float\n"
+		"simple_decimator_cc_sptr_pc_output_buffers_full(simple_decimator_cc_sptr self) -> pmt_vector_float\n"
+		""},
+	 { "simple_decimator_cc_sptr_pc_output_buffers_full_avg", _wrap_simple_decimator_cc_sptr_pc_output_buffers_full_avg, METH_VARARGS, "\n"
+		"simple_decimator_cc_sptr_pc_output_buffers_full_avg(simple_decimator_cc_sptr self, int which) -> float\n"
+		"simple_decimator_cc_sptr_pc_output_buffers_full_avg(simple_decimator_cc_sptr self) -> pmt_vector_float\n"
+		""},
+	 { "simple_decimator_cc_sptr_pc_output_buffers_full_var", _wrap_simple_decimator_cc_sptr_pc_output_buffers_full_var, METH_VARARGS, "\n"
+		"simple_decimator_cc_sptr_pc_output_buffers_full_var(simple_decimator_cc_sptr self, int which) -> float\n"
+		"simple_decimator_cc_sptr_pc_output_buffers_full_var(simple_decimator_cc_sptr self) -> pmt_vector_float\n"
+		""},
+	 { "simple_decimator_cc_sptr_pc_work_time", _wrap_simple_decimator_cc_sptr_pc_work_time, METH_O, "simple_decimator_cc_sptr_pc_work_time(simple_decimator_cc_sptr self) -> float"},
+	 { "simple_decimator_cc_sptr_pc_work_time_avg", _wrap_simple_decimator_cc_sptr_pc_work_time_avg, METH_O, "simple_decimator_cc_sptr_pc_work_time_avg(simple_decimator_cc_sptr self) -> float"},
+	 { "simple_decimator_cc_sptr_pc_work_time_var", _wrap_simple_decimator_cc_sptr_pc_work_time_var, METH_O, "simple_decimator_cc_sptr_pc_work_time_var(simple_decimator_cc_sptr self) -> float"},
+	 { "simple_decimator_cc_sptr_pc_work_time_total", _wrap_simple_decimator_cc_sptr_pc_work_time_total, METH_O, "simple_decimator_cc_sptr_pc_work_time_total(simple_decimator_cc_sptr self) -> float"},
+	 { "simple_decimator_cc_sptr_pc_throughput_avg", _wrap_simple_decimator_cc_sptr_pc_throughput_avg, METH_O, "simple_decimator_cc_sptr_pc_throughput_avg(simple_decimator_cc_sptr self) -> float"},
+	 { "simple_decimator_cc_sptr_set_processor_affinity", (PyCFunction)(void(*)(void))_wrap_simple_decimator_cc_sptr_set_processor_affinity, METH_VARARGS|METH_KEYWORDS, "simple_decimator_cc_sptr_set_processor_affinity(simple_decimator_cc_sptr self, std::vector< int,std::allocator< int > > const & mask)"},
+	 { "simple_decimator_cc_sptr_unset_processor_affinity", _wrap_simple_decimator_cc_sptr_unset_processor_affinity, METH_O, "simple_decimator_cc_sptr_unset_processor_affinity(simple_decimator_cc_sptr self)"},
+	 { "simple_decimator_cc_sptr_processor_affinity", _wrap_simple_decimator_cc_sptr_processor_affinity, METH_O, "simple_decimator_cc_sptr_processor_affinity(simple_decimator_cc_sptr self) -> std::vector< int,std::allocator< int > >"},
+	 { "simple_decimator_cc_sptr_active_thread_priority", _wrap_simple_decimator_cc_sptr_active_thread_priority, METH_O, "simple_decimator_cc_sptr_active_thread_priority(simple_decimator_cc_sptr self) -> int"},
+	 { "simple_decimator_cc_sptr_thread_priority", _wrap_simple_decimator_cc_sptr_thread_priority, METH_O, "simple_decimator_cc_sptr_thread_priority(simple_decimator_cc_sptr self) -> int"},
+	 { "simple_decimator_cc_sptr_set_thread_priority", (PyCFunction)(void(*)(void))_wrap_simple_decimator_cc_sptr_set_thread_priority, METH_VARARGS|METH_KEYWORDS, "simple_decimator_cc_sptr_set_thread_priority(simple_decimator_cc_sptr self, int priority) -> int"},
+	 { "simple_decimator_cc_sptr_name", _wrap_simple_decimator_cc_sptr_name, METH_O, "simple_decimator_cc_sptr_name(simple_decimator_cc_sptr self) -> std::string"},
+	 { "simple_decimator_cc_sptr_symbol_name", _wrap_simple_decimator_cc_sptr_symbol_name, METH_O, "simple_decimator_cc_sptr_symbol_name(simple_decimator_cc_sptr self) -> std::string"},
+	 { "simple_decimator_cc_sptr_input_signature", _wrap_simple_decimator_cc_sptr_input_signature, METH_O, "simple_decimator_cc_sptr_input_signature(simple_decimator_cc_sptr self) -> io_signature_sptr"},
+	 { "simple_decimator_cc_sptr_output_signature", _wrap_simple_decimator_cc_sptr_output_signature, METH_O, "simple_decimator_cc_sptr_output_signature(simple_decimator_cc_sptr self) -> io_signature_sptr"},
+	 { "simple_decimator_cc_sptr_unique_id", _wrap_simple_decimator_cc_sptr_unique_id, METH_O, "simple_decimator_cc_sptr_unique_id(simple_decimator_cc_sptr self) -> long"},
+	 { "simple_decimator_cc_sptr_to_basic_block", _wrap_simple_decimator_cc_sptr_to_basic_block, METH_O, "simple_decimator_cc_sptr_to_basic_block(simple_decimator_cc_sptr self) -> basic_block_sptr"},
+	 { "simple_decimator_cc_sptr_check_topology", (PyCFunction)(void(*)(void))_wrap_simple_decimator_cc_sptr_check_topology, METH_VARARGS|METH_KEYWORDS, "simple_decimator_cc_sptr_check_topology(simple_decimator_cc_sptr self, int ninputs, int noutputs) -> bool"},
+	 { "simple_decimator_cc_sptr_alias", _wrap_simple_decimator_cc_sptr_alias, METH_O, "simple_decimator_cc_sptr_alias(simple_decimator_cc_sptr self) -> std::string"},
+	 { "simple_decimator_cc_sptr_set_block_alias", (PyCFunction)(void(*)(void))_wrap_simple_decimator_cc_sptr_set_block_alias, METH_VARARGS|METH_KEYWORDS, "simple_decimator_cc_sptr_set_block_alias(simple_decimator_cc_sptr self, std::string name)"},
+	 { "simple_decimator_cc_sptr__post", (PyCFunction)(void(*)(void))_wrap_simple_decimator_cc_sptr__post, METH_VARARGS|METH_KEYWORDS, "simple_decimator_cc_sptr__post(simple_decimator_cc_sptr self, swig_pmt_ptr which_port, swig_pmt_ptr msg)"},
+	 { "simple_decimator_cc_sptr_message_ports_in", _wrap_simple_decimator_cc_sptr_message_ports_in, METH_O, "simple_decimator_cc_sptr_message_ports_in(simple_decimator_cc_sptr self) -> swig_pmt_ptr"},
+	 { "simple_decimator_cc_sptr_message_ports_out", _wrap_simple_decimator_cc_sptr_message_ports_out, METH_O, "simple_decimator_cc_sptr_message_ports_out(simple_decimator_cc_sptr self) -> swig_pmt_ptr"},
+	 { "simple_decimator_cc_sptr_message_subscribers", (PyCFunction)(void(*)(void))_wrap_simple_decimator_cc_sptr_message_subscribers, METH_VARARGS|METH_KEYWORDS, "simple_decimator_cc_sptr_message_subscribers(simple_decimator_cc_sptr self, swig_pmt_ptr which_port) -> swig_pmt_ptr"},
+	 { "simple_decimator_cc_sptr_swigregister", simple_decimator_cc_sptr_swigregister, METH_O, NULL},
+	 { "simple_decimator_cc_sptr_swiginit", simple_decimator_cc_sptr_swiginit, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
 };
 
@@ -8300,6 +15296,9 @@ static PyMethodDef SwigMethods_proxydocs[] = {
 
 /* -------- TYPE CONVERSION AND EQUIVALENCE RULES (BEGIN) -------- */
 
+static void *_p_gr__lab_radar__simple_decimator_ccTo_p_gr__block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr::block *) (gr::sync_block *)(gr::sync_decimator *) ((gr::lab_radar::simple_decimator_cc *) x));
+}
 static void *_p_gr__lab_radar__corr_dist_estimator_bfiTo_p_gr__block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::block *) (gr::sync_block *)(gr::sync_decimator *) ((gr::lab_radar::corr_dist_estimator_bfi *) x));
 }
@@ -8315,8 +15314,14 @@ static void *_p_gr__tagged_stream_blockTo_p_gr__block(void *x, int *SWIGUNUSEDPA
 static void *_p_gr__block_gatewayTo_p_gr__block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::block *)  ((gr::block_gateway *) x));
 }
+static void *_p_gr__lab_radar__signal_corr_estimator_cfTo_p_gr__block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr::block *)  ((gr::lab_radar::signal_corr_estimator_cf *) x));
+}
 static void *_p_gr__sync_interpolatorTo_p_gr__block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::block *) (gr::sync_block *) ((gr::sync_interpolator *) x));
+}
+static void *_p_gr__lab_radar__simple_decimator_ccTo_p_gr__sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr::sync_block *) (gr::sync_decimator *) ((gr::lab_radar::simple_decimator_cc *) x));
 }
 static void *_p_gr__lab_radar__corr_dist_estimator_bfiTo_p_gr__sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::sync_block *) (gr::sync_decimator *) ((gr::lab_radar::corr_dist_estimator_bfi *) x));
@@ -8326,6 +15331,9 @@ static void *_p_gr__sync_decimatorTo_p_gr__sync_block(void *x, int *SWIGUNUSEDPA
 }
 static void *_p_gr__sync_interpolatorTo_p_gr__sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::sync_block *)  ((gr::sync_interpolator *) x));
+}
+static void *_p_gr__lab_radar__simple_decimator_ccTo_p_gr__basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr::basic_block *) (gr::block *)(gr::sync_block *)(gr::sync_decimator *) ((gr::lab_radar::simple_decimator_cc *) x));
 }
 static void *_p_gr__lab_radar__corr_dist_estimator_bfiTo_p_gr__basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::basic_block *) (gr::block *)(gr::sync_block *)(gr::sync_decimator *) ((gr::lab_radar::corr_dist_estimator_bfi *) x));
@@ -8348,11 +15356,17 @@ static void *_p_gr__tagged_stream_blockTo_p_gr__basic_block(void *x, int *SWIGUN
 static void *_p_gr__block_gatewayTo_p_gr__basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::basic_block *) (gr::block *) ((gr::block_gateway *) x));
 }
+static void *_p_gr__lab_radar__signal_corr_estimator_cfTo_p_gr__basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr::basic_block *) (gr::block *) ((gr::lab_radar::signal_corr_estimator_cf *) x));
+}
 static void *_p_gr__sync_interpolatorTo_p_gr__basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::basic_block *) (gr::block *)(gr::sync_block *) ((gr::sync_interpolator *) x));
 }
 static void *_p_gr__top_blockTo_p_gr__basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::basic_block *) (gr::hier_block2 *) ((gr::top_block *) x));
+}
+static void *_p_gr__lab_radar__simple_decimator_ccTo_p_gr__sync_decimator(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr::sync_decimator *)  ((gr::lab_radar::simple_decimator_cc *) x));
 }
 static void *_p_gr__lab_radar__corr_dist_estimator_bfiTo_p_gr__sync_decimator(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::sync_decimator *)  ((gr::lab_radar::corr_dist_estimator_bfi *) x));
@@ -8368,6 +15382,8 @@ static swig_type_info _swigt__p_boost__shared_ptrT_gr__flowgraph_t = {"_p_boost_
 static swig_type_info _swigt__p_boost__shared_ptrT_gr__hier_block2_t = {"_p_boost__shared_ptrT_gr__hier_block2_t", "boost::shared_ptr< gr::hier_block2 > *|gr::hier_block2_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr__io_signature_t = {"_p_boost__shared_ptrT_gr__io_signature_t", "gr::io_signature::sptr *|boost::shared_ptr< gr::io_signature > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr__lab_radar__corr_dist_estimator_bfi_t = {"_p_boost__shared_ptrT_gr__lab_radar__corr_dist_estimator_bfi_t", "gr::lab_radar::corr_dist_estimator_bfi::sptr *|boost::shared_ptr< gr::lab_radar::corr_dist_estimator_bfi > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t = {"_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t", "gr::lab_radar::signal_corr_estimator_cf::sptr *|boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t = {"_p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t", "gr::lab_radar::simple_decimator_cc::sptr *|boost::shared_ptr< gr::lab_radar::simple_decimator_cc > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr__top_block_t = {"_p_boost__shared_ptrT_gr__top_block_t", "boost::shared_ptr< gr::top_block > *|gr::top_block_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_pmt__pmt_base_t = {"_p_boost__shared_ptrT_pmt__pmt_base_t", "pmt::pmt_t *|boost::shared_ptr< pmt::pmt_base > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
@@ -8381,6 +15397,8 @@ static swig_type_info _swigt__p_gr__top_block = {"_p_gr__top_block", 0, 0, 0, 0,
 static swig_type_info _swigt__p_gr__block = {"_p_gr__block", "gr::block *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr__endianness_t = {"_p_gr__endianness_t", "enum gr::endianness_t *|gr::endianness_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr__lab_radar__corr_dist_estimator_bfi = {"_p_gr__lab_radar__corr_dist_estimator_bfi", "gr::lab_radar::corr_dist_estimator_bfi *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gr__lab_radar__signal_corr_estimator_cf = {"_p_gr__lab_radar__signal_corr_estimator_cf", "gr::lab_radar::signal_corr_estimator_cf *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gr__lab_radar__simple_decimator_cc = {"_p_gr__lab_radar__simple_decimator_cc", "gr::lab_radar::simple_decimator_cc *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr__rt_status_t = {"_p_gr__rt_status_t", "enum gr::rt_status_t *|gr::rt_status_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr__sync_block = {"_p_gr__sync_block", "gr::sync_block *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr__sync_decimator = {"_p_gr__sync_decimator", "gr::sync_decimator *", 0, 0, (void*)0, 0};
@@ -8410,6 +15428,8 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_boost__shared_ptrT_gr__hier_block2_t,
   &_swigt__p_boost__shared_ptrT_gr__io_signature_t,
   &_swigt__p_boost__shared_ptrT_gr__lab_radar__corr_dist_estimator_bfi_t,
+  &_swigt__p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t,
+  &_swigt__p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t,
   &_swigt__p_boost__shared_ptrT_gr__top_block_t,
   &_swigt__p_boost__shared_ptrT_pmt__pmt_base_t,
   &_swigt__p_char,
@@ -8420,6 +15440,8 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_gr__endianness_t,
   &_swigt__p_gr__hier_block2,
   &_swigt__p_gr__lab_radar__corr_dist_estimator_bfi,
+  &_swigt__p_gr__lab_radar__signal_corr_estimator_cf,
+  &_swigt__p_gr__lab_radar__simple_decimator_cc,
   &_swigt__p_gr__rt_status_t,
   &_swigt__p_gr__sync_block,
   &_swigt__p_gr__sync_decimator,
@@ -8452,6 +15474,8 @@ static swig_cast_info _swigc__p_boost__shared_ptrT_gr__flowgraph_t[] = {  {&_swi
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr__hier_block2_t[] = {  {&_swigt__p_boost__shared_ptrT_gr__hier_block2_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr__io_signature_t[] = {  {&_swigt__p_boost__shared_ptrT_gr__io_signature_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr__lab_radar__corr_dist_estimator_bfi_t[] = {  {&_swigt__p_boost__shared_ptrT_gr__lab_radar__corr_dist_estimator_bfi_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t[] = {  {&_swigt__p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t[] = {  {&_swigt__p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr__top_block_t[] = {  {&_swigt__p_boost__shared_ptrT_gr__top_block_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_pmt__pmt_base_t[] = {  {&_swigt__p_boost__shared_ptrT_pmt__pmt_base_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
@@ -8461,13 +15485,15 @@ static swig_cast_info _swigc__p_gr__block_gateway[] = {{&_swigt__p_gr__block_gat
 static swig_cast_info _swigc__p_gr__hier_block2[] = {{&_swigt__p_gr__hier_block2, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr__sync_interpolator[] = {{&_swigt__p_gr__sync_interpolator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr__top_block[] = {{&_swigt__p_gr__top_block, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr__basic_block[] = {  {&_swigt__p_gr__lab_radar__corr_dist_estimator_bfi, _p_gr__lab_radar__corr_dist_estimator_bfiTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__sync_decimator, _p_gr__sync_decimatorTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__basic_block, 0, 0, 0},  {&_swigt__p_gr__block, _p_gr__blockTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__sync_block, _p_gr__sync_blockTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__tagged_stream_block, _p_gr__tagged_stream_blockTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__block_gateway, _p_gr__block_gatewayTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__hier_block2, _p_gr__hier_block2To_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__sync_interpolator, _p_gr__sync_interpolatorTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__top_block, _p_gr__top_blockTo_p_gr__basic_block, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr__block[] = {  {&_swigt__p_gr__lab_radar__corr_dist_estimator_bfi, _p_gr__lab_radar__corr_dist_estimator_bfiTo_p_gr__block, 0, 0},  {&_swigt__p_gr__sync_decimator, _p_gr__sync_decimatorTo_p_gr__block, 0, 0},  {&_swigt__p_gr__block, 0, 0, 0},  {&_swigt__p_gr__sync_block, _p_gr__sync_blockTo_p_gr__block, 0, 0},  {&_swigt__p_gr__tagged_stream_block, _p_gr__tagged_stream_blockTo_p_gr__block, 0, 0},  {&_swigt__p_gr__block_gateway, _p_gr__block_gatewayTo_p_gr__block, 0, 0},  {&_swigt__p_gr__sync_interpolator, _p_gr__sync_interpolatorTo_p_gr__block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr__basic_block[] = {  {&_swigt__p_gr__lab_radar__simple_decimator_cc, _p_gr__lab_radar__simple_decimator_ccTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__lab_radar__corr_dist_estimator_bfi, _p_gr__lab_radar__corr_dist_estimator_bfiTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__sync_decimator, _p_gr__sync_decimatorTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__basic_block, 0, 0, 0},  {&_swigt__p_gr__block, _p_gr__blockTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__sync_block, _p_gr__sync_blockTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__tagged_stream_block, _p_gr__tagged_stream_blockTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__block_gateway, _p_gr__block_gatewayTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__lab_radar__signal_corr_estimator_cf, _p_gr__lab_radar__signal_corr_estimator_cfTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__hier_block2, _p_gr__hier_block2To_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__sync_interpolator, _p_gr__sync_interpolatorTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__top_block, _p_gr__top_blockTo_p_gr__basic_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr__block[] = {  {&_swigt__p_gr__lab_radar__simple_decimator_cc, _p_gr__lab_radar__simple_decimator_ccTo_p_gr__block, 0, 0},  {&_swigt__p_gr__lab_radar__corr_dist_estimator_bfi, _p_gr__lab_radar__corr_dist_estimator_bfiTo_p_gr__block, 0, 0},  {&_swigt__p_gr__sync_decimator, _p_gr__sync_decimatorTo_p_gr__block, 0, 0},  {&_swigt__p_gr__block, 0, 0, 0},  {&_swigt__p_gr__sync_block, _p_gr__sync_blockTo_p_gr__block, 0, 0},  {&_swigt__p_gr__tagged_stream_block, _p_gr__tagged_stream_blockTo_p_gr__block, 0, 0},  {&_swigt__p_gr__block_gateway, _p_gr__block_gatewayTo_p_gr__block, 0, 0},  {&_swigt__p_gr__lab_radar__signal_corr_estimator_cf, _p_gr__lab_radar__signal_corr_estimator_cfTo_p_gr__block, 0, 0},  {&_swigt__p_gr__sync_interpolator, _p_gr__sync_interpolatorTo_p_gr__block, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr__endianness_t[] = {  {&_swigt__p_gr__endianness_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr__lab_radar__corr_dist_estimator_bfi[] = {  {&_swigt__p_gr__lab_radar__corr_dist_estimator_bfi, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr__lab_radar__signal_corr_estimator_cf[] = {  {&_swigt__p_gr__lab_radar__signal_corr_estimator_cf, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr__lab_radar__simple_decimator_cc[] = {  {&_swigt__p_gr__lab_radar__simple_decimator_cc, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr__rt_status_t[] = {  {&_swigt__p_gr__rt_status_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr__sync_block[] = {  {&_swigt__p_gr__lab_radar__corr_dist_estimator_bfi, _p_gr__lab_radar__corr_dist_estimator_bfiTo_p_gr__sync_block, 0, 0},  {&_swigt__p_gr__sync_decimator, _p_gr__sync_decimatorTo_p_gr__sync_block, 0, 0},  {&_swigt__p_gr__sync_block, 0, 0, 0},  {&_swigt__p_gr__sync_interpolator, _p_gr__sync_interpolatorTo_p_gr__sync_block, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr__sync_decimator[] = {  {&_swigt__p_gr__lab_radar__corr_dist_estimator_bfi, _p_gr__lab_radar__corr_dist_estimator_bfiTo_p_gr__sync_decimator, 0, 0},  {&_swigt__p_gr__sync_decimator, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr__sync_block[] = {  {&_swigt__p_gr__lab_radar__simple_decimator_cc, _p_gr__lab_radar__simple_decimator_ccTo_p_gr__sync_block, 0, 0},  {&_swigt__p_gr__lab_radar__corr_dist_estimator_bfi, _p_gr__lab_radar__corr_dist_estimator_bfiTo_p_gr__sync_block, 0, 0},  {&_swigt__p_gr__sync_decimator, _p_gr__sync_decimatorTo_p_gr__sync_block, 0, 0},  {&_swigt__p_gr__sync_block, 0, 0, 0},  {&_swigt__p_gr__sync_interpolator, _p_gr__sync_interpolatorTo_p_gr__sync_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr__sync_decimator[] = {  {&_swigt__p_gr__lab_radar__simple_decimator_cc, _p_gr__lab_radar__simple_decimator_ccTo_p_gr__sync_decimator, 0, 0},  {&_swigt__p_gr__lab_radar__corr_dist_estimator_bfi, _p_gr__lab_radar__corr_dist_estimator_bfiTo_p_gr__sync_decimator, 0, 0},  {&_swigt__p_gr__sync_decimator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_long_long[] = {  {&_swigt__p_long_long, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_short[] = {  {&_swigt__p_short, 0, 0, 0},{0, 0, 0, 0}};
@@ -8494,6 +15520,8 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_boost__shared_ptrT_gr__hier_block2_t,
   _swigc__p_boost__shared_ptrT_gr__io_signature_t,
   _swigc__p_boost__shared_ptrT_gr__lab_radar__corr_dist_estimator_bfi_t,
+  _swigc__p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t,
+  _swigc__p_boost__shared_ptrT_gr__lab_radar__simple_decimator_cc_t,
   _swigc__p_boost__shared_ptrT_gr__top_block_t,
   _swigc__p_boost__shared_ptrT_pmt__pmt_base_t,
   _swigc__p_char,
@@ -8504,6 +15532,8 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_gr__endianness_t,
   _swigc__p_gr__hier_block2,
   _swigc__p_gr__lab_radar__corr_dist_estimator_bfi,
+  _swigc__p_gr__lab_radar__signal_corr_estimator_cf,
+  _swigc__p_gr__lab_radar__simple_decimator_cc,
   _swigc__p_gr__rt_status_t,
   _swigc__p_gr__sync_block,
   _swigc__p_gr__sync_decimator,

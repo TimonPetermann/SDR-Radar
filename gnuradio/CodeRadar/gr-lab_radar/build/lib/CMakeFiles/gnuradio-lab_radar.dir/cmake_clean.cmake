@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gnuradio-lab_radar.dir/corr_dist_estimator_bfi_impl.cc.o"
+  "CMakeFiles/gnuradio-lab_radar.dir/signal_corr_estimator_cf_impl.cc.o"
+  "CMakeFiles/gnuradio-lab_radar.dir/simple_decimator_cc_impl.cc.o"
   "libgnuradio-lab_radar.pdb"
   "libgnuradio-lab_radar.so"
   "libgnuradio-lab_radar.so.1.0.0git"

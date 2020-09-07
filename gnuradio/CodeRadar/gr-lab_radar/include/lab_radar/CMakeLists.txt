@@ -23,5 +23,7 @@
 ########################################################################
 install(FILES
     api.h
-    corr_dist_estimator_bfi.h DESTINATION include/lab_radar
+    corr_dist_estimator_bfi.h
+    signal_corr_estimator_cf.h
+    simple_decimator_cc.h DESTINATION include/lab_radar
 )
