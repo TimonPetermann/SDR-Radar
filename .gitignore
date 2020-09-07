@@ -1,6 +1,51 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+*.pyo
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
 # ignore build folders and binaries
 gnuradio/CwChirpRadar/gr-chirp_radar/build/
 gnuradio/CwChirpRadar/gr-chirp_radar/python/__pycache__/
+gnuradio/CodeRadar/gr-lab_radar/build/
+gnuradio/CodeRadar/gr-lab_radar/python/__ycache__/
+
+
 
 # ignore output files 
 gnuradio/misc/*.dat
