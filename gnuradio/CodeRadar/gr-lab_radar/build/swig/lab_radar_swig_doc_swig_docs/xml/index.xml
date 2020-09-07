@@ -6,7 +6,7 @@
   </compound>
   <compound refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf" kind="class"><name>gr::lab_radar::signal_corr_estimator_cf</name>
     <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1a55882e3ecbb6b017c256d8a2ebea5218" kind="typedef"><name>sptr</name></member>
-    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1a4d56bc5dfd0674be203a52c19e9e0e56" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1af945b60abe82a7b1c87a00ad29876c6e" kind="function"><name>make</name></member>
   </compound>
   <compound refid="classgr_1_1lab__radar_1_1simple__decimator__cc" kind="class"><name>gr::lab_radar::simple_decimator_cc</name>
     <member refid="classgr_1_1lab__radar_1_1simple__decimator__cc_1a3cab297394efe85f68ee1ca5abd33be8" kind="typedef"><name>sptr</name></member>

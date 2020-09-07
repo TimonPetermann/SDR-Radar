@@ -8173,7 +8173,9 @@ SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_make(PyObject *SWIGUNUSEDPAR
   int arg2 ;
   int arg3 ;
   int arg4 ;
-  float arg5 ;
+  int arg5 ;
+  int arg6 ;
+  float arg7 ;
   int val1 ;
   int ecode1 = 0 ;
   int val2 ;
@@ -8182,19 +8184,25 @@ SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_make(PyObject *SWIGUNUSEDPAR
   int ecode3 = 0 ;
   int val4 ;
   int ecode4 = 0 ;
-  float val5 ;
+  int val5 ;
   int ecode5 = 0 ;
+  int val6 ;
+  int ecode6 = 0 ;
+  float val7 ;
+  int ecode7 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
   PyObject * obj3 = 0 ;
   PyObject * obj4 = 0 ;
+  PyObject * obj5 = 0 ;
+  PyObject * obj6 = 0 ;
   char * kwnames[] = {
-    (char *)"sample_rate_rx",  (char *)"sample_fac",  (char *)"code_length",  (char *)"sps_rx",  (char *)"v_max",  NULL 
+    (char *)"sample_rate_rx",  (char *)"sample_fac",  (char *)"code_length",  (char *)"sps_rx",  (char *)"avg_length",  (char *)"skip_data",  (char *)"v_max",  NULL 
   };
   gr::lab_radar::signal_corr_estimator_cf::sptr result;
   
-  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OOOOO:signal_corr_estimator_cf_make", kwnames, &obj0, &obj1, &obj2, &obj3, &obj4)) SWIG_fail;
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OOOOOOO:signal_corr_estimator_cf_make", kwnames, &obj0, &obj1, &obj2, &obj3, &obj4, &obj5, &obj6)) SWIG_fail;
   ecode1 = SWIG_AsVal_int(obj0, &val1);
   if (!SWIG_IsOK(ecode1)) {
     SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "signal_corr_estimator_cf_make" "', argument " "1"" of type '" "int""'");
@@ -8215,14 +8223,24 @@ SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_make(PyObject *SWIGUNUSEDPAR
     SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "signal_corr_estimator_cf_make" "', argument " "4"" of type '" "int""'");
   } 
   arg4 = static_cast< int >(val4);
-  ecode5 = SWIG_AsVal_float(obj4, &val5);
+  ecode5 = SWIG_AsVal_int(obj4, &val5);
   if (!SWIG_IsOK(ecode5)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "signal_corr_estimator_cf_make" "', argument " "5"" of type '" "float""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "signal_corr_estimator_cf_make" "', argument " "5"" of type '" "int""'");
   } 
-  arg5 = static_cast< float >(val5);
+  arg5 = static_cast< int >(val5);
+  ecode6 = SWIG_AsVal_int(obj5, &val6);
+  if (!SWIG_IsOK(ecode6)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "signal_corr_estimator_cf_make" "', argument " "6"" of type '" "int""'");
+  } 
+  arg6 = static_cast< int >(val6);
+  ecode7 = SWIG_AsVal_float(obj6, &val7);
+  if (!SWIG_IsOK(ecode7)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "signal_corr_estimator_cf_make" "', argument " "7"" of type '" "float""'");
+  } 
+  arg7 = static_cast< float >(val7);
   {
     try {
-      result = gr::lab_radar::signal_corr_estimator_cf::make(arg1,arg2,arg3,arg4,arg5);
+      result = gr::lab_radar::signal_corr_estimator_cf::make(arg1,arg2,arg3,arg4,arg5,arg6,arg7);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -8439,7 +8457,9 @@ SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_make(PyObject *SWIGUNUS
   int arg3 ;
   int arg4 ;
   int arg5 ;
-  float arg6 ;
+  int arg6 ;
+  int arg7 ;
+  float arg8 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   int val2 ;
@@ -8450,20 +8470,26 @@ SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_make(PyObject *SWIGUNUS
   int ecode4 = 0 ;
   int val5 ;
   int ecode5 = 0 ;
-  float val6 ;
+  int val6 ;
   int ecode6 = 0 ;
+  int val7 ;
+  int ecode7 = 0 ;
+  float val8 ;
+  int ecode8 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
   PyObject * obj3 = 0 ;
   PyObject * obj4 = 0 ;
   PyObject * obj5 = 0 ;
+  PyObject * obj6 = 0 ;
+  PyObject * obj7 = 0 ;
   char * kwnames[] = {
-    (char *)"self",  (char *)"sample_rate_rx",  (char *)"sample_fac",  (char *)"code_length",  (char *)"sps_rx",  (char *)"v_max",  NULL 
+    (char *)"self",  (char *)"sample_rate_rx",  (char *)"sample_fac",  (char *)"code_length",  (char *)"sps_rx",  (char *)"avg_length",  (char *)"skip_data",  (char *)"v_max",  NULL 
   };
   gr::lab_radar::signal_corr_estimator_cf::sptr result;
   
-  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OOOOOO:signal_corr_estimator_cf_sptr_make", kwnames, &obj0, &obj1, &obj2, &obj3, &obj4, &obj5)) SWIG_fail;
+  if (!PyArg_ParseTupleAndKeywords(args, kwargs, "OOOOOOOO:signal_corr_estimator_cf_sptr_make", kwnames, &obj0, &obj1, &obj2, &obj3, &obj4, &obj5, &obj6, &obj7)) SWIG_fail;
   res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__lab_radar__signal_corr_estimator_cf_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "signal_corr_estimator_cf_sptr_make" "', argument " "1"" of type '" "boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > *""'"); 
@@ -8489,14 +8515,24 @@ SWIGINTERN PyObject *_wrap_signal_corr_estimator_cf_sptr_make(PyObject *SWIGUNUS
     SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "signal_corr_estimator_cf_sptr_make" "', argument " "5"" of type '" "int""'");
   } 
   arg5 = static_cast< int >(val5);
-  ecode6 = SWIG_AsVal_float(obj5, &val6);
+  ecode6 = SWIG_AsVal_int(obj5, &val6);
   if (!SWIG_IsOK(ecode6)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "signal_corr_estimator_cf_sptr_make" "', argument " "6"" of type '" "float""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "signal_corr_estimator_cf_sptr_make" "', argument " "6"" of type '" "int""'");
   } 
-  arg6 = static_cast< float >(val6);
+  arg6 = static_cast< int >(val6);
+  ecode7 = SWIG_AsVal_int(obj6, &val7);
+  if (!SWIG_IsOK(ecode7)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "signal_corr_estimator_cf_sptr_make" "', argument " "7"" of type '" "int""'");
+  } 
+  arg7 = static_cast< int >(val7);
+  ecode8 = SWIG_AsVal_float(obj7, &val8);
+  if (!SWIG_IsOK(ecode8)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode8), "in method '" "signal_corr_estimator_cf_sptr_make" "', argument " "8"" of type '" "float""'");
+  } 
+  arg8 = static_cast< float >(val8);
   {
     try {
-      result = (*arg1)->make(arg2,arg3,arg4,arg5,arg6);
+      result = (*arg1)->make(arg2,arg3,arg4,arg5,arg6,arg7,arg8);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -15033,7 +15069,7 @@ static PyMethodDef SwigMethods[] = {
 	 { "corr_dist_estimator_bfi_sptr_swigregister", corr_dist_estimator_bfi_sptr_swigregister, METH_O, NULL},
 	 { "corr_dist_estimator_bfi_sptr_swiginit", corr_dist_estimator_bfi_sptr_swiginit, METH_VARARGS, NULL},
 	 { "signal_corr_estimator_cf_make", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_make, METH_VARARGS|METH_KEYWORDS, "\n"
-		"signal_corr_estimator_cf_make(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max) -> signal_corr_estimator_cf_sptr\n"
+		"signal_corr_estimator_cf_make(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, int avg_length, int skip_data, float v_max) -> signal_corr_estimator_cf_sptr\n"
 		"<+description of block+>\n"
 		"\n"
 		"Constructor Specific Documentation:\n"
@@ -15047,6 +15083,8 @@ static PyMethodDef SwigMethods[] = {
 		"    sample_fac : \n"
 		"    code_length : \n"
 		"    sps_rx : \n"
+		"    avg_length : \n"
+		"    skip_data : \n"
 		"    v_max : \n"
 		""},
 	 { "delete_signal_corr_estimator_cf", _wrap_delete_signal_corr_estimator_cf, METH_O, "delete_signal_corr_estimator_cf(signal_corr_estimator_cf self)"},
@@ -15058,7 +15096,7 @@ static PyMethodDef SwigMethods[] = {
 	 { "signal_corr_estimator_cf_sptr___deref__", _wrap_signal_corr_estimator_cf_sptr___deref__, METH_O, "signal_corr_estimator_cf_sptr___deref__(signal_corr_estimator_cf_sptr self) -> signal_corr_estimator_cf"},
 	 { "delete_signal_corr_estimator_cf_sptr", _wrap_delete_signal_corr_estimator_cf_sptr, METH_O, "delete_signal_corr_estimator_cf_sptr(signal_corr_estimator_cf_sptr self)"},
 	 { "signal_corr_estimator_cf_sptr_make", (PyCFunction)(void(*)(void))_wrap_signal_corr_estimator_cf_sptr_make, METH_VARARGS|METH_KEYWORDS, "\n"
-		"signal_corr_estimator_cf_sptr_make(signal_corr_estimator_cf_sptr self, int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max) -> signal_corr_estimator_cf_sptr\n"
+		"signal_corr_estimator_cf_sptr_make(signal_corr_estimator_cf_sptr self, int sample_rate_rx, int sample_fac, int code_length, int sps_rx, int avg_length, int skip_data, float v_max) -> signal_corr_estimator_cf_sptr\n"
 		"<+description of block+>\n"
 		"\n"
 		"Constructor Specific Documentation:\n"
@@ -15072,6 +15110,8 @@ static PyMethodDef SwigMethods[] = {
 		"    sample_fac : \n"
 		"    code_length : \n"
 		"    sps_rx : \n"
+		"    avg_length : \n"
+		"    skip_data : \n"
 		"    v_max : \n"
 		""},
 	 { "signal_corr_estimator_cf_sptr_history", _wrap_signal_corr_estimator_cf_sptr_history, METH_O, "signal_corr_estimator_cf_sptr_history(signal_corr_estimator_cf_sptr self) -> unsigned int"},

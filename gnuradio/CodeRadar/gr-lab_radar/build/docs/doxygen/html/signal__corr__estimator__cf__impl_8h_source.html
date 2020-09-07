@@ -77,50 +77,58 @@ $(document).ready(function(){initNavTree('signal__corr__estimator__cf__impl_8h_s
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define INCLUDED_LAB_RADAR_SIGNAL_CORR_ESTIMATOR_CF_IMPL_H</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="signal__corr__estimator__cf_8h.html">lab_radar/signal_corr_estimator_cf.h</a>&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegr.html">gr</a></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">namespace </span>lab_radar</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html">   31</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html">signal_corr_estimator_cf_impl</a> : <span class="keyword">public</span> <a class="code" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf.html">signal_corr_estimator_cf</a></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keywordtype">int</span> nelements_rx;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keywordtype">int</span> nelements_tx;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keywordtype">float</span> dist_factor;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordtype">int</span> factor;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordtype">float</span> v_max;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordtype">void</span> findCorrelationPeak(std::tuple&lt;float,int&gt; &amp;result, gr_complex *arr1,gr_complex *arr2);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <a class="code" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html#a52fed0568a1a451af33b2378c5373adf">signal_corr_estimator_cf_impl</a>(<span class="keywordtype">int</span> sample_rate_rx, <span class="keywordtype">int</span> sample_fac, <span class="keywordtype">int</span> code_length, <span class="keywordtype">int</span> sps_rx, <span class="keywordtype">float</span> v_max);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <a class="code" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html#aab71525615382d751bf5e9801c73053d">~signal_corr_estimator_cf_impl</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="comment">// Where all the action really happens</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html#a50782a5a63a99ef9d28baae5ac70facd">forecast</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html#a282c6200dce2f936a4d151130ba2b312">general_work</a>(<span class="keywordtype">int</span> noutput_items,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                       gr_vector_int &amp;ninput_items,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                       gr_vector_const_void_star &amp;input_items,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                       gr_vector_void_star &amp;output_items);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    };</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  } <span class="comment">// namespace lab_radar</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <span class="comment">// namespace gr</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LAB_RADAR_SIGNAL_CORR_ESTIMATOR_CF_IMPL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegr.html">gr</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">namespace </span>lab_radar</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html">   32</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html">signal_corr_estimator_cf_impl</a> : <span class="keyword">public</span> <a class="code" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf.html">signal_corr_estimator_cf</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keywordtype">int</span> nelements_rx;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keywordtype">int</span> nelements_tx;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordtype">float</span> dist_factor;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordtype">int</span> factor;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordtype">int</span> ncheckindices;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordtype">bool</span> locked;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordtype">float</span> sum_corr;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keywordtype">float</span> sum_offset;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      std::vector&lt;float&gt; corr_results;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      std::vector&lt;float&gt; offsets;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordtype">int</span> avg_length;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordtype">int</span> i_corr_results;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordtype">void</span> findCorrelationPeak(std::tuple&lt;float,float&gt; &amp;result, gr_complex *arr1,gr_complex *arr2);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <a class="code" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html#a4a84d0a395fad466224e40eea09aa9bb">signal_corr_estimator_cf_impl</a>(<span class="keywordtype">int</span> sample_rate_rx, <span class="keywordtype">int</span> sample_fac, <span class="keywordtype">int</span> code_length, <span class="keywordtype">int</span> sps_rx, <span class="keywordtype">int</span> avg_length, <span class="keywordtype">int</span> skip_data, <span class="keywordtype">float</span> v_max);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <a class="code" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html#aab71525615382d751bf5e9801c73053d">~signal_corr_estimator_cf_impl</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="comment">// Where all the action really happens</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html#a50782a5a63a99ef9d28baae5ac70facd">forecast</a>(<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html#a282c6200dce2f936a4d151130ba2b312">general_work</a>(<span class="keywordtype">int</span> noutput_items,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                       gr_vector_int &amp;ninput_items,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                       gr_vector_const_void_star &amp;input_items,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                       gr_vector_void_star &amp;output_items);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    };</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  } <span class="comment">// namespace lab_radar</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_LAB_RADAR_SIGNAL_CORR_ESTIMATOR_CF_IMPL_H */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_html_a4a84d0a395fad466224e40eea09aa9bb"><div class="ttname"><a href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html#a4a84d0a395fad466224e40eea09aa9bb">gr::lab_radar::signal_corr_estimator_cf_impl::signal_corr_estimator_cf_impl</a></div><div class="ttdeci">signal_corr_estimator_cf_impl(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, int avg_length, int skip_data, float v_max)</div></div>
 <div class="ttc" id="aclassgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_html_aab71525615382d751bf5e9801c73053d"><div class="ttname"><a href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html#aab71525615382d751bf5e9801c73053d">gr::lab_radar::signal_corr_estimator_cf_impl::~signal_corr_estimator_cf_impl</a></div><div class="ttdeci">~signal_corr_estimator_cf_impl()</div></div>
 <div class="ttc" id="aclassgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_html_a50782a5a63a99ef9d28baae5ac70facd"><div class="ttname"><a href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html#a50782a5a63a99ef9d28baae5ac70facd">gr::lab_radar::signal_corr_estimator_cf_impl::forecast</a></div><div class="ttdeci">void forecast(int noutput_items, gr_vector_int &amp;ninput_items_required)</div></div>
-<div class="ttc" id="aclassgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_html_a52fed0568a1a451af33b2378c5373adf"><div class="ttname"><a href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html#a52fed0568a1a451af33b2378c5373adf">gr::lab_radar::signal_corr_estimator_cf_impl::signal_corr_estimator_cf_impl</a></div><div class="ttdeci">signal_corr_estimator_cf_impl(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max)</div></div>
 <div class="ttc" id="aclassgr_1_1lab__radar_1_1signal__corr__estimator__cf_html"><div class="ttname"><a href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf.html">gr::lab_radar::signal_corr_estimator_cf</a></div><div class="ttdoc">&lt;+description of block+&gt;</div><div class="ttdef"><b>Definition:</b> signal_corr_estimator_cf.h:35</div></div>
 <div class="ttc" id="aclassgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_html_a282c6200dce2f936a4d151130ba2b312"><div class="ttname"><a href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html#a282c6200dce2f936a4d151130ba2b312">gr::lab_radar::signal_corr_estimator_cf_impl::general_work</a></div><div class="ttdeci">int general_work(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div></div>
 <div class="ttc" id="anamespacegr_html"><div class="ttname"><a href="namespacegr.html">gr</a></div><div class="ttdef"><b>Definition:</b> corr_dist_estimator_bfi.h:27</div></div>
 <div class="ttc" id="asignal__corr__estimator__cf_8h_html"><div class="ttname"><a href="signal__corr__estimator__cf_8h.html">signal_corr_estimator_cf.h</a></div></div>
-<div class="ttc" id="aclassgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_html"><div class="ttname"><a href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html">gr::lab_radar::signal_corr_estimator_cf_impl</a></div><div class="ttdef"><b>Definition:</b> signal_corr_estimator_cf_impl.h:31</div></div>
+<div class="ttc" id="aclassgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_html"><div class="ttname"><a href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl.html">gr::lab_radar::signal_corr_estimator_cf_impl</a></div><div class="ttdef"><b>Definition:</b> signal_corr_estimator_cf_impl.h:32</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

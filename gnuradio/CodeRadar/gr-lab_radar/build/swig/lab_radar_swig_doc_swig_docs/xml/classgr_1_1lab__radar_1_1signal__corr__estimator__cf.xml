@@ -20,10 +20,10 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1a4d56bc5dfd0674be203a52c19e9e0e56" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1af945b60abe82a7b1c87a00ad29876c6e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1a55882e3ecbb6b017c256d8a2ebea5218" kindref="member">sptr</ref></type>
         <definition>static sptr gr::lab_radar::signal_corr_estimator_cf::make</definition>
-        <argsstring>(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max)</argsstring>
+        <argsstring>(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, int avg_length, int skip_data, float v_max)</argsstring>
         <name>make</name>
         <param>
           <type>int</type>
@@ -42,6 +42,14 @@
           <declname>sps_rx</declname>
         </param>
         <param>
+          <type>int</type>
+          <declname>avg_length</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>skip_data</declname>
+        </param>
+        <param>
           <type>float</type>
           <declname>v_max</declname>
         </param>
@@ -49,7 +57,7 @@
 <para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf" kindref="compound">lab_radar::signal_corr_estimator_cf</ref>. </para>
         </briefdescription>
         <detaileddescription>
-<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf" kindref="compound">lab_radar::signal_corr_estimator_cf</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1a4d56bc5dfd0674be203a52c19e9e0e56" kindref="member">lab_radar::signal_corr_estimator_cf::make</ref> is the public interface for creating new instances. </para>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf" kindref="compound">lab_radar::signal_corr_estimator_cf</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1af945b60abe82a7b1c87a00ad29876c6e" kindref="member">lab_radar::signal_corr_estimator_cf::make</ref> is the public interface for creating new instances. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -85,7 +93,7 @@
     </collaborationgraph>
     <location file="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/include/lab_radar/signal_corr_estimator_cf.h" line="36" column="1" bodyfile="/home/dominik/Dokumente/Uni/Master/Sem2/Telecom/lab/radar/SDR-Positioning-System/gnuradio/CodeRadar/gr-lab_radar/include/lab_radar/signal_corr_estimator_cf.h" bodystart="35" bodyend="50"/>
     <listofallmembers>
-      <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1a4d56bc5dfd0674be203a52c19e9e0e56" prot="public" virt="non-virtual"><scope>gr::lab_radar::signal_corr_estimator_cf</scope><name>make</name></member>
+      <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1af945b60abe82a7b1c87a00ad29876c6e" prot="public" virt="non-virtual"><scope>gr::lab_radar::signal_corr_estimator_cf</scope><name>make</name></member>
       <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1a55882e3ecbb6b017c256d8a2ebea5218" prot="public" virt="non-virtual"><scope>gr::lab_radar::signal_corr_estimator_cf</scope><name>sptr</name></member>
     </listofallmembers>
   </compounddef>

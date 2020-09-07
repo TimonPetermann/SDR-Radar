@@ -33,30 +33,31 @@ namespace gr
   {
 
     signal_corr_estimator_cf::sptr
-    signal_corr_estimator_cf::make(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max)
+    signal_corr_estimator_cf::make(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, int avg_length, int skip_data, float v_max)
     {
-      return gnuradio::get_initial_sptr(new signal_corr_estimator_cf_impl(sample_rate_rx, sample_fac, code_length, sps_rx, v_max));
+      return gnuradio::get_initial_sptr(new signal_corr_estimator_cf_impl(sample_rate_rx, sample_fac, code_length, sps_rx, avg_length, skip_data, v_max));
     }
 
     /*
      * The private constructor
      */
-    signal_corr_estimator_cf_impl::signal_corr_estimator_cf_impl(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max)
+    signal_corr_estimator_cf_impl::signal_corr_estimator_cf_impl(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, int avg_length, int skip_data, float v_max)
         : gr::block("signal_corr_estimator_cf",
                     gr::io_signature::make(2, 2, sizeof(gr_complex)),
-                    gr::io_signature::make(1, 3, sizeof(float)))
+                    gr::io_signature::make(1, 3, sizeof(float))),
+          avg_length(avg_length), skip_data(skip_data)
     {
       nelements_rx = sps_rx * code_length;
       nelements_tx = sps_rx * code_length * sample_fac;
       factor = sample_fac;
       dist_factor = 299792458. / ((float)(sample_rate_rx * factor * 2));
-      avg_length = 200;
       corr_results = std::vector<float>(avg_length);
       offsets = std::vector<float>(avg_length);
       sum_corr = 0;
+      sum_offset = 0;
       locked = false;
-      float indices = ((float)nelements_tx / (float)(sample_rate_rx * factor)) / dist_factor;
-      ncheckindices = std::max(2.f, indices);
+      int indices = std::ceil(((float)nelements_tx / (float)(sample_rate_rx * factor)) / dist_factor);
+      ncheckindices = std::max(2, indices);
       i_corr_results = 0;
     }
 
@@ -69,8 +70,8 @@ namespace gr
 
     void signal_corr_estimator_cf_impl::forecast(int noutput_items, gr_vector_int &ninput_items_required)
     {
-      ninput_items_required[0] = noutput_items * nelements_rx;
-      ninput_items_required[1] = noutput_items * nelements_tx;
+      ninput_items_required[0] = noutput_items * nelements_rx * skip_data;
+      ninput_items_required[1] = noutput_items * nelements_tx * skip_data;
     }
 
     void signal_corr_estimator_cf_impl::findCorrelationPeak(std::tuple<float, float> &result, gr_complex *arr1, gr_complex *arr2)
@@ -81,7 +82,7 @@ namespace gr
       float abs_corr = 0;
       if (locked)
       {
-        int curoffset = std::round(std::accumulate(offsets.begin(), offsets.end(), 0) / (float)avg_length);
+        int curoffset = std::round(sum_offset / (float)avg_length);
 
         for (int i = -ncheckindices; i <= ncheckindices; i++)
         {
@@ -116,11 +117,13 @@ namespace gr
         }
       }
       sum_corr -= corr_results[i_corr_results];
+      sum_offset -= offsets[i_corr_results];
       corr_results[i_corr_results] = peak;
       offsets[i_corr_results] = offset;
       sum_corr += peak;
+      sum_offset += offset;
       i_corr_results = (i_corr_results + 1) % avg_length;
-      if (abs(sum_corr - peak * avg_length) / sum_corr < 0.05)
+      if (abs(sum_corr - peak * avg_length) / sum_corr < 0.1)
       {
         locked = true;
       }
@@ -128,7 +131,7 @@ namespace gr
       {
         locked = false;
       }
-      offset = std::accumulate(offsets.begin(), offsets.end(), 0) / (float)avg_length;
+      offset = sum_offset / (float)avg_length;
       peak = sum_corr / (float)avg_length;
     }
 
@@ -146,20 +149,25 @@ namespace gr
       int num_rx = ninput_items[0];
       int num_tx = ninput_items[1];
 
-      noutput_items = std::min(noutput_items, std::min(num_rx / nelements_rx, num_tx / nelements_tx));
+//      noutput_items = std::min(noutput_items, std::min(num_rx / nelements_rx, num_tx / nelements_tx));
       //signal processing (complex correlation)
-      for (int i = 0; i < noutput_items; i++)
+      std::tuple<float, float> corr_res = std::make_tuple<float, float>(0.0, 0.0);
+      int outindex = 0;
+      for (int i = 0; i < noutput_items*skip_data; i++)
       {
-        std::tuple<float, float> corr_res = std::make_tuple<float, float>(0.0, 0);
-        findCorrelationPeak(corr_res, rx + i * nelements_rx, tx + i * nelements_tx);
-        peak[i] = std::get<0>(corr_res);
-        offset[i] = std::get<1>(corr_res);
-        dist[i] = offset[i] * dist_factor;
+        if (i % skip_data == 0)
+        {
+          findCorrelationPeak(corr_res, rx + i * nelements_rx, tx + i * nelements_tx);
+          peak[outindex] = std::get<0>(corr_res);
+          offset[outindex] = std::get<1>(corr_res);
+          dist[outindex] = offset[outindex] * dist_factor;
+          outindex++;
+        }
       }
       // Tell runtime system how many input items we consumed on
       // each input stream.
-      consume(0, noutput_items * nelements_rx);
-      consume(1, noutput_items * nelements_tx);
+      consume(0, noutput_items * nelements_rx * skip_data);
+      consume(1, noutput_items * nelements_tx * skip_data);
 
       // Tell runtime system how many output items we produced.
       return noutput_items;

@@ -46,7 +46,7 @@ namespace gr {
        * class. lab_radar::signal_corr_estimator_cf::make is the public interface for
        * creating new instances.
        */
-      static sptr make(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max);
+      static sptr make(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, int avg_length, int skip_data, float v_max);
     };
 
   } // namespace lab_radar

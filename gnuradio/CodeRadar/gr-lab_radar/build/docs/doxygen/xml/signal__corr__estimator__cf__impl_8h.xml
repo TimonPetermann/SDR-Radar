@@ -3,6 +3,7 @@
   <compounddef id="signal__corr__estimator__cf__impl_8h" kind="file" language="C++">
     <compoundname>signal_corr_estimator_cf_impl.h</compoundname>
     <includes refid="signal__corr__estimator__cf_8h" local="no">lab_radar/signal_corr_estimator_cf.h</includes>
+    <includes local="no">vector</includes>
     <incdepgraph>
       <node id="4">
         <label>gnuradio/attributes.h</label>
@@ -12,6 +13,11 @@
         <link refid="signal__corr__estimator__cf__impl_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vector</label>
       </node>
       <node id="5">
         <label>gnuradio/block.h</label>

@@ -24,7 +24,6 @@ from PyQt5 import Qt
 from gnuradio import qtgui
 from gnuradio.filter import firdes
 import sip
-from gnuradio import analog
 from gnuradio import blocks
 from gnuradio import digital
 from gnuradio import gr
@@ -34,6 +33,7 @@ from argparse import ArgumentParser
 from gnuradio.eng_arg import eng_float, intx
 from gnuradio import eng_notation
 from gnuradio.qtgui import Range, RangeWidget
+import iio
 import lab_radar
 from gnuradio import qtgui
 
@@ -73,16 +73,16 @@ class test1(gr.top_block, Qt.QWidget):
         ##################################################
         # Variables
         ##################################################
-        self.sps = sps = 2
-        self.samp_rate_rx = samp_rate_rx = 4000000
-        self.divider = divider = 50
-        self.delay = delay = 50
+        self.sps = sps = 4
+        self.samp_rate_rx = samp_rate_rx = 3000000
+        self.divider = divider = 2
+        self.delay = delay = 10
         self.bpsk = bpsk = digital.constellation_bpsk().base()
 
         ##################################################
         # Blocks
         ##################################################
-        self._delay_range = Range(0, 8*divider*sps-1, 1, 50, 200)
+        self._delay_range = Range(0, 8*divider*sps-1, 1, 10, 200)
         self._delay_win = RangeWidget(self._delay_range, self.set_delay, 'delay', "counter_slider", float)
         self.top_grid_layout.addWidget(self._delay_win)
         self.qtgui_time_sink_x_0 = qtgui.time_sink_f(
@@ -133,7 +133,9 @@ class test1(gr.top_block, Qt.QWidget):
         self._qtgui_time_sink_x_0_win = sip.wrapinstance(self.qtgui_time_sink_x_0.pyqwidget(), Qt.QWidget)
         self.top_grid_layout.addWidget(self._qtgui_time_sink_x_0_win)
         self.lab_radar_simple_decimator_cc_0 = lab_radar.simple_decimator_cc(divider)
-        self.lab_radar_signal_corr_estimator_cf_0 = lab_radar.signal_corr_estimator_cf(samp_rate_rx, divider, 8, sps, 10)
+        self.lab_radar_signal_corr_estimator_cf_0 = lab_radar.signal_corr_estimator_cf(samp_rate_rx, divider, 8, sps, 10, 60, 10)
+        self.iio_pluto_source_0 = iio.pluto_source('', 2400000000, samp_rate_rx, 2000000, 327680, True, True, True, 'fast_attack', 64, '', True)
+        self.iio_pluto_sink_0 = iio.pluto_sink('', 2400000000, samp_rate_rx, 2000000, 327680, False, 10.0, '', True)
         self.digital_constellation_modulator_0 = digital.generic_mod(
             constellation=bpsk,
             differential=False,
@@ -143,27 +145,22 @@ class test1(gr.top_block, Qt.QWidget):
             verbose=False,
             log=False)
         self.blocks_vector_source_x_0 = blocks.vector_source_b((154,154,154,154,154,154,154,154), True, 1, [])
-        self.blocks_throttle_0 = blocks.throttle(gr.sizeof_char*1, samp_rate_rx/sps/8,True)
         self.blocks_delay_0 = blocks.delay(gr.sizeof_gr_complex*1, delay)
-        self.blocks_add_xx_0 = blocks.add_vcc(1)
-        self.analog_noise_source_x_0 = analog.noise_source_c(analog.GR_GAUSSIAN, 0.1, 0)
 
 
 
         ##################################################
         # Connections
         ##################################################
-        self.connect((self.analog_noise_source_x_0, 0), (self.blocks_add_xx_0, 1))
-        self.connect((self.blocks_add_xx_0, 0), (self.lab_radar_signal_corr_estimator_cf_0, 0))
         self.connect((self.blocks_delay_0, 0), (self.lab_radar_simple_decimator_cc_0, 0))
-        self.connect((self.blocks_throttle_0, 0), (self.digital_constellation_modulator_0, 0))
-        self.connect((self.blocks_vector_source_x_0, 0), (self.blocks_throttle_0, 0))
+        self.connect((self.blocks_vector_source_x_0, 0), (self.digital_constellation_modulator_0, 0))
         self.connect((self.digital_constellation_modulator_0, 0), (self.blocks_delay_0, 0))
         self.connect((self.digital_constellation_modulator_0, 0), (self.lab_radar_signal_corr_estimator_cf_0, 1))
+        self.connect((self.iio_pluto_source_0, 0), (self.lab_radar_signal_corr_estimator_cf_0, 0))
         self.connect((self.lab_radar_signal_corr_estimator_cf_0, 2), (self.qtgui_time_sink_x_0, 2))
         self.connect((self.lab_radar_signal_corr_estimator_cf_0, 1), (self.qtgui_time_sink_x_0, 1))
         self.connect((self.lab_radar_signal_corr_estimator_cf_0, 0), (self.qtgui_time_sink_x_0, 0))
-        self.connect((self.lab_radar_simple_decimator_cc_0, 0), (self.blocks_add_xx_0, 0))
+        self.connect((self.lab_radar_simple_decimator_cc_0, 0), (self.iio_pluto_sink_0, 0))
 
     def closeEvent(self, event):
         self.settings = Qt.QSettings("GNU Radio", "test1")
@@ -175,7 +172,6 @@ class test1(gr.top_block, Qt.QWidget):
 
     def set_sps(self, sps):
         self.sps = sps
-        self.blocks_throttle_0.set_sample_rate(self.samp_rate_rx/self.sps/8)
         self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate_rx/self.sps/8)
 
     def get_samp_rate_rx(self):
@@ -183,7 +179,8 @@ class test1(gr.top_block, Qt.QWidget):
 
     def set_samp_rate_rx(self, samp_rate_rx):
         self.samp_rate_rx = samp_rate_rx
-        self.blocks_throttle_0.set_sample_rate(self.samp_rate_rx/self.sps/8)
+        self.iio_pluto_sink_0.set_params(2400000000, self.samp_rate_rx, 2000000, 10.0, '', True)
+        self.iio_pluto_source_0.set_params(2400000000, self.samp_rate_rx, 2000000, True, True, True, 'fast_attack', 64, '', True)
         self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate_rx/self.sps/8)
 
     def get_divider(self):

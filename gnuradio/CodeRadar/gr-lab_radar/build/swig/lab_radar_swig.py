@@ -457,6 +457,8 @@ class signal_corr_estimator_cf(object):
         sample_fac : 
         code_length : 
         sps_rx : 
+        avg_length : 
+        skip_data : 
         v_max : 
     """
 
@@ -467,9 +469,9 @@ class signal_corr_estimator_cf(object):
     __repr__ = _swig_repr
 
     @staticmethod
-    def make(sample_rate_rx: "int", sample_fac: "int", code_length: "int", sps_rx: "int", v_max: "float") -> "gr::lab_radar::signal_corr_estimator_cf::sptr":
+    def make(sample_rate_rx: "int", sample_fac: "int", code_length: "int", sps_rx: "int", avg_length: "int", skip_data: "int", v_max: "float") -> "gr::lab_radar::signal_corr_estimator_cf::sptr":
         r"""
-        make(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max) -> signal_corr_estimator_cf_sptr
+        make(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, int avg_length, int skip_data, float v_max) -> signal_corr_estimator_cf_sptr
         <+description of block+>
 
         Constructor Specific Documentation:
@@ -483,17 +485,19 @@ class signal_corr_estimator_cf(object):
             sample_fac : 
             code_length : 
             sps_rx : 
+            avg_length : 
+            skip_data : 
             v_max : 
         """
-        return _lab_radar_swig.signal_corr_estimator_cf_make(sample_rate_rx, sample_fac, code_length, sps_rx, v_max)
+        return _lab_radar_swig.signal_corr_estimator_cf_make(sample_rate_rx, sample_fac, code_length, sps_rx, avg_length, skip_data, v_max)
     __swig_destroy__ = _lab_radar_swig.delete_signal_corr_estimator_cf
 
 # Register signal_corr_estimator_cf in _lab_radar_swig:
 _lab_radar_swig.signal_corr_estimator_cf_swigregister(signal_corr_estimator_cf)
 
-def signal_corr_estimator_cf_make(sample_rate_rx: "int", sample_fac: "int", code_length: "int", sps_rx: "int", v_max: "float") -> "gr::lab_radar::signal_corr_estimator_cf::sptr":
+def signal_corr_estimator_cf_make(sample_rate_rx: "int", sample_fac: "int", code_length: "int", sps_rx: "int", avg_length: "int", skip_data: "int", v_max: "float") -> "gr::lab_radar::signal_corr_estimator_cf::sptr":
     r"""
-    signal_corr_estimator_cf_make(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max) -> signal_corr_estimator_cf_sptr
+    signal_corr_estimator_cf_make(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, int avg_length, int skip_data, float v_max) -> signal_corr_estimator_cf_sptr
     <+description of block+>
 
     Constructor Specific Documentation:
@@ -507,9 +511,11 @@ def signal_corr_estimator_cf_make(sample_rate_rx: "int", sample_fac: "int", code
         sample_fac : 
         code_length : 
         sps_rx : 
+        avg_length : 
+        skip_data : 
         v_max : 
     """
-    return _lab_radar_swig.signal_corr_estimator_cf_make(sample_rate_rx, sample_fac, code_length, sps_rx, v_max)
+    return _lab_radar_swig.signal_corr_estimator_cf_make(sample_rate_rx, sample_fac, code_length, sps_rx, avg_length, skip_data, v_max)
 
 class signal_corr_estimator_cf_sptr(object):
     r"""Proxy of C++ boost::shared_ptr< gr::lab_radar::signal_corr_estimator_cf > class."""
@@ -529,9 +535,9 @@ class signal_corr_estimator_cf_sptr(object):
         return _lab_radar_swig.signal_corr_estimator_cf_sptr___deref__(self)
     __swig_destroy__ = _lab_radar_swig.delete_signal_corr_estimator_cf_sptr
 
-    def make(self, sample_rate_rx: "int", sample_fac: "int", code_length: "int", sps_rx: "int", v_max: "float") -> "gr::lab_radar::signal_corr_estimator_cf::sptr":
+    def make(self, sample_rate_rx: "int", sample_fac: "int", code_length: "int", sps_rx: "int", avg_length: "int", skip_data: "int", v_max: "float") -> "gr::lab_radar::signal_corr_estimator_cf::sptr":
         r"""
-        make(signal_corr_estimator_cf_sptr self, int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max) -> signal_corr_estimator_cf_sptr
+        make(signal_corr_estimator_cf_sptr self, int sample_rate_rx, int sample_fac, int code_length, int sps_rx, int avg_length, int skip_data, float v_max) -> signal_corr_estimator_cf_sptr
         <+description of block+>
 
         Constructor Specific Documentation:
@@ -545,9 +551,11 @@ class signal_corr_estimator_cf_sptr(object):
             sample_fac : 
             code_length : 
             sps_rx : 
+            avg_length : 
+            skip_data : 
             v_max : 
         """
-        return _lab_radar_swig.signal_corr_estimator_cf_sptr_make(self, sample_rate_rx, sample_fac, code_length, sps_rx, v_max)
+        return _lab_radar_swig.signal_corr_estimator_cf_sptr_make(self, sample_rate_rx, sample_fac, code_length, sps_rx, avg_length, skip_data, v_max)
 
     def history(self) -> "unsigned int":
         r"""history(signal_corr_estimator_cf_sptr self) -> unsigned int"""

@@ -18,16 +18,23 @@
   </compound>
   <compound refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf" kind="class"><name>gr::lab_radar::signal_corr_estimator_cf</name>
     <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1a55882e3ecbb6b017c256d8a2ebea5218" kind="typedef"><name>sptr</name></member>
-    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1a4d56bc5dfd0674be203a52c19e9e0e56" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf_1af945b60abe82a7b1c87a00ad29876c6e" kind="function"><name>make</name></member>
   </compound>
   <compound refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl" kind="class"><name>gr::lab_radar::signal_corr_estimator_cf_impl</name>
     <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1abb3adbbbed475e05d18425f95551f02b" kind="variable"><name>nelements_rx</name></member>
     <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1aa7248000aa76b61030abdd13eea197e1" kind="variable"><name>nelements_tx</name></member>
     <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a51fd42ab3bfcaf3cabee0764f757735f" kind="variable"><name>dist_factor</name></member>
     <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a5ed2b0bd3c9dd67e64b4bd5574d2dda7" kind="variable"><name>factor</name></member>
-    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1af78357bfd10878c97111fbc66366e945" kind="variable"><name>v_max</name></member>
-    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1aa70780d0870d47ab25d5b6e1b50886d9" kind="function"><name>findCorrelationPeak</name></member>
-    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a52fed0568a1a451af33b2378c5373adf" kind="function"><name>signal_corr_estimator_cf_impl</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1ae676eed89a52d692e6b42f54742e6b3a" kind="variable"><name>ncheckindices</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a54abd1e25ea70ab4b8e327c0eaa28832" kind="variable"><name>locked</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a7f59a7a12e0ab9570d5cc50fb11a688a" kind="variable"><name>sum_corr</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a84e8ad2048b39aecf1440d1b783d8fce" kind="variable"><name>sum_offset</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a298089a09bd4bea9618e1249287d6e40" kind="variable"><name>corr_results</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1ab7025f9b0f15a11032f2452b4623aa5c" kind="variable"><name>offsets</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a9eb2676cf30c659a904461519568adc9" kind="variable"><name>avg_length</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a693664260a7a88054a8eba7e55af1a20" kind="variable"><name>i_corr_results</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a080774b6d299d62a76df439cb0ac3517" kind="function"><name>findCorrelationPeak</name></member>
+    <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a4a84d0a395fad466224e40eea09aa9bb" kind="function"><name>signal_corr_estimator_cf_impl</name></member>
     <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1aab71525615382d751bf5e9801c73053d" kind="function"><name>~signal_corr_estimator_cf_impl</name></member>
     <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a50782a5a63a99ef9d28baae5ac70facd" kind="function"><name>forecast</name></member>
     <member refid="classgr_1_1lab__radar_1_1signal__corr__estimator__cf__impl_1a282c6200dce2f936a4d151130ba2b312" kind="function"><name>general_work</name></member>

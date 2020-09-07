@@ -1,10 +1,10 @@
 id: lab_radar_signal_corr_estimator_cf
 label: signal_corr_estimator_cf
-category: '[lab_radar]'
+category: "[lab_radar]"
 
 templates:
   imports: import lab_radar
-  make: lab_radar.signal_corr_estimator_cf(${sample_rate_rx}, ${sample_fac}, ${code_length}, ${sps_rx}, ${v_max})
+  make: lab_radar.signal_corr_estimator_cf(${sample_rate_rx}, ${sample_fac}, ${code_length}, ${sps_rx}, ${avg_length}, ${skip_data}, ${v_max})
 
 #  Make one 'parameters' list entry for every parameter you want settable from the GUI.
 #     Keys include:
@@ -12,24 +12,31 @@ templates:
 #     * label (label shown in the GUI)
 #     * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
 parameters:
-- id: sample_rate_rx
-  label: Sample Rate of Rx signal
-  dtype: int
-- id: sample_fac 
-  label: Oversampling factor of Tx signal
-  dtype: int
-- id: code_length 
-  label: Length of modulated code in symbols
-  dtype: int
-- id: sps_rx 
-  label: Number of samples per symbol of Rx signal
-  dtype: int
-  default: 2
-- id: v_max
-  label: maximum expected velocity of targets (m/s)
-  dtype: float
-  default: 10
-
+  - id: sample_rate_rx
+    label: Sample Rate of Rx signal
+    dtype: int
+  - id: sample_fac
+    label: Oversampling factor of Tx signal
+    dtype: int
+  - id: code_length
+    label: Length of modulated code in symbols
+    dtype: int
+  - id: sps_rx
+    label: Number of samples per symbol of Rx signal
+    dtype: int
+    default: 2
+  - id: avg_length
+    label: Length of mean filter an verification array
+    dtype: int
+    default: 20
+  - id: skip_data
+    label: Update ouput ever nth time
+    dtype: int
+    default: 20
+  - id: v_max
+    label: maximum expected velocity of targets (m/s)
+    dtype: float
+    default: 10
 
 #  Make one 'inputs' list entry per input and one 'outputs' list entry per output.
 #  Keys include:
@@ -39,18 +46,18 @@ parameters:
 #      * vlen (optional - data stream vector length. Default is 1)
 #      * optional (optional - set to 1 for optional inputs. Default is 0)
 inputs:
-- label: Rx Signal
-  dtype: complex
-- label: Tx Signal
-  dtype: complex
+  - label: Rx Signal
+    dtype: complex
+  - label: Tx Signal
+    dtype: complex
 
 outputs:
-- label: distance
-  dtype: float
-- label: correlation peak
-  dtype: float
-- label: peak index
-  dtype: float
+  - label: distance
+    dtype: float
+  - label: correlation peak
+    dtype: float
+  - label: peak index
+    dtype: float
 
 #  'file_format' specifies the version of the GRC yml format used in the file
 #  and should usually not be changed.

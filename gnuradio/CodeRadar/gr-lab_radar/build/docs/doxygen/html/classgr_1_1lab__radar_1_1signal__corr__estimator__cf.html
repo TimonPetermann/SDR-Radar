@@ -80,9 +80,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4d56bc5dfd0674be203a52c19e9e0e56"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf.html#a55882e3ecbb6b017c256d8a2ebea5218">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf.html#a4d56bc5dfd0674be203a52c19e9e0e56">make</a> (int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max)</td></tr>
-<tr class="memdesc:a4d56bc5dfd0674be203a52c19e9e0e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf.html" title="&lt;+description of block+&gt;">lab_radar::signal_corr_estimator_cf</a>.  <a href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf.html#a4d56bc5dfd0674be203a52c19e9e0e56">More...</a><br /></td></tr>
-<tr class="separator:a4d56bc5dfd0674be203a52c19e9e0e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af945b60abe82a7b1c87a00ad29876c6e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf.html#a55882e3ecbb6b017c256d8a2ebea5218">sptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf.html#af945b60abe82a7b1c87a00ad29876c6e">make</a> (int sample_rate_rx, int sample_fac, int code_length, int sps_rx, int avg_length, int skip_data, float v_max)</td></tr>
+<tr class="memdesc:af945b60abe82a7b1c87a00ad29876c6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf.html" title="&lt;+description of block+&gt;">lab_radar::signal_corr_estimator_cf</a>.  <a href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf.html#af945b60abe82a7b1c87a00ad29876c6e">More...</a><br /></td></tr>
+<tr class="separator:af945b60abe82a7b1c87a00ad29876c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>&lt;+description of block+&gt; </p>
@@ -102,8 +102,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4d56bc5dfd0674be203a52c19e9e0e56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d56bc5dfd0674be203a52c19e9e0e56">&#9670;&nbsp;</a></span>make()</h2>
+<a id="af945b60abe82a7b1c87a00ad29876c6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af945b60abe82a7b1c87a00ad29876c6e">&#9670;&nbsp;</a></span>make()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,6 +138,18 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>avg_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>skip_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>v_max</em>&#160;</td>
         </tr>
@@ -155,7 +167,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return a shared_ptr to a new instance of <a class="el" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf.html" title="&lt;+description of block+&gt;">lab_radar::signal_corr_estimator_cf</a>. </p>
-<p>To avoid accidental use of raw pointers, <a class="el" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf.html" title="&lt;+description of block+&gt;">lab_radar::signal_corr_estimator_cf</a>'s constructor is in a private implementation class. <a class="el" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf.html#a4d56bc5dfd0674be203a52c19e9e0e56" title="Return a shared_ptr to a new instance of lab_radar::signal_corr_estimator_cf.">lab_radar::signal_corr_estimator_cf::make</a> is the public interface for creating new instances. </p>
+<p>To avoid accidental use of raw pointers, <a class="el" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf.html" title="&lt;+description of block+&gt;">lab_radar::signal_corr_estimator_cf</a>'s constructor is in a private implementation class. <a class="el" href="classgr_1_1lab__radar_1_1signal__corr__estimator__cf.html#af945b60abe82a7b1c87a00ad29876c6e" title="Return a shared_ptr to a new instance of lab_radar::signal_corr_estimator_cf.">lab_radar::signal_corr_estimator_cf::make</a> is the public interface for creating new instances. </p>
 
 </div>
 </div>

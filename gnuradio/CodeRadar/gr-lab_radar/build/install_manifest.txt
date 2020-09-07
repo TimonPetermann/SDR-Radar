@@ -7,7 +7,7 @@
 /usr/local/lib/x86_64-linux-gnu/libgnuradio-lab_radar.so.1.0.0git
 /usr/local/lib/x86_64-linux-gnu/libgnuradio-lab_radar.so
 /usr/local/lib/cmake/lab_radar/gnuradio-lab_radarTargets.cmake
-/usr/local/lib/cmake/lab_radar/gnuradio-lab_radarTargets-debug.cmake
+/usr/local/lib/cmake/lab_radar/gnuradio-lab_radarTargets-release.cmake
 /usr/local/lib/cmake/lab_radar/gnuradio-lab_radarConfig.cmake
 /usr/local/share/doc/gr-lab_radar/xml/namespacegr_1_1lab__radar.xml
 /usr/local/share/doc/gr-lab_radar/xml/combine.xslt

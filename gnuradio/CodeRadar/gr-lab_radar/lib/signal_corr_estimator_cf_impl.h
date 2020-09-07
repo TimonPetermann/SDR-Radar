@@ -34,11 +34,13 @@ namespace gr
     private:
       int nelements_rx;
       int nelements_tx;
+      int skip_data;
       float dist_factor;
       int factor;
-      float ncheckindices;
+      int ncheckindices;
       bool locked;
       float sum_corr;
+      float sum_offset;
       std::vector<float> corr_results;
       std::vector<float> offsets;
       int avg_length;
@@ -47,7 +49,7 @@ namespace gr
       void findCorrelationPeak(std::tuple<float,float> &result, gr_complex *arr1,gr_complex *arr2);
 
     public:
-      signal_corr_estimator_cf_impl(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max);
+      signal_corr_estimator_cf_impl(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, int avg_length, int skip_data, float v_max);
       ~signal_corr_estimator_cf_impl();
 
       // Where all the action really happens

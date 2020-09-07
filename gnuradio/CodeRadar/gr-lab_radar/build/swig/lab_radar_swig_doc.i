@@ -43,6 +43,8 @@ Args:
     sample_fac : 
     code_length : 
     sps_rx : 
+    avg_length : 
+    skip_data : 
     v_max : "
 
 %feature("docstring") gr::lab_radar::signal_corr_estimator_cf::make "<+description of block+>
@@ -58,6 +60,8 @@ Args:
     sample_fac : 
     code_length : 
     sps_rx : 
+    avg_length : 
+    skip_data : 
     v_max : "
 
 %feature("docstring") gr::lab_radar::simple_decimator_cc "<+description of block+>
