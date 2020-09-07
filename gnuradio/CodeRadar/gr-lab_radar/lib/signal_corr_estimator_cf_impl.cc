@@ -120,7 +120,7 @@ namespace gr
       offsets[i_corr_results] = offset;
       sum_corr += peak;
       i_corr_results = (i_corr_results + 1) % avg_length;
-      if (abs(sum_corr - peak * avg_length) / sum_corr < 0.05)
+      if (abs(sum_corr - peak * avg_length) / sum_corr < 0.1)
       {
         locked = true;
       }
@@ -148,10 +148,11 @@ namespace gr
 
       noutput_items = std::min(noutput_items, std::min(num_rx / nelements_rx, num_tx / nelements_tx));
       //signal processing (complex correlation)
+      std::tuple<float, float> corr_res = std::make_tuple<float, float>(0.0, 0.0);
       for (int i = 0; i < noutput_items; i++)
       {
-        std::tuple<float, float> corr_res = std::make_tuple<float, float>(0.0, 0);
-        findCorrelationPeak(corr_res, rx + i * nelements_rx, tx + i * nelements_tx);
+        if (i % 20 == 0)
+          findCorrelationPeak(corr_res, rx + i * nelements_rx, tx + i * nelements_tx);
         peak[i] = std::get<0>(corr_res);
         offset[i] = std::get<1>(corr_res);
         dist[i] = offset[i] * dist_factor;
