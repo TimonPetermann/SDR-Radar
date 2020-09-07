@@ -40,11 +40,11 @@ namespace gr
       bool locked;
       float sum_corr;
       std::vector<float> corr_results;
-      std::vector<int> offsets;
+      std::vector<float> offsets;
       int avg_length;
       int i_corr_results;
 
-      void findCorrelationPeak(std::tuple<float,int> &result, gr_complex *arr1,gr_complex *arr2);
+      void findCorrelationPeak(std::tuple<float,float> &result, gr_complex *arr1,gr_complex *arr2);
 
     public:
       signal_corr_estimator_cf_impl(int sample_rate_rx, int sample_fac, int code_length, int sps_rx, float v_max);

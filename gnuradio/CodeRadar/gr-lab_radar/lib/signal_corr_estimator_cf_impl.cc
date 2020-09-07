@@ -50,9 +50,9 @@ namespace gr
       nelements_tx = sps_rx * code_length * sample_fac;
       factor = sample_fac;
       dist_factor = 299792458. / ((float)(sample_rate_rx * factor * 2));
-      avg_length = 20;
+      avg_length = 200;
       corr_results = std::vector<float>(avg_length);
-      offsets = std::vector<int>(avg_length);
+      offsets = std::vector<float>(avg_length);
       sum_corr = 0;
       locked = false;
       float indices = ((float)nelements_tx / (float)(sample_rate_rx * factor)) / dist_factor;
@@ -73,32 +73,30 @@ namespace gr
       ninput_items_required[1] = noutput_items * nelements_tx;
     }
 
-    void signal_corr_estimator_cf_impl::findCorrelationPeak(std::tuple<float, int> &result, gr_complex *arr1, gr_complex *arr2)
+    void signal_corr_estimator_cf_impl::findCorrelationPeak(std::tuple<float, float> &result, gr_complex *arr1, gr_complex *arr2)
     {
       float &peak = std::get<0>(result);
-      int &offset = std::get<1>(result);
+      float &offset = std::get<1>(result);
       gr_complex corr_integrator(0, 0);
       float abs_corr = 0;
-      int i_max = 0;
       if (locked)
       {
-        offset = std::round(std::accumulate(offsets.begin(), offsets.end(), 0) / (float)avg_length);
+        int curoffset = std::round(std::accumulate(offsets.begin(), offsets.end(), 0) / (float)avg_length);
 
         for (int i = -ncheckindices; i <= ncheckindices; i++)
         {
           corr_integrator = 0;
           for (int j = 0; j < nelements_rx; j++)
           {
-            corr_integrator += std::conj(arr1[j]) * arr2[(-offset - i + j * factor) % nelements_tx];
+            corr_integrator += std::conj(arr1[j]) * arr2[(-curoffset - i + j * factor) % nelements_tx];
           }
           abs_corr = std::abs(corr_integrator);
           if (abs_corr > peak)
           {
             peak = abs_corr;
-            i_max = i;
+            offset = curoffset + i;
           }
         }
-        offset += i_max;
       }
       else
       {
@@ -130,7 +128,7 @@ namespace gr
       {
         locked = false;
       }
-      offset = std::round(std::accumulate(offsets.begin(), offsets.end(), 0) / (float)avg_length);
+      offset = std::accumulate(offsets.begin(), offsets.end(), 0) / (float)avg_length;
       peak = sum_corr / (float)avg_length;
     }
 
@@ -152,10 +150,10 @@ namespace gr
       //signal processing (complex correlation)
       for (int i = 0; i < noutput_items; i++)
       {
-        std::tuple<float, int> corr_res = std::make_tuple<float, int>(0.0, 0);
+        std::tuple<float, float> corr_res = std::make_tuple<float, float>(0.0, 0);
         findCorrelationPeak(corr_res, rx + i * nelements_rx, tx + i * nelements_tx);
         peak[i] = std::get<0>(corr_res);
-        offset[i] = (float)std::get<1>(corr_res);
+        offset[i] = std::get<1>(corr_res);
         dist[i] = offset[i] * dist_factor;
       }
       // Tell runtime system how many input items we consumed on
