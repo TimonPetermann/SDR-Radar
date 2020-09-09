@@ -158,7 +158,6 @@ class test1(gr.top_block, Qt.QWidget):
         self.connect((self.digital_constellation_modulator_0, 0), (self.lab_radar_signal_corr_estimator_cf_0, 1))
         self.connect((self.iio_pluto_source_0, 0), (self.lab_radar_signal_corr_estimator_cf_0, 0))
         self.connect((self.lab_radar_signal_corr_estimator_cf_0, 2), (self.qtgui_time_sink_x_0, 2))
-        self.connect((self.lab_radar_signal_corr_estimator_cf_0, 1), (self.qtgui_time_sink_x_0, 1))
         self.connect((self.lab_radar_signal_corr_estimator_cf_0, 0), (self.qtgui_time_sink_x_0, 0))
         self.connect((self.lab_radar_simple_decimator_cc_0, 0), (self.iio_pluto_sink_0, 0))
 

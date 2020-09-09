@@ -87,7 +87,11 @@ blocks:
   id: variable
   parameters:
     comment: ''
+<<<<<<< HEAD
     value: '3000000'
+=======
+    value: '2000000'
+>>>>>>> 1d00e20faf9e16107b883d4964bfba292abad59e
   states:
     bus_sink: false
     bus_source: false
@@ -221,14 +225,20 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
+<<<<<<< HEAD
     avg_length: '10'
+=======
+>>>>>>> 1d00e20faf9e16107b883d4964bfba292abad59e
     code_length: '8'
     comment: ''
     maxoutbuf: '0'
     minoutbuf: '0'
     sample_fac: divider
     sample_rate_rx: samp_rate_rx
+<<<<<<< HEAD
     skip_data: '60'
+=======
+>>>>>>> 1d00e20faf9e16107b883d4964bfba292abad59e
     sps_rx: sps
     v_max: '10'
   states:
