@@ -36,21 +36,25 @@ class qa_signal_corr_estimator_cf(gr_unittest.TestCase):
 
     def test_001_t(self):
         # set up variables
-        sps = 2
-        samp_rate_rx = 4000000
-        divider = 50
+        sps = 4
+        samp_rate_rx = 3000000
+        divider = 2
         delay = 6
         v_max = 10
+        skip_data = 10
+        avg_length = 20
+
+
         bpsk = digital.constellation_bpsk().base()
 
         # generate blocks
         lab_radar_simple_decimator = lab_radar.simple_decimator_cc(decimation = divider)
         lab_radar_signal_corr_estimator_cf_0 = lab_radar.signal_corr_estimator_cf(
-            samp_rate_rx, divider, 8, sps, v_max)
+            samp_rate_rx, divider, 8, sps, avg_length, skip_data, v_max)
         digital_constellation_modulator_0 = digital.generic_mod(
             constellation=bpsk, differential=False, samples_per_symbol=sps*divider, pre_diff_code=True, excess_bw=0.35, verbose=False, log=False)
         blocks_vector_source_x_0 = blocks.vector_source_b(
-            (154, 154, 154, 154, 154, 154, 154, 154,154,154,154,154,154,154,154,154), False, 1, [])
+            (154, 154, 154, 154, 154, 154, 154, 154,154,154,154,154,154,154,154,154), True, 1, [])
         offsets = blocks.vector_sink_f(1, 1024)
         peaks = blocks.vector_sink_f(1, 1024)
         distances = blocks.vector_sink_f(1, 1024)

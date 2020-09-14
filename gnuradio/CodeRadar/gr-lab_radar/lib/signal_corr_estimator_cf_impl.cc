@@ -45,19 +45,17 @@ namespace gr
         : gr::block("signal_corr_estimator_cf",
                     gr::io_signature::make(2, 2, sizeof(gr_complex)),
                     gr::io_signature::make(1, 3, sizeof(float))),
-          avg_length(avg_length), skip_data(skip_data)
+          avg_length(avg_length), skip_data(skip_data), factor(sample_fac)
     {
       nelements_rx = sps_rx * code_length;
       nelements_tx = sps_rx * code_length * sample_fac;
-      factor = sample_fac;
       dist_factor = 299792458. / ((float)(sample_rate_rx * factor * 2));
       corr_results = std::vector<float>(avg_length);
       offsets = std::vector<float>(avg_length);
       sum_corr = 0;
       sum_offset = 0;
       locked = false;
-      int indices = std::ceil(((float)nelements_tx / (float)(sample_rate_rx * factor)) / dist_factor);
-      ncheckindices = std::max(2, indices);
+      ncheckindices = 2;
       i_corr_results = 0;
     }
 
@@ -142,26 +140,31 @@ namespace gr
     {
       gr_complex *rx = (gr_complex *)input_items[0];
       gr_complex *tx = (gr_complex *)input_items[1];
-      float *dist = (float *)output_items[0];
-      float *peak = (float *)output_items[1];
-      float *offset = (float *)output_items[2];
+      float *dist, *peak, *offset;
+      int size = output_items.size();
+      dist = (float *)output_items[0];
+      if (size > 1)
+      {
+        peak = (float *)output_items[1];
+        if (size > 2)
+          offset = (float *)output_items[2];
+      }
 
       int num_rx = ninput_items[0];
       int num_tx = ninput_items[1];
 
-//      noutput_items = std::min(noutput_items, std::min(num_rx / nelements_rx, num_tx / nelements_tx));
       //signal processing (complex correlation)
       std::tuple<float, float> corr_res = std::make_tuple<float, float>(0.0, 0.0);
       int outindex = 0;
-      for (int i = 0; i < noutput_items*skip_data; i++)
+      for (outindex = 0; outindex < noutput_items; outindex++)
       {
-        if (i % skip_data == 0)
+        findCorrelationPeak(corr_res, rx + outindex * skip_data * nelements_rx, tx + outindex * skip_data * nelements_tx);
+        dist[outindex] = std::get<1>(corr_res) * dist_factor;
+        if (size > 1)
         {
-          findCorrelationPeak(corr_res, rx + i * nelements_rx, tx + i * nelements_tx);
           peak[outindex] = std::get<0>(corr_res);
-          offset[outindex] = std::get<1>(corr_res);
-          dist[outindex] = offset[outindex] * dist_factor;
-          outindex++;
+          if (size > 2)
+            offset[outindex] = std::get<1>(corr_res);
         }
       }
       // Tell runtime system how many input items we consumed on

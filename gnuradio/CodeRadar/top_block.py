@@ -96,7 +96,7 @@ class top_block(gr.top_block, Qt.QWidget):
         self._input_d_win = RangeWidget(self._input_d_range, self.set_input_d, 'Delay', "counter_slider", float)
         self.top_grid_layout.addWidget(self._input_d_win)
         self.qtgui_time_sink_x_0 = qtgui.time_sink_f(
-            1024, #size
+            1000, #size
             samp_rate/129, #samp_rate
             "", #name
             3 #number of inputs
@@ -189,8 +189,8 @@ class top_block(gr.top_block, Qt.QWidget):
         self.connect((self.digital_diff_decoder_bb_0, 0), (self.digital_map_bb_0, 0))
         self.connect((self.digital_map_bb_0, 0), (self.blocks_unpack_k_bits_bb_0, 0))
         self.connect((self.digital_pfb_clock_sync_xxx_0, 0), (self.digital_costas_loop_cc_0, 0))
-        self.connect((self.lab_radar_corr_dist_estimator_bfi_0, 0), (self.qtgui_time_sink_x_0, 2))
         self.connect((self.lab_radar_corr_dist_estimator_bfi_0, 1), (self.qtgui_time_sink_x_0, 1))
+        self.connect((self.lab_radar_corr_dist_estimator_bfi_0, 0), (self.qtgui_time_sink_x_0, 2))
         self.connect((self.lab_radar_corr_dist_estimator_bfi_0, 2), (self.qtgui_time_sink_x_0, 0))
 
     def closeEvent(self, event):
