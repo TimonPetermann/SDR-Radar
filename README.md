@@ -1,5 +1,5 @@
 # SDR-Positioning-System
-SDR-Positioning-System is misleading - the origianl Idea was to implement a positioning system based on SDR radar. However, this turned out to be to complex. Instead, two different continuous wave radar systems were implemented using GNU radio and two Pluto SDRs.
+SDR-Positioning-System is misleading - the original idea was to implement a positioning system based on SDR radar. However, this turned out to be to complex. Instead, two different continuous wave radar systems were implemented using GNU radio and two Pluto SDRs.
 
 # FMCW
 
