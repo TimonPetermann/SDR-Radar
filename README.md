@@ -19,3 +19,5 @@ The modules which were written for the second approach of DCMCW radar can be fou
 
 The Grc files used for the second approach can be found in **gnuradio/CodeRadar/Second_Approach**. **test1.grc** can be used to simulate the system, **test_pluto.grc** can be used for HIL or full system testing.
 
+# Loop Back
+The python script used to set a PlutoSDR into loop back mode can be found in **python/loopback**.
