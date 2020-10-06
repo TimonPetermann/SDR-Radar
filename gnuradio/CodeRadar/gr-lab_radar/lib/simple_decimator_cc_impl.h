@@ -30,6 +30,7 @@ namespace gr {
     {
      private:
       int decimation;
+      int offset;
 
      public:
       simple_decimator_cc_impl(int decimation);

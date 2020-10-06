@@ -27,7 +27,7 @@ options:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [8, 8]
+    coordinate: [18, 24]
     rotation: 0
     state: enabled
 
@@ -47,7 +47,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [35, 250]
+    coordinate: [996, 32]
     rotation: 0
     state: true
 - name: delay
@@ -61,14 +61,14 @@ blocks:
     rangeType: float
     start: '0'
     step: '1'
-    stop: 8*divider*sps-1
-    value: '10'
+    stop: 16*divider*sps-1
+    value: '0'
     widget: counter_slider
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [382, 83]
+    coordinate: [825, 8]
     rotation: 0
     state: true
 - name: divider
@@ -80,7 +80,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [321, 13]
+    coordinate: [399, 32]
     rotation: 0
     state: enabled
 - name: samp_rate_rx
@@ -92,7 +92,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [184, 12]
+    coordinate: [236, 40]
     rotation: 0
     state: enabled
 - name: skip
@@ -104,7 +104,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [516, 16]
+    coordinate: [664, 32]
     rotation: 0
     state: true
 - name: sps
@@ -116,7 +116,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [422, 14]
+    coordinate: [521, 32]
     rotation: 0
     state: true
 - name: blocks_delay_0
@@ -135,7 +135,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [558, 129]
+    coordinate: [556, 208]
     rotation: 0
     state: enabled
 - name: blocks_vector_source_x_0
@@ -149,13 +149,13 @@ blocks:
     repeat: 'True'
     tags: '[]'
     type: byte
-    vector: (118,   4,  15,  13)
+    vector: (118,4,15,13)
     vlen: '1'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [52, 119]
+    coordinate: [18, 192]
     rotation: 0
     state: true
 - name: digital_constellation_modulator_0
@@ -176,7 +176,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [320, 287]
+    coordinate: [214, 184]
     rotation: 0
     state: true
 - name: iio_pluto_sink_0
@@ -187,18 +187,18 @@ blocks:
     attenuation1: '0'
     auto_filter: 'True'
     bandwidth: '2000000'
-    buffer_size: '327680'
+    buffer_size: '647680'
     comment: ''
     cyclic: 'False'
     filter: ''
-    frequency: '2400000000'
+    frequency: '3100000000'
     samplerate: samp_rate_rx
     uri: ''
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [990, 69]
+    coordinate: [1004, 144]
     rotation: 0
     state: true
 - name: iio_pluto_source_0
@@ -209,10 +209,10 @@ blocks:
     auto_filter: 'True'
     bandwidth: '2000000'
     bbdc: 'True'
-    buffer_size: '327680'
+    buffer_size: '647680'
     comment: ''
     filter: ''
-    frequency: '2400000000'
+    frequency: '3100000000'
     gain1: '''slow_attack'''
     manual_gain1: '64'
     maxoutbuf: '0'
@@ -225,7 +225,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [352, 429]
+    coordinate: [214, 346]
     rotation: 0
     state: true
 - name: lab_radar_signal_corr_estimator_cf_0
@@ -233,7 +233,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    avg_length: '200'
+    avg_length: '5'
     code_length: '16'
     comment: ''
     maxoutbuf: '0'
@@ -247,7 +247,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [772, 488]
+    coordinate: [556, 378]
     rotation: 0
     state: true
 - name: lab_radar_simple_decimator_cc_0
@@ -263,7 +263,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [636, 72]
+    coordinate: [700, 208]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -281,7 +281,7 @@ blocks:
     alpha7: '1.0'
     alpha8: '1.0'
     alpha9: '1.0'
-    autoscale: 'True'
+    autoscale: 'False'
     axislabels: 'True'
     color1: blue
     color10: dark blue
@@ -296,7 +296,7 @@ blocks:
     comment: ''
     ctrlpanel: 'False'
     entags: 'True'
-    grid: 'False'
+    grid: 'True'
     gui_hint: ''
     label1: Signal 1
     label10: Signal 10
@@ -320,9 +320,9 @@ blocks:
     marker8: '-1'
     marker9: '-1'
     name: '""'
-    nconnections: '1'
+    nconnections: '3'
     size: '1024'
-    srate: samp_rate_rx/sps/8/skip
+    srate: samp_rate_rx/sps/16/skip
     stemplot: 'False'
     style1: '1'
     style10: '1'
@@ -360,7 +360,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1279, 295]
+    coordinate: [996, 398]
     rotation: 0
     state: true
 
@@ -371,6 +371,8 @@ connections:
 - [digital_constellation_modulator_0, '0', lab_radar_signal_corr_estimator_cf_0, '1']
 - [iio_pluto_source_0, '0', lab_radar_signal_corr_estimator_cf_0, '0']
 - [lab_radar_signal_corr_estimator_cf_0, '0', qtgui_time_sink_x_0, '0']
+- [lab_radar_signal_corr_estimator_cf_0, '1', qtgui_time_sink_x_0, '1']
+- [lab_radar_signal_corr_estimator_cf_0, '2', qtgui_time_sink_x_0, '2']
 - [lab_radar_simple_decimator_cc_0, '0', iio_pluto_sink_0, '0']
 
 metadata:

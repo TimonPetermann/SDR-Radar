@@ -44,6 +44,7 @@ namespace gr
       std::vector<float> corr_results;
       std::vector<float> offsets;
       int avg_length;
+      int startHere;
       int i_corr_results;
 
       void findCorrelationPeak(std::tuple<float,float> &result, gr_complex *arr1,gr_complex *arr2);

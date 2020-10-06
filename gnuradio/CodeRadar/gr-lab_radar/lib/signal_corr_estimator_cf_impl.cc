@@ -57,6 +57,7 @@ namespace gr
       locked = false;
       ncheckindices = 2;
       i_corr_results = 0;
+      startHere = 0;
     }
 
     /*
@@ -78,6 +79,7 @@ namespace gr
       float &offset = std::get<1>(result);
       gr_complex corr_integrator(0, 0);
       float abs_corr = 0;
+      //locked mode
       if (locked)
       {
         int curoffset = std::round(sum_offset / (float)avg_length);
@@ -97,6 +99,7 @@ namespace gr
           }
         }
       }
+      // full correlation
       else
       {
         for (int i = 0; i < nelements_tx; i++)
@@ -114,12 +117,11 @@ namespace gr
           }
         }
       }
-      sum_corr -= corr_results[i_corr_results];
-      sum_offset -= offsets[i_corr_results];
+      //tracking for verification
+      sum_corr -= corr_results[i_corr_results] - peak;
+      sum_offset -= offsets[i_corr_results] - offset;
       corr_results[i_corr_results] = peak;
       offsets[i_corr_results] = offset;
-      sum_corr += peak;
-      sum_offset += offset;
       i_corr_results = (i_corr_results + 1) % avg_length;
       if (abs(sum_corr - peak * avg_length) / sum_corr < 0.1)
       {
@@ -129,8 +131,8 @@ namespace gr
       {
         locked = false;
       }
-      offset = sum_offset / (float)avg_length;
-      peak = sum_corr / (float)avg_length;
+      //offset = sum_offset / (float)avg_length;
+      //peak = sum_corr / (float)avg_length;
     }
 
     int signal_corr_estimator_cf_impl::general_work(int noutput_items,
@@ -150,15 +152,15 @@ namespace gr
           offset = (float *)output_items[2];
       }
 
-      int num_rx = ninput_items[0];
-      int num_tx = ninput_items[1];
+      int maxProcessable = std::min(ninput_items[0] / nelements_rx, ninput_items[1] / nelements_tx);
 
       //signal processing (complex correlation)
       std::tuple<float, float> corr_res = std::make_tuple<float, float>(0.0, 0.0);
-      int outindex = 0;
-      for (outindex = 0; outindex < noutput_items; outindex++)
+      // loop iterating through data
+      for (int outindex = 0; (startHere + outindex * skip_data) < maxProcessable; outindex++)
       {
-        findCorrelationPeak(corr_res, rx + outindex * skip_data * nelements_rx, tx + outindex * skip_data * nelements_tx);
+        //call corrlation function for matchin parts of source and received signal, the factor skip_data is used
+        findCorrelationPeak(corr_res, rx + (outindex * skip_data + startHere) * nelements_rx, tx + (outindex * skip_data + startHere) * nelements_tx);
         dist[outindex] = std::get<1>(corr_res) * dist_factor;
         if (size > 1)
         {
@@ -167,14 +169,16 @@ namespace gr
             offset[outindex] = std::get<1>(corr_res);
         }
       }
+      //track remaining multiples of codelength which are not processed because of skip_data
+      startHere = skip_data- maxProcessable % skip_data;
       // Tell runtime system how many input items we consumed on
       // each input stream.
-      consume(0, noutput_items * nelements_rx * skip_data);
-      consume(1, noutput_items * nelements_tx * skip_data);
+      consume(0, maxProcessable * nelements_rx);
+      consume(1, maxProcessable * nelements_tx);
 
       // Tell runtime system how many output items we produced.
       return noutput_items;
-    }
 
-  } /* namespace lab_radar */
-} /* namespace gr */
+    } /* namespace lab_radar */
+  }   // namespace lab_radar
+} // namespace gr

@@ -61,3 +61,4 @@ gnuradio/CwChirpRadar/chirp_radar_sim_2.py
 # ignore visual studio code files
 **/.vscode/
 
+gnuradio/CodeRadar/Second_Approach/test1.py

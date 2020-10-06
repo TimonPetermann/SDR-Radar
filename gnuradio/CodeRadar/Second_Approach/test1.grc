@@ -75,12 +75,12 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: '2'
+    value: '10'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [322, 13]
+    coordinate: [321, 14]
     rotation: 0
     state: enabled
 - name: samp_rate_rx
@@ -99,7 +99,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: '20'
+    value: '1'
   states:
     bus_sink: false
     bus_source: false
@@ -124,7 +124,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    amp: '0.1'
+    amp: '0.5'
     comment: ''
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -172,7 +172,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [459, 154]
+    coordinate: [444, 147]
     rotation: 0
     state: enabled
 - name: blocks_throttle_0
@@ -205,7 +205,7 @@ blocks:
     repeat: 'True'
     tags: '[]'
     type: byte
-    vector: (118,   4,  15,  13)
+    vector: (249,164,43,177,118,   4,  15,  13)
     vlen: '1'
   states:
     bus_sink: false
@@ -240,7 +240,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    avg_length: '20'
+    avg_length: '5'
     code_length: '16'
     comment: ''
     maxoutbuf: '0'
@@ -254,7 +254,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [825, 354]
+    coordinate: [809, 432]
     rotation: 0
     state: true
 - name: lab_radar_simple_decimator_cc_0
@@ -270,7 +270,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [625, 151]
+    coordinate: [658, 131]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0

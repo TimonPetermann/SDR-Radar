@@ -45,6 +45,12 @@ namespace gr
                              gr::io_signature::make(1, 1, sizeof(gr_complex)), decimation),
           decimation(decimation)
     {
+      if (decimation > 1)
+        offset = 1;
+      else
+      {
+        offset = 0;
+      }
     }
 
     /*
@@ -65,7 +71,7 @@ namespace gr
       // Do <+signal processing+>
       for (int i = 0; i < noutput_items; i++)
       {
-        out[i] = in[i * decimation];
+        out[i] = in[i * decimation + offset];
       }
 
       // Tell runtime system how many output items we produced.
