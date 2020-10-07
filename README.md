@@ -2,6 +2,10 @@
 SDR-Positioning-System is misleading - the original idea was to implement a positioning system based on SDR radar. However, this turned out to be to complex. Instead, two different continuous wave radar systems were implemented using GNU radio and two Pluto SDRs.
 
 # FMCW
+In **gnuradio/CwChirpRadar** all implementation on the FMCW radar can be found.
+It contains the out-of-tree module, that has the neccesary GNU radio python blocks for the radar.
+These have to be installed before running the simulations. (using CMake)
+The folder also contains the GNU radio simulation, HIL tests and the real radar implementation.
 
 
 # Digital Code Modulated Continous Wave Radar (DCMCW)

@@ -72,7 +72,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: 5e5
+    value: 5e3
   states:
     bus_sink: false
     bus_source: false
@@ -96,7 +96,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: '8'
+    value: '0.02'
   states:
     bus_sink: false
     bus_source: false
@@ -129,7 +129,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: int(8192*2)
+    value: int(8192*1)
   states:
     bus_sink: false
     bus_source: false
@@ -148,7 +148,7 @@ blocks:
     rangeType: float
     start: '0'
     step: '0.1'
-    stop: '35'
+    stop: '600'
     value: '10'
     widget: counter_slider
   states:
@@ -162,7 +162,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: 2000e6
+    value: '4000000'
   states:
     bus_sink: false
     bus_source: false
@@ -205,7 +205,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [485, 437]
+    coordinate: [432, 438]
     rotation: 0
     state: true
 - name: blocks_complex_to_real_0_0_0
@@ -221,7 +221,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [489, 378]
+    coordinate: [432, 379]
     rotation: 0
     state: true
 - name: blocks_delay_0
@@ -277,7 +277,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [675, 393]
+    coordinate: [621, 393]
     rotation: 0
     state: true
 - name: blocks_stream_to_vector_0
@@ -295,7 +295,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [860, 479]
+    coordinate: [568, 548]
     rotation: 0
     state: true
 - name: blocks_vco_f_0_0
@@ -332,7 +332,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1049, 463]
+    coordinate: [729, 524]
     rotation: 0
     state: true
 - name: chirp_radar_range_calc_ff_0
@@ -349,7 +349,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1327, 467]
+    coordinate: [996, 536]
     rotation: 0
     state: true
 - name: hilbert_fc_0
@@ -377,19 +377,19 @@ blocks:
     alias: ''
     attenuation1: '0.0'
     auto_filter: 'True'
-    bandwidth: '200000'
-    buffer_size: int(1024*10)
+    bandwidth: int(samp_rate/2)
+    buffer_size: int(1024*100)
     comment: ''
     cyclic: 'False'
     filter: ''
     frequency: '1140000000'
-    samplerate: '600000'
+    samplerate: samp_rate
     uri: ''
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [654, 196]
+    coordinate: [623, 196]
     rotation: 0
     state: true
 - name: iio_pluto_source_0_0
@@ -398,9 +398,9 @@ blocks:
     affinity: ''
     alias: ''
     auto_filter: 'True'
-    bandwidth: '200000'
+    bandwidth: int(samp_rate/2)
     bbdc: 'True'
-    buffer_size: int(1024*10)
+    buffer_size: int(1024*100)
     comment: ''
     filter: ''
     frequency: '1140000000'
@@ -410,13 +410,13 @@ blocks:
     minoutbuf: '0'
     quadrature: 'True'
     rfdc: 'True'
-    samplerate: '600000'
+    samplerate: samp_rate
     uri: ''
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [36, 379]
+    coordinate: [46, 366]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_1_0
@@ -496,7 +496,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [875, 340]
+    coordinate: [887, 340]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0_0
@@ -593,7 +593,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1516, 455]
+    coordinate: [1175, 524]
     rotation: 0
     state: true
 

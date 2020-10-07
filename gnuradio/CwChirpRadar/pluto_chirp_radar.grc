@@ -72,7 +72,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: 500e3
+    value: 5e3
   states:
     bus_sink: false
     bus_source: false
@@ -96,7 +96,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: '8'
+    value: '0.02'
   states:
     bus_sink: false
     bus_source: false
@@ -129,7 +129,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: int(8192*2)
+    value: int(8192)
   states:
     bus_sink: false
     bus_source: false
@@ -141,7 +141,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: 2000e6
+    value: 4e6
   states:
     bus_sink: false
     bus_source: false
@@ -353,13 +353,13 @@ blocks:
     alias: ''
     attenuation1: '0.0'
     auto_filter: 'True'
-    bandwidth: '200000'
-    buffer_size: int(1024*10)
+    bandwidth: int(samp_rate/2)
+    buffer_size: int(1024*100)
     comment: ''
     cyclic: 'False'
     filter: ''
     frequency: '1140000000'
-    samplerate: '600000'
+    samplerate: int(samp_rate)
     uri: ''
   states:
     bus_sink: false
@@ -374,9 +374,9 @@ blocks:
     affinity: ''
     alias: ''
     auto_filter: 'True'
-    bandwidth: '200000'
+    bandwidth: int(samp_rate/2)
     bbdc: 'True'
-    buffer_size: int(1024*10)
+    buffer_size: int(1024*100)
     comment: ''
     filter: ''
     frequency: '900000000'
@@ -386,7 +386,7 @@ blocks:
     minoutbuf: '0'
     quadrature: 'True'
     rfdc: 'True'
-    samplerate: '600000'
+    samplerate: int(samp_rate)
     uri: ''
   states:
     bus_sink: false

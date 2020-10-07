@@ -32,32 +32,71 @@ options:
     state: enabled
 
 blocks:
-- name: PRF
-  id: variable_qtgui_range
+- name: Max_Delta_Freq
+  id: variable
   parameters:
     comment: ''
-    gui_hint: ''
-    label: PRF
-    min_len: '200'
-    orient: Qt.Horizontal
-    rangeType: int
-    start: '100'
-    step: '100'
-    stop: '10000000'
-    value: '50000'
-    widget: counter_slider
+    value: PRF*2*Max_Range*bw*1e8/(3e8)
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [593, 15]
+    coordinate: [840, 34]
     rotation: 0
-    state: true
+    state: enabled
+- name: Max_Range
+  id: variable
+  parameters:
+    comment: ''
+    value: 0.5*3e8/PRF
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [724, 29]
+    rotation: 0
+    state: enabled
+- name: Min_Delta_Freq
+  id: variable
+  parameters:
+    comment: ''
+    value: PRF*2*R_resolution*bw*1e8/(3e8)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [974, 35]
+    rotation: 0
+    state: enabled
+- name: PRF
+  id: variable
+  parameters:
+    comment: ''
+    value: '5000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [621, 30]
+    rotation: 0
+    state: enabled
+- name: R_resolution
+  id: variable
+  parameters:
+    comment: ''
+    value: (3e8)/(2*bw*1e8)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1101, 37]
+    rotation: 0
+    state: enabled
 - name: bw
   id: variable
   parameters:
     comment: ''
-    value: '8'
+    value: '0.02'
   states:
     bus_sink: false
     bus_source: false
@@ -74,7 +113,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [290, 11]
+    coordinate: [294, 11]
     rotation: 0
     state: enabled
 - name: input_d
@@ -82,13 +121,13 @@ blocks:
   parameters:
     comment: ''
     gui_hint: ''
-    label: Delay
+    label: Simulated Range
     min_len: '200'
     orient: Qt.Horizontal
     rangeType: float
     start: '0'
     step: '0.1'
-    stop: '35'
+    stop: '600'
     value: '10'
     widget: counter_slider
   states:
@@ -102,7 +141,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: 600000000*10
+    value: '4000000'
   states:
     bus_sink: false
     bus_source: false
@@ -126,7 +165,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [288, 516]
+    coordinate: [310, 603]
     rotation: 0
     state: true
 - name: analog_sig_source_x_0
@@ -148,7 +187,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [100, 187]
+    coordinate: [79, 270]
     rotation: 0
     state: true
 - name: blocks_add_xx_0
@@ -166,7 +205,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [603, 458]
+    coordinate: [582, 541]
     rotation: 0
     state: true
 - name: blocks_complex_to_real_0
@@ -182,7 +221,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [754, 363]
+    coordinate: [733, 446]
     rotation: 0
     state: true
 - name: blocks_complex_to_real_0_0
@@ -198,7 +237,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [753, 414]
+    coordinate: [732, 497]
     rotation: 0
     state: true
 - name: blocks_delay_0
@@ -217,7 +256,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [271, 454]
+    coordinate: [250, 537]
     rotation: 0
     state: true
 - name: blocks_multiply_const_vxx_0
@@ -235,7 +274,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [416, 454]
+    coordinate: [395, 537]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_0
@@ -253,7 +292,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [974, 372]
+    coordinate: [953, 455]
     rotation: 0
     state: true
 - name: blocks_stream_to_vector_0
@@ -271,7 +310,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [740, 579]
+    coordinate: [719, 662]
     rotation: 0
     state: true
 - name: blocks_throttle_0
@@ -290,7 +329,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [488, 223]
+    coordinate: [467, 306]
     rotation: 0
     state: true
 - name: blocks_vco_f_0
@@ -308,7 +347,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [317, 211]
+    coordinate: [296, 294]
     rotation: 0
     state: true
 - name: chirp_radar_max_freq_peak_detector_ff_0
@@ -327,7 +366,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [940, 556]
+    coordinate: [919, 639]
     rotation: 0
     state: true
 - name: chirp_radar_range_calc_ff_0
@@ -344,7 +383,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1205, 568]
+    coordinate: [1184, 651]
     rotation: 0
     state: true
 - name: hilbert_fc_0
@@ -362,7 +401,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [656, 223]
+    coordinate: [635, 306]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0
@@ -381,7 +420,7 @@ blocks:
     alpha8: '1.0'
     alpha9: '1.0'
     autoscale: 'False'
-    average: '1.0'
+    average: '0.1'
     axislabels: 'True'
     bw: samp_rate
     color1: '"blue"'
@@ -442,7 +481,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [814, 145]
+    coordinate: [793, 228]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_1_0
@@ -522,7 +561,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1154, 387]
+    coordinate: [1133, 470]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -619,7 +658,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1144, 280]
+    coordinate: [1123, 363]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0_0
@@ -716,7 +755,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1405, 556]
+    coordinate: [1384, 639]
     rotation: 0
     state: true
 
